@@ -1,0 +1,762 @@
+store_id,week_start,weeks_since_opening,ramp_index,ramp_state,ramp_peer_median,ramp_peer_p25,ramp_peer_p75,ramp_peer_n,ramp_basis,ramp_below_run,ramp_flag
+SYN-001,2026-02-23,206.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-03-02,207.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-03-09,208.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-03-16,209.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-03-23,210.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-03-30,211.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-04-06,212.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-04-13,213.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-04-20,214.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-04-27,215.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-05-04,216.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-05-11,217.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-05-18,218.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-05-25,219.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-06-01,220.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-06-08,221.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-06-15,222.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-06-22,223.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-06-29,224.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-07-06,225.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-07-13,226.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-07-20,227.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-07-27,228.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-08-03,229.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-08-10,230.0,,not_eligible,,,,0,,0,False
+SYN-001,2026-08-17,231.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-02-23,192.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-03-02,193.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-03-09,194.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-03-16,195.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-03-23,196.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-03-30,197.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-04-06,198.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-04-13,199.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-04-20,200.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-04-27,201.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-05-04,202.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-05-11,203.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-05-18,204.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-05-25,205.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-06-01,206.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-06-08,207.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-06-15,208.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-06-22,209.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-06-29,210.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-07-06,211.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-07-13,212.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-07-20,213.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-07-27,214.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-08-03,215.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-08-10,216.0,,not_eligible,,,,0,,0,False
+SYN-002,2026-08-17,217.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-02-23,162.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-03-02,163.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-03-09,164.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-03-16,165.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-03-23,166.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-03-30,167.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-04-06,168.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-04-13,169.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-04-20,170.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-04-27,171.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-05-04,172.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-05-11,173.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-05-18,174.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-05-25,175.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-06-01,176.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-06-08,177.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-06-15,178.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-06-22,179.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-06-29,180.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-07-06,181.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-07-13,182.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-07-20,183.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-07-27,184.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-08-03,185.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-08-10,186.0,,not_eligible,,,,0,,0,False
+SYN-003,2026-08-17,187.0,,not_eligible,,,,0,,0,False
+SYN-004,2026-02-23,20.0,,insufficient_history,73.75,72.875,77.8125,6,same format,0,False
+SYN-004,2026-03-02,21.0,,insufficient_history,75.375,74.6875,78.5,6,same format,0,False
+SYN-004,2026-03-09,22.0,103.2258064516129,ok,77.5,75.75,79.8125,6,same format,0,False
+SYN-004,2026-03-16,23.0,103.84615384615384,ok,78.0,77.5,81.1875,6,same format,0,False
+SYN-004,2026-03-23,24.0,103.30708661417323,ok,79.375,79.0,82.1875,6,same format,0,False
+SYN-004,2026-03-30,25.0,104.375,ok,80.0,76.625,81.75,7,same format,0,False
+SYN-004,2026-04-06,26.0,107.27848101265823,ok,79.0,76.125,82.0,7,same format,0,False
+SYN-004,2026-04-13,27.0,104.375,ok,80.0,76.25,82.125,7,same format,0,False
+SYN-004,2026-04-20,28.0,109.58466453674122,ok,78.25,76.875,82.5,7,same format,0,False
+SYN-004,2026-04-27,29.0,107.88643533123029,ok,79.25,76.625,83.0,7,same format,0,False
+SYN-004,2026-05-04,30.0,105.59006211180125,ok,80.5,76.875,83.25,7,same format,0,False
+SYN-004,2026-05-11,31.0,108.46394984326018,ok,79.75,78.625,82.875,7,same format,0,False
+SYN-004,2026-05-18,32.0,106.06531881804044,ok,80.375,77.5,83.0625,6,same format,0,False
+SYN-004,2026-05-25,33.0,105.23076923076923,ok,81.25,77.0,83.25,5,same format,0,False
+SYN-004,2026-06-01,34.0,106.099436186571,ok,81.29166666666666,79.9375,82.02083333333333,6,same format,0,False
+SYN-004,2026-06-08,35.0,107.91366906474819,ok,81.08333333333334,78.79166666666667,83.8125,6,same format,0,False
+SYN-004,2026-06-15,36.0,106.96969696969697,ok,82.5,81.75,85.0625,6,same format,0,False
+SYN-004,2026-06-22,37.0,109.7560975609756,ok,82.0,81.4375,85.0,6,same format,0,False
+SYN-004,2026-06-29,38.0,110.33434650455926,ok,82.25,81.25,88.125,6,same format,0,False
+SYN-004,2026-07-06,39.0,109.03614457831326,ok,83.0,81.8125,88.5,6,same format,0,False
+SYN-004,2026-07-13,40.0,110.0,ok,82.5,81.0,90.25,5,same format,0,False
+SYN-004,2026-07-20,41.0,109.2814371257485,ok,83.5,83.25,90.75,5,same format,0,False
+SYN-004,2026-07-27,42.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-004,2026-08-03,43.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-004,2026-08-10,44.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-004,2026-08-17,45.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-005,2026-02-23,180.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-03-02,181.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-03-09,182.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-03-16,183.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-03-23,184.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-03-30,185.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-04-06,186.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-04-13,187.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-04-20,188.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-04-27,189.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-05-04,190.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-05-11,191.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-05-18,192.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-05-25,193.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-06-01,194.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-06-08,195.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-06-15,196.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-06-22,197.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-06-29,198.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-07-06,199.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-07-13,200.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-07-20,201.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-07-27,202.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-08-03,203.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-08-10,204.0,,not_eligible,,,,0,,0,False
+SYN-005,2026-08-17,205.0,,not_eligible,,,,0,,0,False
+SYN-006,2026-02-23,76.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-006,2026-03-02,77.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-006,2026-03-09,78.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-006,2026-03-16,79.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-006,2026-03-23,80.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-006,2026-03-30,81.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-006,2026-04-06,82.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-04-13,83.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-04-20,84.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-04-27,85.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-05-04,86.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-05-11,87.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-05-18,88.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-05-25,89.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-06-01,90.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-006,2026-06-08,91.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-006,2026-06-15,92.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-06-22,93.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-06-29,94.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-07-06,95.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-006,2026-07-13,96.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-006,2026-07-20,97.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-006,2026-07-27,98.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-08-03,99.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-08-10,100.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-006,2026-08-17,101.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-007,2026-02-23,149.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-03-02,150.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-03-09,151.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-03-16,152.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-03-23,153.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-03-30,154.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-04-06,155.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-04-13,156.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-04-20,157.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-04-27,158.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-05-04,159.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-05-11,160.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-05-18,161.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-05-25,162.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-06-01,163.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-06-08,164.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-06-15,165.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-06-22,166.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-06-29,167.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-07-06,168.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-07-13,169.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-07-20,170.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-07-27,171.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-08-03,172.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-08-10,173.0,,not_eligible,,,,0,,0,False
+SYN-007,2026-08-17,174.0,,not_eligible,,,,0,,0,False
+SYN-008,2026-02-23,16.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-008,2026-03-02,17.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-008,2026-03-09,18.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-008,2026-03-16,19.0,107.85714285714286,ok,70.0,65.75,73.66666666666667,5,same format,0,False
+SYN-008,2026-03-23,20.0,107.84982935153583,ok,73.25,72.75,74.25,5,same format,0,False
+SYN-008,2026-03-30,21.0,105.98006644518273,ok,75.25,74.5,75.5,5,same format,0,False
+SYN-008,2026-04-06,22.0,107.09677419354838,ok,77.5,75.75,79.625,6,same format,0,False
+SYN-008,2026-04-13,23.0,108.33333333333333,ok,78.0,77.5,80.25,6,same format,0,False
+SYN-008,2026-04-20,24.0,105.19685039370079,ok,79.375,79.0,81.4375,6,same format,0,False
+SYN-008,2026-04-27,25.0,107.5,ok,80.0,76.625,81.75,7,same format,0,False
+SYN-008,2026-05-04,26.0,108.86075949367088,ok,79.0,76.125,82.0,7,same format,0,False
+SYN-008,2026-05-11,27.0,109.375,ok,80.0,76.25,81.75,7,same format,0,False
+SYN-008,2026-05-18,28.0,111.82108626198082,ok,78.25,76.875,82.5,7,same format,0,False
+SYN-008,2026-05-25,29.0,109.14826498422713,ok,79.25,76.625,83.0,7,same format,0,False
+SYN-008,2026-06-01,30.0,107.14285714285714,ok,80.5,76.875,82.875,7,same format,0,False
+SYN-008,2026-06-08,31.0,107.83699059561128,ok,79.75,78.625,82.875,7,same format,0,False
+SYN-008,2026-06-15,32.0,108.8646967340591,ok,80.375,77.5,83.0625,6,same format,0,False
+SYN-008,2026-06-22,33.0,109.23076923076923,ok,81.25,77.0,83.25,5,same format,0,False
+SYN-008,2026-06-29,34.0,109.17478216299335,ok,81.29166666666666,79.9375,82.02083333333333,6,same format,0,False
+SYN-008,2026-07-06,35.0,113.15519013360739,ok,81.08333333333334,78.79166666666667,83.8125,6,same format,0,False
+SYN-008,2026-07-13,36.0,110.9090909090909,ok,82.5,81.75,85.0625,6,same format,0,False
+SYN-008,2026-07-20,37.0,111.58536585365853,ok,82.0,81.4375,85.0,6,same format,0,False
+SYN-008,2026-07-27,38.0,114.58966565349544,ok,82.25,81.25,88.125,6,same format,0,False
+SYN-008,2026-08-03,39.0,111.144578313253,ok,83.0,81.8125,88.5,6,same format,0,False
+SYN-008,2026-08-10,40.0,110.0,ok,82.5,81.0,90.25,5,same format,0,False
+SYN-008,2026-08-17,41.0,108.68263473053892,ok,83.5,83.25,90.75,5,same format,0,False
+SYN-009,2026-02-23,131.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-03-02,132.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-03-09,133.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-03-16,134.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-03-23,135.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-03-30,136.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-04-06,137.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-04-13,138.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-04-20,139.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-04-27,140.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-05-04,141.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-05-11,142.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-05-18,143.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-05-25,144.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-06-01,145.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-06-08,146.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-06-15,147.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-06-22,148.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-06-29,149.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-07-06,150.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-07-13,151.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-07-20,152.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-07-27,153.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-08-03,154.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-08-10,155.0,,not_eligible,,,,0,,0,False
+SYN-009,2026-08-17,156.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-02-23,93.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-010,2026-03-02,94.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-010,2026-03-09,95.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-010,2026-03-16,96.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-010,2026-03-23,97.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-010,2026-03-30,98.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-010,2026-04-06,99.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-010,2026-04-13,100.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-010,2026-04-20,101.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-010,2026-04-27,102.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-010,2026-05-04,103.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-010,2026-05-11,104.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-010,2026-05-18,105.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-05-25,106.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-06-01,107.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-06-08,108.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-06-15,109.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-06-22,110.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-06-29,111.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-07-06,112.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-07-13,113.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-07-20,114.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-07-27,115.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-08-03,116.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-08-10,117.0,,not_eligible,,,,0,,0,False
+SYN-010,2026-08-17,118.0,,not_eligible,,,,0,,0,False
+SYN-011,2026-02-23,23.0,,insufficient_history,78.0,77.66666666666666,81.625,7,same format,0,False
+SYN-011,2026-03-02,24.0,,insufficient_history,79.75,79.0,82.5,7,same format,0,False
+SYN-011,2026-03-09,25.0,88.05815160955348,ok,80.25,79.0,83.375,7,same format,0,False
+SYN-011,2026-03-16,26.0,87.61609907120743,ok,80.75,78.0,84.0,7,same format,0,False
+SYN-011,2026-03-23,27.0,89.375,ok,80.0,78.375,83.875,7,same format,0,False
+SYN-011,2026-03-30,28.0,87.85046728971963,ok,80.25,78.125,85.25,7,same format,0,False
+SYN-011,2026-04-06,29.0,89.16408668730651,ok,80.75,78.0,85.375,7,same format,0,False
+SYN-011,2026-04-13,30.0,89.78328173374614,ok,80.75,78.875,85.375,7,same format,0,False
+SYN-011,2026-04-20,31.0,88.34355828220859,ok,81.5,79.75,85.125,7,same format,0,False
+SYN-011,2026-04-27,32.0,88.61911987860394,ok,82.375,80.0625,84.875,6,same format,0,False
+SYN-011,2026-05-04,33.0,87.38738738738739,ok,83.25,81.25,85.5,5,same format,0,False
+SYN-011,2026-05-11,34.0,89.2511462047886,ok,81.79166666666666,81.27083333333333,85.25,6,same format,0,False
+SYN-011,2026-05-18,35.0,88.75562218890555,ok,83.375,80.375,86.6875,6,same format,0,False
+SYN-011,2026-05-25,36.0,87.70370370370371,ok,84.375,82.25,87.625,6,same format,0,False
+SYN-011,2026-06-01,37.0,87.5,ok,84.0,82.0,89.0,6,same format,0,False
+SYN-011,2026-06-08,38.0,85.21739130434783,ok,86.25,82.125,90.5625,6,same format,0,False
+SYN-011,2026-06-15,39.0,85.5907780979827,ok,86.75,82.875,90.4375,6,same format,0,False
+SYN-011,2026-06-22,40.0,84.7645429362881,ok,90.25,82.5,90.75,5,same format,0,False
+SYN-011,2026-06-29,41.0,85.12396694214875,ok,90.75,83.5,90.75,5,same format,0,False
+SYN-011,2026-07-06,42.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-011,2026-07-13,43.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-011,2026-07-20,44.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-011,2026-07-27,45.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-011,2026-08-03,46.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-011,2026-08-10,47.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-011,2026-08-17,48.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-012,2026-02-23,66.0,,insufficient_history,,,,2,suppressed,0,False
+SYN-012,2026-03-02,67.0,,insufficient_history,,,,2,suppressed,0,False
+SYN-012,2026-03-09,68.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-03-16,69.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-03-23,70.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-03-30,71.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-012,2026-04-06,72.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-012,2026-04-13,73.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-012,2026-04-20,74.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-04-27,75.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-05-04,76.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-05-11,77.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-05-18,78.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-05-25,79.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-06-01,80.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-06-08,81.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-012,2026-06-15,82.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-012,2026-06-22,83.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-012,2026-06-29,84.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-012,2026-07-06,85.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-012,2026-07-13,86.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-012,2026-07-20,87.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-012,2026-07-27,88.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-012,2026-08-03,89.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-012,2026-08-10,90.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-012,2026-08-17,91.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-013,2026-02-23,88.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-013,2026-03-02,89.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-013,2026-03-09,90.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-013,2026-03-16,91.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-013,2026-03-23,92.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-013,2026-03-30,93.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-013,2026-04-06,94.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-013,2026-04-13,95.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-013,2026-04-20,96.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-013,2026-04-27,97.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-013,2026-05-04,98.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-013,2026-05-11,99.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-013,2026-05-18,100.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-013,2026-05-25,101.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-013,2026-06-01,102.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-013,2026-06-08,103.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-013,2026-06-15,104.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-013,2026-06-22,105.0,,not_eligible,,,,0,,0,False
+SYN-013,2026-06-29,106.0,,not_eligible,,,,0,,0,False
+SYN-013,2026-07-06,107.0,,not_eligible,,,,0,,0,False
+SYN-013,2026-07-13,108.0,,not_eligible,,,,0,,0,False
+SYN-013,2026-07-20,109.0,,not_eligible,,,,0,,0,False
+SYN-013,2026-07-27,110.0,,not_eligible,,,,0,,0,False
+SYN-013,2026-08-03,111.0,,not_eligible,,,,0,,0,False
+SYN-013,2026-08-10,112.0,,not_eligible,,,,0,,0,False
+SYN-013,2026-08-17,113.0,,not_eligible,,,,0,,0,False
+SYN-014,2026-02-23,6.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-014,2026-03-02,7.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-014,2026-03-09,8.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-03-16,9.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-03-23,10.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-03-30,11.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-04-06,12.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-04-13,13.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-04-20,14.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-04-27,15.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-05-04,16.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-05-11,17.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-014,2026-05-18,18.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-014,2026-05-25,19.0,106.42857142857143,ok,70.0,65.75,73.66666666666667,5,same format,0,False
+SYN-014,2026-06-01,20.0,101.36518771331058,ok,73.25,72.75,79.0,5,same format,0,False
+SYN-014,2026-06-08,21.0,98.67549668874172,ok,75.5,75.25,79.5,5,same format,0,False
+SYN-014,2026-06-15,22.0,95.26813880126183,ok,79.25,77.0,80.1875,6,same format,0,False
+SYN-014,2026-06-22,23.0,98.11320754716981,ok,79.5,77.5,81.9375,6,same format,0,False
+SYN-014,2026-06-29,24.0,99.06832298136646,ok,80.5,79.0,82.75,6,same format,0,False
+SYN-014,2026-07-06,25.0,100.3125,ok,80.0,76.625,83.375,7,same format,0,False
+SYN-014,2026-07-13,26.0,102.21518987341773,ok,79.0,76.125,84.0,7,same format,0,False
+SYN-014,2026-07-20,27.0,100.0,ok,80.0,76.25,83.875,7,same format,0,False
+SYN-014,2026-07-27,28.0,102.55591054313099,ok,78.25,76.875,85.25,7,same format,0,False
+SYN-014,2026-08-03,29.0,101.89274447949526,ok,79.25,76.625,85.375,7,same format,0,False
+SYN-014,2026-08-10,30.0,100.31055900621118,ok,80.5,76.875,85.375,7,same format,0,False
+SYN-014,2026-08-17,31.0,102.19435736677116,ok,79.75,78.625,85.125,7,same format,0,False
+SYN-015,2026-02-23,214.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-03-02,215.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-03-09,216.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-03-16,217.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-03-23,218.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-03-30,219.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-04-06,220.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-04-13,221.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-04-20,222.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-04-27,223.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-05-04,224.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-05-11,225.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-05-18,226.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-05-25,227.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-06-01,228.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-06-08,229.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-06-15,230.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-06-22,231.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-06-29,232.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-07-06,233.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-07-13,234.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-07-20,235.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-07-27,236.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-08-03,237.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-08-10,238.0,,not_eligible,,,,0,,0,False
+SYN-015,2026-08-17,239.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-02-23,172.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-03-02,173.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-03-09,174.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-03-16,175.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-03-23,176.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-03-30,177.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-04-06,178.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-04-13,179.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-04-20,180.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-04-27,181.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-05-04,182.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-05-11,183.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-05-18,184.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-05-25,185.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-06-01,186.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-06-08,187.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-06-15,188.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-06-22,189.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-06-29,190.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-07-06,191.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-07-13,192.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-07-20,193.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-07-27,194.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-08-03,195.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-08-10,196.0,,not_eligible,,,,0,,0,False
+SYN-016,2026-08-17,197.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-02-23,142.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-03-02,143.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-03-09,144.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-03-16,145.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-03-23,146.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-03-30,147.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-04-06,148.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-04-13,149.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-04-20,150.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-04-27,151.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-05-04,152.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-05-11,153.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-05-18,154.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-05-25,155.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-06-01,156.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-06-08,157.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-06-15,158.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-06-22,159.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-06-29,160.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-07-06,161.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-07-13,162.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-07-20,163.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-07-27,164.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-08-03,165.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-08-10,166.0,,not_eligible,,,,0,,0,False
+SYN-017,2026-08-17,167.0,,not_eligible,,,,0,,0,False
+SYN-018,2026-02-23,18.0,,insufficient_history,68.75,65.0,71.75,5,same format,0,False
+SYN-018,2026-03-02,19.0,,insufficient_history,71.83333333333334,66.8125,74.29166666666667,6,same format,0,False
+SYN-018,2026-03-09,20.0,107.84982935153583,ok,73.25,72.75,74.25,5,same format,0,False
+SYN-018,2026-03-16,21.0,105.64784053156146,ok,75.25,74.5,75.5,5,same format,0,False
+SYN-018,2026-03-23,22.0,103.54838709677419,ok,77.5,75.75,79.625,6,same format,0,False
+SYN-018,2026-03-30,23.0,105.44871794871794,ok,78.0,77.5,80.25,6,same format,0,False
+SYN-018,2026-04-06,24.0,104.56692913385827,ok,79.375,79.0,81.4375,6,same format,0,False
+SYN-018,2026-04-13,25.0,104.0625,ok,80.0,76.625,81.875,7,same format,0,False
+SYN-018,2026-04-20,26.0,105.37974683544304,ok,79.0,76.125,82.75,7,same format,0,False
+SYN-018,2026-04-27,27.0,105.3125,ok,80.0,76.25,81.75,7,same format,0,False
+SYN-018,2026-05-04,28.0,108.30670926517571,ok,78.25,76.875,83.0,7,same format,0,False
+SYN-018,2026-05-11,29.0,107.57097791798107,ok,79.25,76.625,83.125,7,same format,0,False
+SYN-018,2026-05-18,30.0,106.52173913043478,ok,80.5,76.875,82.875,7,same format,0,False
+SYN-018,2026-05-25,31.0,105.64263322884013,ok,79.75,78.625,83.75,7,same format,0,False
+SYN-018,2026-06-01,32.0,104.19906687402799,ok,80.375,77.5,84.1875,6,same format,0,False
+SYN-018,2026-06-08,33.0,102.46153846153847,ok,81.25,77.0,85.5,5,same format,0,False
+SYN-018,2026-06-15,34.0,101.17888262429524,ok,81.29166666666666,79.9375,85.02083333333333,6,same format,0,False
+SYN-018,2026-06-22,35.0,103.90544707091469,ok,81.08333333333334,78.79166666666667,86.25,6,same format,0,False
+SYN-018,2026-06-29,36.0,103.93939393939394,ok,82.5,81.75,86.9375,6,same format,0,False
+SYN-018,2026-07-06,37.0,104.8780487804878,ok,82.0,81.4375,88.0,6,same format,0,False
+SYN-018,2026-07-13,38.0,109.4224924012158,ok,82.25,81.25,88.6875,6,same format,0,False
+SYN-018,2026-07-20,39.0,108.73493975903614,ok,83.0,81.8125,88.6875,6,same format,0,False
+SYN-018,2026-07-27,40.0,109.39393939393939,ok,82.5,81.0,90.75,5,same format,0,False
+SYN-018,2026-08-03,41.0,108.68263473053892,ok,83.5,83.25,90.75,5,same format,0,False
+SYN-018,2026-08-10,42.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-018,2026-08-17,43.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-019,2026-02-23,103.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-019,2026-03-02,104.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-019,2026-03-09,105.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-03-16,106.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-03-23,107.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-03-30,108.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-04-06,109.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-04-13,110.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-04-20,111.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-04-27,112.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-05-04,113.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-05-11,114.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-05-18,115.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-05-25,116.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-06-01,117.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-06-08,118.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-06-15,119.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-06-22,120.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-06-29,121.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-07-06,122.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-07-13,123.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-07-20,124.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-07-27,125.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-08-03,126.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-08-10,127.0,,not_eligible,,,,0,,0,False
+SYN-019,2026-08-17,128.0,,not_eligible,,,,0,,0,False
+SYN-020,2026-04-06,0.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-020,2026-04-13,1.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-020,2026-04-20,2.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-020,2026-04-27,3.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-020,2026-05-04,4.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-020,2026-05-11,5.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-020,2026-05-18,6.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-020,2026-05-25,7.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-020,2026-06-01,8.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-06-08,9.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-06-15,10.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-06-22,11.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-06-29,12.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-07-06,13.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-07-13,14.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-07-20,15.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-07-27,16.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-08-03,17.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-020,2026-08-10,18.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-020,2026-08-17,19.0,89.25339366515837,ok,73.66666666666667,70.0,74.5,5,same format,0,False
+SYN-021,2026-02-23,80.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-021,2026-03-02,81.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-021,2026-03-09,82.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-03-16,83.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-03-23,84.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-03-30,85.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-04-06,86.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-04-13,87.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-04-20,88.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-04-27,89.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-05-04,90.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-021,2026-05-11,91.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-021,2026-05-18,92.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-05-25,93.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-06-01,94.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-06-08,95.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-021,2026-06-15,96.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-021,2026-06-22,97.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-021,2026-06-29,98.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-07-06,99.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-07-13,100.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-07-20,101.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-021,2026-07-27,102.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-021,2026-08-03,103.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-021,2026-08-10,104.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-021,2026-08-17,105.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-02-23,156.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-03-02,157.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-03-09,158.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-03-16,159.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-03-23,160.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-03-30,161.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-04-06,162.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-04-13,163.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-04-20,164.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-04-27,165.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-05-04,166.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-05-11,167.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-05-18,168.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-05-25,169.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-06-01,170.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-06-08,171.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-06-15,172.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-06-22,173.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-06-29,174.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-07-06,175.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-07-13,176.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-07-20,177.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-07-27,178.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-08-03,179.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-08-10,180.0,,not_eligible,,,,0,,0,False
+SYN-022,2026-08-17,181.0,,not_eligible,,,,0,,0,False
+SYN-023,2026-05-04,0.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-023,2026-05-11,1.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-023,2026-05-18,2.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-023,2026-05-25,3.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-023,2026-06-01,4.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-023,2026-06-08,5.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-023,2026-06-15,6.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-023,2026-06-22,7.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-023,2026-06-29,8.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-023,2026-07-06,9.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-023,2026-07-13,10.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-023,2026-07-20,11.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-023,2026-07-27,12.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-023,2026-08-03,13.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-023,2026-08-10,14.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-023,2026-08-17,15.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-024,2026-02-23,52.0,,insufficient_history,,,,1,suppressed,0,False
+SYN-024,2026-03-02,53.0,,insufficient_history,,,,1,suppressed,0,False
+SYN-024,2026-03-09,54.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-03-16,55.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-03-23,56.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-03-30,57.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-04-06,58.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-04-13,59.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-04-20,60.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-04-27,61.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-05-04,62.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-05-11,63.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-05-18,64.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-05-25,65.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-06-01,66.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-06-08,67.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-06-15,68.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-024,2026-06-22,69.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-024,2026-06-29,70.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-024,2026-07-06,71.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-07-13,72.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-07-20,73.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-024,2026-07-27,74.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-024,2026-08-03,75.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-024,2026-08-10,76.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-024,2026-08-17,77.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-025,2026-02-23,21.0,,insufficient_history,75.375,74.6875,78.5,6,same format,0,False
+SYN-025,2026-03-02,22.0,,insufficient_history,78.5,76.0,80.125,7,same format,0,False
+SYN-025,2026-03-09,23.0,97.27463312368972,ok,79.5,78.0,81.9375,6,same format,0,False
+SYN-025,2026-03-16,24.0,97.68160741885626,ok,80.875,79.1875,82.75,6,same format,0,False
+SYN-025,2026-03-23,25.0,99.68847352024922,ok,80.25,76.625,83.375,7,same format,0,False
+SYN-025,2026-03-30,26.0,97.83281733746131,ok,80.75,76.125,84.0,7,same format,0,False
+SYN-025,2026-04-06,27.0,100.0,ok,80.0,76.25,83.875,7,same format,0,False
+SYN-025,2026-04-13,28.0,97.50778816199377,ok,80.25,76.875,85.25,7,same format,0,False
+SYN-025,2026-04-20,29.0,95.04643962848297,ok,80.75,77.875,85.375,7,same format,0,False
+SYN-025,2026-04-27,30.0,94.73684210526316,ok,80.75,78.875,85.375,7,same format,0,False
+SYN-025,2026-05-04,31.0,95.0920245398773,ok,81.5,79.75,85.125,7,same format,0,False
+SYN-025,2026-05-11,32.0,93.17147192716237,ok,82.375,80.0625,84.875,6,same format,0,False
+SYN-025,2026-05-18,33.0,92.49249249249249,ok,83.25,81.25,85.5,5,same format,0,False
+SYN-025,2026-05-25,34.0,97.19816607233827,ok,81.79166666666666,81.27083333333333,85.25,6,same format,0,False
+SYN-025,2026-06-01,35.0,94.15292353823088,ok,83.375,80.375,86.6875,6,same format,0,False
+SYN-025,2026-06-08,36.0,97.18518518518519,ok,84.375,82.0,87.625,6,same format,0,False
+SYN-025,2026-06-15,37.0,97.61904761904762,ok,84.0,81.4375,89.0,6,same format,0,False
+SYN-025,2026-06-22,38.0,95.93023255813954,ok,86.0,81.25,90.5625,6,same format,0,False
+SYN-025,2026-06-29,39.0,95.38904899135447,ok,86.75,81.9375,90.4375,6,same format,0,False
+SYN-025,2026-07-06,40.0,89.75069252077563,ok,90.25,82.5,90.75,5,same format,0,False
+SYN-025,2026-07-13,41.0,91.73553719008264,ok,90.75,83.5,90.75,5,same format,0,False
+SYN-025,2026-07-20,42.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-025,2026-07-27,43.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-025,2026-08-03,44.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-025,2026-08-10,45.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-025,2026-08-17,46.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-026,2026-02-23,72.0,,insufficient_history,,,,2,suppressed,0,False
+SYN-026,2026-03-02,73.0,,insufficient_history,,,,2,suppressed,0,False
+SYN-026,2026-03-09,74.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-026,2026-03-16,75.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-026,2026-03-23,76.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-026,2026-03-30,77.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-026,2026-04-06,78.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-026,2026-04-13,79.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-026,2026-04-20,80.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-026,2026-04-27,81.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-026,2026-05-04,82.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-05-11,83.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-05-18,84.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-05-25,85.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-06-01,86.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-06-08,87.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-06-15,88.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-06-22,89.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-06-29,90.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-026,2026-07-06,91.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-026,2026-07-13,92.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-07-20,93.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-07-27,94.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-026,2026-08-03,95.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-026,2026-08-10,96.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-026,2026-08-17,97.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-027,2026-02-23,14.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-027,2026-03-02,15.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-027,2026-03-09,16.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-027,2026-03-16,17.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-027,2026-03-23,18.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-027,2026-03-30,19.0,95.02262443438913,ok,73.66666666666667,65.75,74.5,5,same format,0,False
+SYN-027,2026-04-06,20.0,97.97979797979798,ok,74.25,73.25,79.0,5,same format,0,False
+SYN-027,2026-04-13,21.0,99.66887417218543,ok,75.5,74.5,79.5,5,same format,0,False
+SYN-027,2026-04-20,22.0,100.31948881789137,ok,78.25,75.75,80.1875,6,same format,0,False
+SYN-027,2026-04-27,23.0,97.16981132075472,ok,79.5,78.0,81.9375,6,same format,0,False
+SYN-027,2026-05-04,24.0,94.28129829984545,ok,80.875,79.1875,82.75,6,same format,0,False
+SYN-027,2026-05-11,25.0,93.76947040498442,ok,80.25,79.0,83.375,7,same format,0,False
+SYN-027,2026-05-18,26.0,93.18885448916409,ok,80.75,78.0,84.0,7,same format,0,False
+SYN-027,2026-05-25,27.0,94.6875,ok,80.0,78.375,83.875,7,same format,0,False
+SYN-027,2026-06-01,28.0,94.39252336448598,ok,80.25,78.125,85.25,7,same format,0,False
+SYN-027,2026-06-08,29.0,94.73684210526316,ok,80.75,78.0,85.375,7,same format,0,False
+SYN-027,2026-06-15,30.0,95.6656346749226,ok,80.75,78.5,85.375,7,same format,0,False
+SYN-027,2026-06-22,31.0,97.85276073619632,ok,81.5,78.625,85.125,7,same format,0,False
+SYN-027,2026-06-29,32.0,99.08256880733946,ok,81.75,77.5,84.875,6,same format,0,False
+SYN-027,2026-07-06,33.0,,red,82.25,78.0625,84.9375,6,same format,0,False
+SYN-027,2026-07-13,34.0,99.49031600407747,ok,81.75,79.9375,85.25,6,same format,0,False
+SYN-027,2026-07-20,35.0,95.55222388805598,ok,83.375,79.5,86.6875,6,same format,0,False
+SYN-027,2026-07-27,36.0,96.79012345679013,ok,84.375,82.25,87.625,6,same format,0,False
+SYN-027,2026-08-03,37.0,96.72619047619048,ok,84.0,82.0,89.0,6,same format,0,False
+SYN-027,2026-08-10,38.0,93.91304347826087,ok,86.25,82.125,90.5625,6,same format,0,False
+SYN-027,2026-08-17,39.0,93.94812680115274,ok,86.75,82.875,90.4375,6,same format,0,False
+SYN-028,2026-02-23,17.0,,insufficient_history,,,,4,suppressed,0,False
+SYN-028,2026-03-02,18.0,,insufficient_history,68.75,65.0,71.75,5,same format,0,False
+SYN-028,2026-03-09,19.0,105.23809523809524,ok,70.0,65.75,74.5,5,same format,0,False
+SYN-028,2026-03-16,20.0,98.65319865319866,ok,74.25,72.75,79.0,5,same format,0,False
+SYN-028,2026-03-23,21.0,100.33222591362126,ok,75.25,74.5,79.5,5,same format,0,False
+SYN-028,2026-03-30,22.0,96.52996845425868,ok,79.25,76.25,80.1875,6,same format,0,False
+SYN-028,2026-04-06,23.0,98.11320754716981,ok,79.5,77.5,81.9375,6,same format,0,False
+SYN-028,2026-04-13,24.0,97.68160741885626,ok,80.875,79.1875,82.75,6,same format,0,False
+SYN-028,2026-04-20,25.0,97.19626168224299,ok,80.25,77.625,83.375,7,same format,0,False
+SYN-028,2026-04-27,26.0,95.3560371517028,ok,80.75,77.125,84.0,7,same format,0,False
+SYN-028,2026-05-04,27.0,95.9375,ok,80.0,77.875,83.875,7,same format,0,False
+SYN-028,2026-05-11,28.0,97.19626168224299,ok,80.25,77.0,85.25,7,same format,0,False
+SYN-028,2026-05-18,29.0,98.14241486068111,ok,80.75,76.625,85.375,7,same format,0,False
+SYN-028,2026-05-25,30.0,99.69040247678019,ok,80.75,76.875,85.375,7,same format,0,False
+SYN-028,2026-06-01,31.0,97.85276073619632,ok,81.5,78.625,85.125,7,same format,0,False
+SYN-028,2026-06-08,32.0,96.8133535660091,ok,82.375,77.8125,84.875,6,same format,0,False
+SYN-028,2026-06-15,33.0,97.5975975975976,ok,83.25,77.0,85.5,5,same format,0,False
+SYN-028,2026-06-22,34.0,99.33774834437087,ok,81.79166666666666,79.95833333333333,85.25,6,same format,0,False
+SYN-028,2026-06-29,35.0,100.66090493136755,ok,81.95833333333334,78.79166666666667,86.6875,6,same format,0,False
+SYN-028,2026-07-06,36.0,98.95678092399403,ok,83.875,81.75,87.625,6,same format,0,False
+SYN-028,2026-07-13,37.0,97.61904761904762,ok,84.0,81.4375,89.0,6,same format,0,False
+SYN-028,2026-07-20,38.0,95.07246376811594,ok,86.25,81.375,90.5625,6,same format,0,False
+SYN-028,2026-07-27,39.0,96.24277456647398,ok,86.5,81.8125,90.4375,6,same format,0,False
+SYN-028,2026-08-03,40.0,91.41274238227147,ok,90.25,81.0,90.75,5,same format,0,False
+SYN-028,2026-08-10,41.0,92.01101928374656,ok,90.75,83.25,90.75,5,same format,0,False
+SYN-028,2026-08-17,42.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-029,2026-02-23,45.0,,insufficient_history,,,,3,suppressed,0,False
+SYN-029,2026-03-02,46.0,,insufficient_history,,,,2,suppressed,0,False
+SYN-029,2026-03-09,47.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-03-16,48.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-03-23,49.0,,peer_suppressed,,,,0,suppressed,0,False
+SYN-029,2026-03-30,50.0,,peer_suppressed,,,,0,suppressed,0,False
+SYN-029,2026-04-06,51.0,,peer_suppressed,,,,0,suppressed,0,False
+SYN-029,2026-04-13,52.0,,peer_suppressed,,,,0,suppressed,0,False
+SYN-029,2026-04-20,53.0,,peer_suppressed,,,,0,suppressed,0,False
+SYN-029,2026-04-27,54.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-05-04,55.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-05-11,56.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-05-18,57.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-05-25,58.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-06-01,59.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-06-08,60.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-06-15,61.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-06-22,62.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-06-29,63.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-07-06,64.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-07-13,65.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-07-20,66.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-07-27,67.0,,peer_suppressed,,,,1,suppressed,0,False
+SYN-029,2026-08-03,68.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-029,2026-08-10,69.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-029,2026-08-17,70.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-030,2026-03-16,0.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-030,2026-03-23,1.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-030,2026-03-30,2.0,,insufficient_history,,,,0,suppressed,0,False
+SYN-030,2026-04-06,3.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-030,2026-04-13,4.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-030,2026-04-20,5.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-030,2026-04-27,6.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-030,2026-05-04,7.0,,peer_suppressed,,,,2,suppressed,0,False
+SYN-030,2026-05-11,8.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-05-18,9.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-05-25,10.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-06-01,11.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-06-08,12.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-06-15,13.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-06-22,14.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-06-29,15.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-07-06,16.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-07-13,17.0,,peer_suppressed,,,,3,suppressed,0,False
+SYN-030,2026-07-20,18.0,,peer_suppressed,,,,4,suppressed,0,False
+SYN-030,2026-07-27,19.0,83.1447963800905,ok,73.66666666666667,70.0,74.5,5,same format,0,False
+SYN-030,2026-08-03,20.0,84.84848484848484,ok,74.25,73.25,79.0,5,same format,0,False
+SYN-030,2026-08-10,21.0,87.41721854304636,ok,75.5,75.25,79.5,5,same format,0,False
+SYN-030,2026-08-17,22.0,86.43533123028391,ok,79.25,77.0,80.1875,6,same format,0,False

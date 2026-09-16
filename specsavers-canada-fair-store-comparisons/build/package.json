@@ -1,0 +1,19 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd .. && python build/run_tests.py",
+    "test:logic": "cd .. && node --test tests/test_dashboard_logic.js",
+    "test:ui": "cd .. && node tests/ui_regression.js",
+    "build:deck": "node build_deck.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}

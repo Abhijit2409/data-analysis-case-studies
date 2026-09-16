@@ -1,0 +1,4 @@
+# Python dependencies used to build and test the synthetic case study (tested with Python 3.11.0)
+pandas==3.0.5
+numpy==2.4.6
+# Optional: Pillow is only used for local image checks during deck QA

@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Store Growth Intelligence Prototype (Synthetic Data)</title>
+<style>
+  :root {
+    --ink: #1d2a33; --muted: #56656f; --line: #d3dce1; --bg: #f4f7f8; --card: #ffffff;
+    --brand: #0b5d57; --brand-2: #1f8a80; --brand-soft: #e3efed;
+    --accent: #c4581b; --text-accent: #a84a14; --peer: #0b5d57; --band: #7a8a94;
+    --amber: #b26a00; --text-amber: #8a5300; --red: #b3261e; --text-red: #b3261e; --green: #2e7d32; --text-green: #2e7d32;
+    --hl: #fff4e5; --hl-line: #e7b36b; --info: #eef3f5; --focus: #1a5fb4;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 15px/1.5 "Segoe UI", Arial, sans-serif; color: var(--ink); background: var(--bg); overflow-x: hidden; }
+  a { color: var(--brand); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .skip { position: absolute; left: -9999px; top: 0; background: #fff; padding: 8px 12px; z-index: 10; }
+  .skip:focus { left: 8px; top: 8px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  header.top { background: var(--brand); color: #fff; padding: 10px 20px; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+  header.top h1 { font-size: 18px; margin: 0; font-weight: 600; line-height: 1.3; }
+  .synth { background: #fff; color: var(--text-accent); font-weight: 700; font-size: 12px; letter-spacing: .03em; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .rolebox { margin-left: auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .rolebox label { font-size: 13px; }
+  select, button { font: inherit; font-size: 14px; min-height: 40px; padding: 6px 10px; border: 1px solid #9fb0b8; border-radius: 6px; background: #fff; color: var(--ink); max-width: 100%; }
+  button { cursor: pointer; }
+  button.link { border: 0; background: none; color: var(--brand); text-decoration: underline; padding: 4px 2px; min-height: 36px; text-align: left; }
+  button.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+  button:disabled, select:disabled { background: #eef1f2; color: var(--muted); cursor: not-allowed; }
+  .simnote { background: #fff; border-bottom: 1px solid var(--line); padding: 8px 20px; font-size: 13.5px; }
+  .simnote strong { color: var(--text-accent); }
+  nav.tabs { display: flex; gap: 2px; padding: 0 20px; background: #e6eef0; border-bottom: 1px solid var(--line); overflow-x: auto; }
+  nav.tabs button { border: 0; border-radius: 0; background: transparent; padding: 10px 14px; min-height: 46px; color: var(--muted); border-bottom: 3px solid transparent; white-space: nowrap; }
+  nav.tabs button[aria-selected="true"] { color: var(--brand); border-bottom-color: var(--brand); font-weight: 600; background: #fff; }
+  nav.tabs button[aria-disabled="true"] { color: #8a979e; cursor: not-allowed; }
+  .filters { background: #fff; border-bottom: 1px solid var(--line); padding: 8px 20px 6px; }
+  .frow { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: flex-end; max-width: 1400px; margin: 0 auto; }
+  .frow label { display: flex; flex-direction: column; font-size: 12.5px; color: var(--muted); gap: 2px; min-width: 0; }
+  .frow select { min-width: 120px; }
+  .fsummary { max-width: 1400px; margin: 6px auto 0; font-size: 13px; color: var(--muted); }
+  main { padding: 14px 20px 40px; max-width: 1400px; margin: 0 auto; }
+  .banner { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin-bottom: 10px; display: flex; gap: 6px 16px; flex-wrap: wrap; align-items: center; font-size: 13.5px; }
+  .backbar { margin: 0 0 8px; }
+  .pagetitle { font-size: 20px; margin: 4px 0 6px; }
+  details.guide { background: var(--info); border-radius: 6px; padding: 6px 10px; margin: 0 0 10px; font-size: 13.5px; }
+  details.guide summary { cursor: pointer; font-weight: 600; min-height: 28px; }
+  details.guide ul { margin: 6px 0 2px 18px; padding: 0; }
+  .grid { display: grid; gap: 12px; margin-top: 12px; }
+  .cards { grid-template-columns: repeat(auto-fit, minmax(min(175px, 100%), 1fr)); margin-top: 6px; }
+  .two { grid-template-columns: repeat(auto-fit, minmax(min(470px, 100%), 1fr)); }
+  .three { grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); }
+  .two.wide { grid-template-columns: repeat(auto-fit, minmax(min(560px, 100%), 1fr)); align-items: start; }
+  table.funnel th .note { font-weight: 400; font-size: 12.5px; display: block; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-width: 0; }
+  .card h3 { font-size: 15px; margin: 0; color: var(--ink); font-weight: 600; }
+  .cardhead { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 4px; }
+  .cardhead label { font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+  .sub { font-size: 12.5px; color: var(--muted); margin: 2px 0 6px; }
+  .kpi .t { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 2px; min-height: 36px; }
+  .kpi .v { font-size: 24px; font-weight: 600; line-height: 1.2; }
+  .kpi .v.state { font-size: 15px; font-weight: 600; color: var(--muted); }
+  .kpi .d { font-size: 12.5px; color: var(--muted); }
+  .note { font-size: 13px; color: var(--muted); }
+  .warn { background: var(--hl); border: 1px solid var(--hl-line); border-radius: 6px; padding: 8px 10px; font-size: 13.5px; margin: 6px 0; }
+  .info { background: var(--info); border-radius: 6px; padding: 8px 10px; font-size: 13.5px; margin: 6px 0; }
+  .help { border: 0; background: none; color: var(--brand); font-size: 16px; min-height: 32px; min-width: 32px; padding: 0 4px; line-height: 1; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  caption { text-align: left; font-size: 12.5px; color: var(--muted); padding: 2px 0 4px; }
+  th, td { text-align: left; padding: 6px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  thead th { color: var(--muted); font-weight: 600; background: #f6f9fa; }
+  tbody th { font-weight: 600; }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  .scroll { overflow-x: auto; max-width: 100%; }
+  .dq { font-weight: 600; white-space: nowrap; }
+  .dq-Green { color: var(--text-green); } .dq-Amber { color: var(--text-amber); } .dq-Red { color: var(--text-red); }
+  .flag { color: var(--text-red); font-weight: 600; }
+  .restricted { color: var(--muted); font-style: italic; }
+  .muted { color: var(--muted); }
+  .legend { display: flex; gap: 4px 14px; font-size: 12.5px; color: var(--muted); flex-wrap: wrap; list-style: none; padding: 0; margin: 4px 0; }
+  .legend li { display: flex; align-items: center; gap: 5px; }
+  .chart { min-height: 40px; }
+  .chart svg { display: block; max-width: 100%; }
+  details.tbl { margin-top: 4px; font-size: 13px; }
+  details.tbl summary { cursor: pointer; color: var(--brand); min-height: 32px; display: flex; align-items: center; }
+  .storebar { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: flex-end; }
+  .storebar label { display: flex; flex-direction: column; font-size: 12.5px; color: var(--muted); gap: 2px; min-width: 0; }
+  .storehead { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin-top: 10px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+  table.funnel td.bar { width: 40%; min-width: 120px; }
+  .fbar { height: 22px; background: var(--brand); border-radius: 3px; }
+  .fbar.cap { background: #9fb7bb; }
+  .promptbox { border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; margin: 8px 0; }
+  .promptbox.attn { background: var(--hl); border-color: var(--hl-line); }
+  .promptbox h4 { margin: 0 0 4px; font-size: 14px; }
+  .dqstrip { display: grid; grid-template-columns: repeat(auto-fill, minmax(62px, 1fr)); gap: 4px; margin: 6px 0; }
+  .dqcell { border: 1px solid var(--line); border-radius: 5px; padding: 4px; font-size: 12px; text-align: center; background: #fff; min-height: 44px; }
+  .dqcell.sel { outline: 3px solid var(--ink); outline-offset: 1px; }
+  .dqcell.Green { background: #e8f3e9; } .dqcell.Amber { background: #fdf0db; } .dqcell.Red { background: #f9e0de; } .dqcell.none { background: #eef1f2; color: var(--muted); }
+  .rbstrip { display: grid; grid-template-columns: repeat(auto-fill, minmax(58px, 1fr)); gap: 3px; margin: 6px 0; }
+  .rbcell { border: 1px solid var(--line); border-radius: 4px; font-size: 12px; text-align: center; padding: 3px 2px; }
+  .rbcell b { display: block; font-size: 13px; }
+  .tiles { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 5px; }
+  .tile { border-radius: 6px; min-height: 58px; padding: 3px; font-size: 12px; text-align: center; border: 1px solid transparent; display: flex; flex-direction: column; justify-content: center; line-height: 1.2; }
+  button.tile { min-height: 58px; font-size: 12px; }
+  .tile b { font-size: 13px; }
+  .tile.empty { background: #eef1f2; color: var(--muted); }
+  .tile.out { background: #fff; border: 1px dashed #9fb0b8; color: var(--muted); }
+  dialog, .dialog { max-width: min(640px, 94vw); }
+  .dialog { position: fixed; inset: 0; background: rgba(20, 30, 36, .45); display: flex; align-items: center; justify-content: center; z-index: 20; padding: 12px; }
+  .dialog .panel { background: #fff; border-radius: 10px; padding: 16px 18px; max-height: 90vh; overflow: auto; width: min(640px, 94vw); }
+  .dialog dl { display: grid; grid-template-columns: minmax(90px, 30%) 1fr; gap: 6px 12px; font-size: 14px; }
+  .dialog dt { font-weight: 600; color: var(--muted); }
+  .dialog dd { margin: 0; }
+  footer { font-size: 12.5px; color: var(--muted); padding: 10px 20px 24px; max-width: 1400px; margin: 0 auto; }
+  [hidden] { display: none !important; }
+  @media (max-width: 700px) {
+    header.top, .simnote, nav.tabs, .filters { padding-left: 12px; padding-right: 12px; }
+    main { padding: 10px 10px 30px; }
+    .rolebox { margin-left: 0; }
+    .frow label, .storebar label { flex: 1 1 140px; }
+    .frow select, .storebar select { width: 100%; min-width: 0; }
+    .tiles { gap: 3px; }
+    .tile, button.tile { min-height: 46px; font-size: 10.5px; padding: 2px 1px; }
+    .tile.empty span, .tile.out span { display: none; }
+    table.funnel thead { display: none; }
+    table.funnel tr { display: grid; grid-template-columns: 1fr auto; border-bottom: 1px solid var(--line); padding: 4px 0; }
+    table.funnel th, table.funnel td { border: 0; padding: 2px 4px; }
+    table.funnel td.bar { grid-column: 1 / -1; width: auto; }
+    table.funnel td.rate { grid-column: 1 / -1; text-align: left; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to report content</a>
+<header class="top">
+  <h1>Store Growth &amp; Partner Performance Intelligence — Prototype</h1>
+  <span class="synth">SYNTHETIC DATA · NOT SPECSAVERS RESULTS</span>
+  <div class="rolebox"><label for="role">View as role (simulated)</label><select id="role"></select></div>
+</header>
+<div class="simnote" role="note">
+  <strong>Simulated role view.</strong> This page embeds the full synthetic dataset. The role selector demonstrates what each role would be shown;
+  it is <b>not</b> authentication, row-level security or object-level security. Production security is specified separately (SR-01 to SR-08, Phase 5).
+</div>
+<nav class="tabs" role="tablist" aria-label="Report pages">
+  <button role="tab" id="tab-p1" aria-controls="p1" data-page="p1" type="button">1 · Network Overview</button>
+  <button role="tab" id="tab-p2" aria-controls="p2" data-page="p2" type="button">2 · Store &amp; Cohort Benchmarking</button>
+  <button role="tab" id="tab-p3" aria-controls="p3" data-page="p3" type="button">3 · Store Diagnostic &amp; Data Quality</button>
+</nav>
+<section class="filters" aria-label="Report filters">
+  <div class="frow">
+    <label for="f-week">Reporting week<select id="f-week"></select></label>
+    <label for="f-region">Region<select id="f-region" data-filter="region"></select></label>
+    <label for="f-province">Province<select id="f-province" data-filter="province"></select></label>
+    <label for="f-format">Store format<select id="f-format" data-filter="format"></select></label>
+    <label for="f-banner">Host banner<select id="f-banner" data-filter="banner"></select></label>
+    <label for="f-cohort">Maturity cohort (as at week)<select id="f-cohort" data-filter="cohort"></select></label>
+    <label for="f-dq">Data quality<select id="f-dq" data-filter="dq"></select></label>
+    <button id="f-reset" type="button">Reset filters</button>
+  </div>
+  <p id="f-summary" class="fsummary" aria-live="polite"></p>
+</section>
+
+<main id="main">
+  <div id="banner" class="banner" data-test="banner"></div>
+  <div id="backbar" class="backbar"></div>
+
+  <section id="p1" role="tabpanel" aria-labelledby="tab-p1">
+    <h2 class="pagetitle" id="h-p1" tabindex="-1">Network Overview</h2>
+    <details class="guide"><summary>How to read this page</summary><ul>
+      <li>Cards show the <b>selected week</b> for the stores in view: role scope first, then filters. Changes compare with the <b>pooled 4 weeks before</b> the selected week.</li>
+      <li>The trend shows weekly pooled values. The province view and region table use the <b>4 calendar weeks ending</b> the selected week.</li>
+      <li>"Stores warranting attention" lists journey stages with a triggered rule. <b>Rule (a)</b> compares a store with peers; <b>rule (b)</b> compares it with its own recent history. Flags are areas to investigate, not causes.</li>
+      <li>Red data-quality store-weeks are excluded from every rate and listed as data checks.</li>
+    </ul></details>
+    <div id="p1-body">
+      <p class="sub" id="p1-scope"></p>
+      <div class="grid cards" id="kpiCards"></div>
+      <div class="grid two">
+        <div class="card"><div class="cardhead"><h3 id="trend-h">Weekly trend</h3><label for="trendKpi">KPI <select id="trendKpi"></select></label></div><div id="trend" class="chart"></div></div>
+        <div class="card"><div class="cardhead"><h3>Province view</h3><label for="mapKpi">KPI <select id="mapKpi"></select></label></div><div id="tiles"></div></div>
+      </div>
+      <div class="grid"><div class="card"><h3>Stores warranting attention</h3><div id="excTable"></div></div></div>
+      <div class="grid"><div class="card"><h3>Region comparison</h3><div id="regionTable"></div></div></div>
+    </div>
+  </section>
+
+  <section id="p2" role="tabpanel" aria-labelledby="tab-p2" hidden>
+    <h2 class="pagetitle" id="h-p2" tabindex="-1">Store &amp; Cohort Benchmarking</h2>
+    <details class="guide"><summary>How to read this page</summary><ul>
+      <li>Values are <b>4-week</b> values ending the selected week. Peers are other stores in the same maturity cohort and format that week; with fewer than 5 the whole cohort is used; with fewer than 5 again, no peer statistic is shown.</li>
+      <li>Peer identities follow the role: partners see anonymous peers; regional managers see names only inside their region.</li>
+      <li>The ramp chart aligns stores by <b>weeks since opening</b>, using peers observed at the same age in any week of the 26-week sample.</li>
+    </ul></details>
+    <div class="storebar">
+      <label for="p2store">Store<select id="p2store"></select></label>
+      <label for="p2kpi">KPI<select id="p2kpi"></select></label>
+      <button type="button" class="primary" id="to-p3">Open Store Diagnostic for this store</button>
+    </div>
+    <div id="p2head" class="storehead"></div>
+    <div id="p2warn"></div>
+    <div class="grid two">
+      <div class="card"><h3>Store versus peer median</h3><div id="cmpTable"></div></div>
+      <div class="card"><h3 id="dist-h">Peer distribution</h3><div id="dist" class="chart"></div></div>
+    </div>
+    <div class="grid two">
+      <div class="card"><h3>Ramp-up by weeks since opening</h3><div id="ramp" class="chart"></div></div>
+      <div class="card"><h3 id="var-h">Variance from peer median over time</h3><div id="varChart" class="chart"></div></div>
+    </div>
+  </section>
+
+  <section id="p3" role="tabpanel" aria-labelledby="tab-p3" hidden>
+    <h2 class="pagetitle" id="h-p3" tabindex="-1">Store Diagnostic &amp; Data Quality</h2>
+    <details class="guide"><summary>How to read this page</summary><ul>
+      <li>The funnel and trends use 4-week windows ending the selected week. Red weeks are excluded; if the selected week is Red, values are withheld.</li>
+      <li>Investigation areas show which rule triggered and a typical follow-up team. They do not explain why a difference exists.</li>
+      <li>Counts from 1 to 4 are shown as "&lt;5". Zero, suppressed, not applicable and withheld are shown differently.</li>
+      <li>Data quality describes the data pipeline, not store performance.</li>
+    </ul></details>
+    <div class="storebar">
+      <label for="p3store">Store<select id="p3store"></select></label>
+      <button type="button" id="to-p2">Open benchmarking for this store</button>
+    </div>
+    <div id="p3head" class="storehead"></div>
+    <div class="grid two wide">
+      <div class="card"><h3>Appointment-to-purchase funnel</h3><div id="funnel"></div></div>
+      <div class="card"><h3 id="prompts-h">Investigation areas</h3><div id="prompts"></div></div>
+    </div>
+    <div class="grid three" id="trendCards"></div>
+    <div class="card" style="margin-top:12px"><h3>Data quality: completeness and freshness (not a performance measure)</h3><div id="dqPanel"></div></div>
+  </section>
+</main>
+
+<div id="helpDialog" class="dialog" hidden>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="help-title">
+    <div class="cardhead"><h3 id="help-title">Definition</h3><button type="button" id="help-close">Close</button></div>
+    <div id="help-body"></div>
+  </div>
+</div>
+
+<footer>
+  Outside-in portfolio prototype built on fictional synthetic data (seed 20260913). Definitions, thresholds, peer rules and prompts are illustrative proposals
+  (KPI dictionary v0.2, exception rule set v0.2, prompt library v0.2), not Specsavers definitions, targets or results. Responsive and keyboard behaviour were
+  checked with automated and manual tests; no formal accessibility audit has been carried out.
+</footer>
+
+<script>/*__LOGIC__*/</script>
+<script>
+"use strict";
+const D = /*__DATA__*/null;
+const L = window.DashLogic;
+const idx = L.index(D);
+const WEEKS = D.weeks, LATEST = WEEKS[WEEKS.length - 1];
+const HELP = D.meta.kpi_help, PROMPTS = D.meta.prompts, VER = D.meta.versions, PAR = D.meta.parameters;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s === null || s === undefined ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const ICON = { Green: "●", Amber: "▲", Red: "■" };
+const COL = { store: "#c4581b", peer: "#0b5d57", band: "#7a8a94", flag: "#b3261e", ref: "#56656f", amber: "#b26a00" };
+const DEFAULT_STORE = { ROL: "SYN-014", RRM: "SYN-027", RP: "SYN-014", OP: "SYN-014" };
+const HELP_KEY = { utilization: "utilization", attendance: "attendance", conversion: "conversion", on_time: "on_time", turnaround: "turnaround", recall_rate: "recall_rate", rev_per_exam: "rev_per_exam", exams: "exams", exams_total: "exams" };
+const storeLabel = (id) => { const s = idx.byStore[id]; return s ? `${s.id} · ${s.name.replace("Synthetic - ", "")}` : id; };
+const dqText = (dq) => `<span class="dq dq-${dq}">${ICON[dq]} ${dq}</span>`;
+const wk = (w) => L.fmtWeek(w);
+const helpBtn = (key, label) => HELP[key] ? `<button type="button" class="help" data-help="${key}" aria-label="Definition of ${esc(label)}" title="Definition">ⓘ</button>` : "";
+let S = L.decodeState(location.hash, D);
+const backStack = [];
+const aggCache = new Map();
+
+/* ------------------------------------------------------------------ state */
+function filters() { const f = {}; for (const k of L.FILTER_KEYS) if (S[k]) f[k] = S[k]; return f; }
+function rowsAt(week, f = filters(), role = S.role) { return L.filteredRows(D, idx, role, f, week); }
+function aggAt(week, f = filters(), role = S.role) {
+  const key = role + "|" + week + "|" + JSON.stringify(f);
+  if (!aggCache.has(key)) aggCache.set(key, L.aggregate(rowsAt(week, f, role)));
+  return aggCache.get(key);
+}
+function normalise() {
+  const role = L.ROLES[S.role];
+  if (!role.pages.includes(S.page)) S.page = role.landing;
+  if (!WEEKS.includes(S.week)) S.week = LATEST;
+  const opts = L.filterOptions(D, idx, S.role, S.week);
+  for (const k of L.FILTER_KEYS) if (S[k] && !opts[k].includes(S[k])) S[k] = "";
+  const ids = rowsAt(S.week).map((r) => r.id);
+  if (!ids.includes(S.store)) S.store = ids.includes(DEFAULT_STORE[S.role]) ? DEFAULT_STORE[S.role] : ids[0] || "";
+  if (!L.canSeeRevenue(S.role)) for (const k of ["kpi", "trend", "map"]) if (S[k] === "rev_per_exam") S[k] = "conversion";
+}
+let hashLock = false;
+function writeHash() {
+  const h = "#" + L.encodeState(S, D);
+  if (location.hash === h) return;
+  hashLock = true;
+  try { history.replaceState(null, "", h); } catch (e) { location.hash = h; }
+  setTimeout(() => { hashLock = false; }, 0);
+}
+function setState(patch, opts = {}) {
+  if (opts.push) backStack.push(Object.assign({}, S));
+  S = Object.assign({}, S, patch);
+  normalise(); writeHash(); render();
+  if (opts.focus) { const h = $("h-" + S.page); if (h) h.focus(); }
+}
+function goBack() {
+  const prev = backStack.pop();
+  if (!prev) return;
+  S = prev; normalise(); writeHash(); render();
+  const h = $("h-" + S.page); if (h) h.focus();
+}
+window.addEventListener("hashchange", () => { if (hashLock) return; S = L.decodeState(location.hash, D); normalise(); render(); });
+
+/* ------------------------------------------------------------------ chart primitives */
+let chartSeq = 0;
+function lineChart(el, o) {
+  el._chart = o;
+  const id = "c" + ++chartSeq;
+  const w = Math.max(260, Math.floor(el.clientWidth || 480)), h = o.height || 220;
+  const n = o.labels.length;
+  const vals = [];
+  o.series.forEach((s) => s.values.forEach((v) => L.isNum(v) && vals.push(v)));
+  (o.band || []).forEach((b) => b && b.forEach((v) => L.isNum(v) && vals.push(v)));
+  if (o.zero) vals.push(0);
+  if (!vals.length) { el.innerHTML = `<p class="note">${esc(o.empty || "No values available for this period.")}</p>` + (o.notes || ""); return; }
+  const m = { l: o.kind === "pct" || o.kind === "delta_pct" ? 64 : 50, r: 12, t: 18, b: 34 };
+  const pw = w - m.l - m.r, ph = h - m.t - m.b;
+  const t = L.niceTicks(Math.min(...vals), Math.max(...vals), { kind: o.kind, min: o.min, max: o.max, count: Math.max(3, Math.min(5, Math.floor(ph / 38))) });
+  const X = (i) => m.l + (n <= 1 ? pw / 2 : (i * pw) / (n - 1));
+  const Y = (v) => m.t + ph * (1 - (v - t.lo) / (t.hi - t.lo || 1));
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="${id}t ${id}d"><title id="${id}t">${esc(o.title)}</title><desc id="${id}d">${esc(o.desc || "")}</desc>`;
+  for (const tk of t.ticks) {
+    const y = Y(tk.v).toFixed(1);
+    s += `<line x1="${m.l}" x2="${w - m.r}" y1="${y}" y2="${y}" stroke="#e3e9ec"/><text x="${m.l - 6}" y="${(+y + 4).toFixed(1)}" font-size="12" text-anchor="end" fill="#56656f">${esc(tk.label)}</text>`;
+  }
+  const maxLab = Math.max(2, Math.floor(pw / 70)), step = Math.max(1, Math.ceil(n / maxLab));
+  const xIdx = [];
+  for (let i = 0; i < n; i += step) xIdx.push(i);
+  if (n > 1 && xIdx[xIdx.length - 1] !== n - 1) { if (X(n - 1) - X(xIdx[xIdx.length - 1]) < 64) xIdx.pop(); xIdx.push(n - 1); }
+  for (const i of xIdx) {
+    const anchor = n > 1 && i === 0 ? "start" : n > 1 && X(i) > w - m.r - 24 ? "end" : "middle";
+    const lx = anchor === "start" ? X(i) - 6 : anchor === "end" ? Math.min(w - 2, X(i) + 6) : X(i);
+    s += `<text x="${lx.toFixed(1)}" y="${h - 12}" font-size="12" text-anchor="${anchor}" fill="#56656f">${esc(o.xfmt ? o.xfmt(o.labels[i], i) : o.labels[i])}</text>`;
+  }
+  if (o.zero) s += `<line x1="${m.l}" x2="${w - m.r}" y1="${Y(0).toFixed(1)}" y2="${Y(0).toFixed(1)}" stroke="#56656f" stroke-width="1"/>`;
+  (o.vlines || []).forEach((vl) => {
+    const x = X(vl.i), right = x > w - m.r - 120;
+    s += `<line x1="${x.toFixed(1)}" x2="${x.toFixed(1)}" y1="${m.t}" y2="${m.t + ph}" stroke="${vl.color || "#56656f"}" stroke-dasharray="${vl.dash || "2 3"}"/><text x="${(right ? x - 4 : x + 4).toFixed(1)}" y="${m.t + 10}" font-size="11.5" text-anchor="${right ? "end" : "start"}" fill="#1d2a33">${esc(vl.label || "")}</text>`;
+  });
+  if (o.band) for (const seg of L.segments(o.band)) {
+    if (seg.length === 1) { const i = seg[0]; s += `<line x1="${X(i)}" x2="${X(i)}" y1="${Y(o.band[i][0])}" y2="${Y(o.band[i][1])}" stroke="${COL.band}" stroke-width="6" opacity=".25"/>`; continue; }
+    const up = seg.map((i) => `${X(i).toFixed(1)},${Y(o.band[i][1]).toFixed(1)}`), dn = seg.slice().reverse().map((i) => `${X(i).toFixed(1)},${Y(o.band[i][0]).toFixed(1)}`);
+    s += `<polygon points="${up.concat(dn).join(" ")}" fill="${COL.band}" opacity=".2"/>`;
+  }
+  for (const ser of o.series) {
+    for (const seg of L.segments(ser.values)) {
+      if (seg.length === 1) { const i = seg[0]; s += `<circle cx="${X(i).toFixed(1)}" cy="${Y(ser.values[i]).toFixed(1)}" r="3" fill="${ser.color}"/>`; continue; }
+      s += `<path d="${seg.map((i, j) => (j ? "L" : "M") + X(i).toFixed(1) + "," + Y(ser.values[i]).toFixed(1)).join("")}" fill="none" stroke="${ser.color}" stroke-width="${ser.width || 2.2}" ${ser.dash ? `stroke-dasharray="${ser.dash}"` : ""}/>`;
+    }
+    if (ser.flags) ser.flags.forEach((f, i) => { if (f && L.isNum(ser.values[i])) s += `<circle cx="${X(i).toFixed(1)}" cy="${Y(ser.values[i]).toFixed(1)}" r="4.5" fill="${COL.flag}" stroke="#fff" stroke-width="1.5"><title>${esc(o.xfmtLong ? o.xfmtLong(o.labels[i]) : o.labels[i])}: exception flagged</title></circle>`; });
+  }
+  (o.markers || []).forEach((mk) => { if (mk) s += `<text x="${X(mk.i).toFixed(1)}" y="${m.t - 5}" font-size="11" text-anchor="middle" fill="${mk.color}">${mk.symbol}<title>${esc(mk.title)}</title></text>`; });
+  if (L.isNum(o.selected)) { const x = X(o.selected).toFixed(1); s += `<line x1="${x}" x2="${x}" y1="${m.t}" y2="${m.t + ph}" stroke="#1d2a33" stroke-width="1.2" stroke-dasharray="4 3"><title>Selected week</title></line>`; }
+  s += "</svg>";
+  const leg = o.series.filter((q) => q.name).map((q) => `<li><svg width="28" height="10" aria-hidden="true"><line x1="0" y1="5" x2="28" y2="5" stroke="${q.color}" stroke-width="2.5" ${q.dash ? `stroke-dasharray="${q.dash}"` : ""}/></svg>${esc(q.name)}</li>`);
+  if (o.band) leg.push(`<li><svg width="18" height="10" aria-hidden="true"><rect width="18" height="10" fill="${COL.band}" opacity=".3"/></svg>Peer interquartile range (P25–P75)</li>`);
+  if (o.series.some((q) => q.flags && q.flags.some(Boolean))) leg.push(`<li><svg width="10" height="10" aria-hidden="true"><circle cx="5" cy="5" r="4.5" fill="${COL.flag}"/></svg>Exception flagged that week (rule a or b)</li>`);
+  if ((o.markers || []).some((mk) => mk && mk.symbol === "▲")) leg.push(`<li><span style="color:${COL.amber}">▲</span> Amber data in the window (provisional)</li>`);
+  if ((o.markers || []).some((mk) => mk && mk.symbol === "■")) leg.push(`<li><span style="color:${COL.flag}">■</span> ${esc(o.redLegend || "Red data-quality week (values withheld)")}</li>`);
+  if (L.isNum(o.selected)) leg.push(`<li><svg width="14" height="12" aria-hidden="true"><line x1="7" y1="0" x2="7" y2="12" stroke="#1d2a33" stroke-dasharray="3 2"/></svg>Selected week</li>`);
+  el.innerHTML = s + `<ul class="legend">${leg.join("")}</ul>` + (o.notes || "") + (o.table || "");
+}
+function dataTable(caption, head, rows) {
+  return `<details class="tbl"><summary>Show data table</summary><div class="scroll"><table><caption>${esc(caption)}</caption><thead><tr>${head.map((h, i) => `<th scope="col"${i ? ' class="num"' : ""}>${esc(h)}</th>`).join("")}</tr></thead><tbody>` +
+    rows.map((r) => `<tr><th scope="row">${esc(r[0])}</th>${r.slice(1).map((c) => `<td class="num">${esc(c)}</td>`).join("")}</tr>`).join("") + `</tbody></table></div></details>`;
+}
+function weekRanges(indices) {
+  if (!indices.length) return "";
+  return L.toRanges(indices).map(([a, b]) => (a === b ? L.fmtWeek(WEEKS[a], false) : `${L.fmtWeek(WEEKS[a], false)}–${L.fmtWeek(WEEKS[b], false)}`)).join(", ") + ", " + WEEKS[indices[0]].slice(0, 4);
+}
+function groupReasons(items) { // items: [{i, reason}]
+  const by = {};
+  for (const it of items) (by[it.reason] = by[it.reason] || []).push(it.i);
+  return Object.entries(by).map(([r, ix]) => `${r}: ${weekRanges(ix)}`).join("; ");
+}
+let resizeTimer = null;
+window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => document.querySelectorAll(".chart").forEach((el) => el._chart && lineChart(el, el._chart)), 150); });
+
+/* ------------------------------------------------------------------ chrome: role, tabs, filters, banner */
+function renderChrome() {
+  $("role").innerHTML = Object.entries(L.ROLES).map(([k, r]) => `<option value="${k}"${k === S.role ? " selected" : ""}>${esc(r.label)}</option>`).join("");
+  const pages = L.ROLES[S.role].pages;
+  document.querySelectorAll('nav.tabs [role="tab"]').forEach((b) => {
+    const p = b.dataset.page, sel = p === S.page, allowed = pages.includes(p);
+    b.setAttribute("aria-selected", String(sel));
+    b.tabIndex = sel ? 0 : -1;
+    b.setAttribute("aria-disabled", String(!allowed));
+    b.title = allowed ? "" : "Not available for this role (partners land on their own store)";
+  });
+  ["p1", "p2", "p3"].forEach((p) => { $(p).hidden = p !== S.page; });
+  $("f-week").innerHTML = WEEKS.slice().reverse().map((w) => `<option value="${w}"${w === S.week ? " selected" : ""}>Week of ${wk(w)}${w === LATEST ? " (latest)" : ""}</option>`).join("");
+  const opts = L.filterOptions(D, idx, S.role, S.week);
+  const label = { region: "regions", province: "provinces", format: "formats", banner: "banners", cohort: "cohorts", dq: "statuses" };
+  const scope = L.ROLES[S.role].scope;
+  for (const k of L.FILTER_KEYS) {
+    const el = $("f-" + k);
+    const lockedToScope = (scope.type === "store" && k !== "dq" && k !== "cohort") || (scope.type === "region" && k === "region");
+    el.innerHTML = `<option value="">All ${label[k]}${scope.type !== "network" ? " in scope" : ""}</option>` + opts[k].map((v) => `<option value="${esc(v)}"${v === S[k] ? " selected" : ""}>${esc(v)}</option>`).join("");
+    el.disabled = lockedToScope;
+  }
+  const rows = rowsAt(S.week);
+  const active = L.FILTER_KEYS.filter((k) => S[k]).map((k) => `${k === "dq" ? "data quality" : k}: ${S[k]}`);
+  const scopeTxt = scope.type === "network" ? "whole network" : scope.type === "region" ? `${scope.region} region only` : `store ${scope.store} only`;
+  $("f-summary").textContent = `Role scope: ${scopeTxt} · Week of ${wk(S.week)} · ${active.length ? "Filters: " + active.join(", ") : "No filters applied"} · ${rows.length} store${rows.length === 1 ? "" : "s"} in view.`;
+  $("f-reset").disabled = !active.length && S.week === LATEST;
+
+  const a = aggAt(S.week);
+  $("banner").innerHTML = `<strong>Data as at:</strong> <span data-test="banner-week">week of ${wk(S.week)}</span>` +
+    `<span class="note">Synthetic snapshot, periods treated as final</span>` +
+    `<span>Data quality, stores in view: <span class="dq dq-Green" data-test="banner-green">● ${a.green} Green</span> · <span class="dq dq-Amber" data-test="banner-amber">▲ ${a.amber} Amber</span> · <span class="dq dq-Red" data-test="banner-red">■ ${a.red} Red</span></span>` +
+    `<span class="note">KPI dictionary ${VER.kpi_dictionary} · Exception rules ${VER.exception_rules} · Prompt library ${VER.prompt_library} · Peer floor ${PAR.peer_floor} · Counts under ${PAR.peer_floor} shown as "&lt;5"</span>` +
+    `<details class="note"><summary>About this snapshot</summary>${esc(D.meta.snapshot.treatment)} ${esc(D.meta.period_text)}</details>`;
+  $("backbar").innerHTML = backStack.length ? `<button type="button" class="link" id="backBtn">← Back to ${esc(pageName(backStack[backStack.length - 1].page))} (week of ${wk(backStack[backStack.length - 1].week)}, filters kept)</button>` : "";
+}
+function pageName(p) { return { p1: "Network Overview", p2: "Store & Cohort Benchmarking", p3: "Store Diagnostic" }[p]; }
+
+/* ------------------------------------------------------------------ PAGE 1 */
+function stateText(x) { return L.STATE_SHORT[x.s] || "Unavailable"; }
+function renderP1() {
+  const scope = L.ROLES[S.role].scope;
+  const rows = rowsAt(S.week);
+  const agg = aggAt(S.week);
+  const scopeName = scope.type === "region" ? `${scope.region} region (your scope)` : "Network";
+  $("h-p1").textContent = scope.type === "region" ? `Regional Overview — ${scope.region}` : "Network Overview";
+  $("p1-scope").innerHTML = `<b>${esc(scopeName)}</b>${L.FILTER_KEYS.some((k) => S[k]) ? " with filters" : ""} · selected week of ${wk(S.week)} · ${agg.stores} stores` + (agg.red ? ` · rates exclude ${agg.red} Red store-week(s)` : "");
+  if (!rows.length) {
+    $("kpiCards").innerHTML = `<div class="info">No stores match the current filters in the week of ${wk(S.week)}. Reset or change the filters.</div>`;
+    ["trend", "tiles", "regionTable", "excTable"].forEach((i) => { $(i).innerHTML = `<p class="note">No stores in view.</p>`; });
+    return;
+  }
+  const priorRows = L.priorRows(D, idx, rows, S.week, 4);
+  const prior = L.aggregate(priorRows);
+  const priorWeeks = new Set(priorRows.map((r) => r.rec.w)).size;
+  const delta = (k) => {
+    if (!priorWeeks) return "No prior weeks in the sample";
+    if (agg[k].s !== "ok" || prior[k].s !== "ok") return "Change unavailable";
+    return `${L.fmtDelta(k, agg[k].v - prior[k].v)} vs prior ${priorWeeks} weeks (pooled)`;
+  };
+  const card = (key, title, value, d, isState) => `<div class="card kpi" data-test="card-${key}"><div class="t">${esc(title)}${helpBtn(HELP_KEY[key] || key, title)}</div><div class="v${isState ? " state" : ""}" data-test="val-${key}">${value}</div><div class="d">${d}</div></div>`;
+  const rate = (k, title) => card(k, title, agg[k].s === "ok" ? L.fmtValue(k, agg[k].v) : esc(stateText(agg[k])), delta(k), agg[k].s !== "ok");
+  const examsDelta = priorWeeks && prior.exams !== null ? `${L.fmtDelta("exams", agg.exams - prior.exams / priorWeeks)} vs prior ${priorWeeks}-week weekly average` : "Change unavailable";
+  const cards = [
+    card("stores", "Active stores", String(agg.stores), `${agg.storeWeeks} store-weeks reported this week`),
+    card("exams_total", "Completed examinations", esc(agg.examsDisplay.text), examsDelta),
+    rate("utilization", "Appointment utilization"),
+    rate("attendance", "Attendance rate"),
+    rate("conversion", "Exam-to-purchase conversion"),
+    rate("recall_rate", "Recall-booking rate"),
+    L.canSeeRevenue(S.role) ? card("rev_per_exam", "Revenue per completed exam", agg.rev_per_exam.s === "ok" ? L.fmtValue("rev_per_exam", agg.rev_per_exam.v) : esc(stateText(agg.rev_per_exam)), "Context only · " + delta("rev_per_exam"), agg.rev_per_exam.s !== "ok")
+      : card("rev_per_exam", "Revenue per completed exam", "Restricted", "Hidden for this role (SR-03)", true),
+    rate("on_time", "On-time fulfilment"),
+    rate("turnaround", "Average order turnaround"),
+    card("dq", "Data quality (stores)", `<span class="dq dq-Green">● ${agg.green}</span> <span class="dq dq-Amber">▲ ${agg.amber}</span> <span class="dq dq-Red">■ ${agg.red}</span>`, "Green · Amber · Red store-weeks this week"),
+  ];
+  $("kpiCards").innerHTML = cards.join("");
+
+  // trend
+  const tkOpts = ["conversion", "utilization", "attendance", "on_time", "turnaround", "recall_rate", "exams_total"].concat(L.canSeeRevenue(S.role) ? ["rev_per_exam"] : []);
+  if (!tkOpts.includes(S.trend)) S.trend = "conversion";
+  $("trendKpi").innerHTML = tkOpts.map((k) => `<option value="${k}"${k === S.trend ? " selected" : ""}>${esc(k === "exams_total" ? "Completed exams (weekly total)" : L.KPI[k].label)}</option>`).join("");
+  const tk = S.trend, kind = tk === "exams_total" ? "count" : L.KPI[tk].unit;
+  const valOf = (a) => (tk === "exams_total" ? a.exams : a[tk].s === "ok" ? a[tk].v : null);
+  const series = [{ name: `${scope.type === "region" ? scope.region : "Stores in view"} (weekly pooled)`, values: WEEKS.map((w) => valOf(aggAt(w))), color: COL.peer }];
+  const showRef = scope.type === "region" || L.FILTER_KEYS.some((k) => S[k]);
+  if (showRef && tk !== "exams_total") series.push({ name: "Network reference (all 30 stores, no filters; comparison population, not your scope)", values: WEEKS.map((w) => valOf(aggAt(w, {}, "ROL"))), color: COL.ref, dash: "5 4", width: 1.6 });
+  const redMarks = WEEKS.map((w, i) => (aggAt(w).red ? { i, symbol: "■", color: COL.flag, title: `Week of ${wk(w)}: ${aggAt(w).red} Red store-week(s) excluded` } : null));
+  $("trend-h").textContent = `Weekly trend · ${tk === "exams_total" ? "Completed exams" : L.KPI[tk].short}`;
+  lineChart($("trend"), {
+    labels: WEEKS, xfmt: (w) => L.fmtWeek(w, false), kind, min: kind === "pct" || kind === "count" ? 0 : undefined, max: kind === "pct" ? 1 : undefined, series, markers: redMarks, selected: WEEKS.indexOf(S.week),
+    redLegend: "Week with Red store-weeks excluded from the pooled value",
+    title: `Weekly trend of ${tk === "exams_total" ? "completed exams" : L.KPI[tk].label}`, desc: `Weekly pooled values, ${wk(WEEKS[0])} to ${wk(LATEST)}. Selected week ${wk(S.week)}: ${series[0].values[WEEKS.indexOf(S.week)] === null ? "unavailable" : tk === "exams_total" ? series[0].values[WEEKS.indexOf(S.week)] : L.fmtValue(tk, series[0].values[WEEKS.indexOf(S.week)])}.`,
+    notes: `<p class="note">Weekly pooled values (not rolling), weeks of ${wk(WEEKS[0])} to ${wk(LATEST)}. Red store-weeks are excluded from each week.${kind === "pct" ? " Axis shows the range of values, within 0–100%." : ""}</p>`,
+    table: dataTable("Weekly values", ["Week", ...series.map((q) => q.name.split(" (")[0])], WEEKS.map((w, i) => [wk(w), ...series.map((q) => (q.values[i] === null ? "n/a" : tk === "exams_total" ? L.fmtNum(q.values[i]) : L.fmtValue(tk, q.values[i])))])),
+  });
+
+  renderTiles();
+  renderRegionTable();
+  renderExceptions(rows);
+}
+function window4(week) { return [0, 1, 2, 3].map((i) => L.weekOffset(D, week, -i)).filter(Boolean); }
+function renderTiles() {
+  const mOpts = ["turnaround", "on_time", "conversion", "utilization", "attendance", "recall_rate"];
+  if (!mOpts.includes(S.map)) S.map = "turnaround";
+  $("mapKpi").innerHTML = mOpts.map((k) => `<option value="${k}"${k === S.map ? " selected" : ""}>${esc(L.KPI[k].label)}</option>`).join("");
+  const k = S.map;
+  const f = Object.assign({}, filters()); delete f.province;
+  const inScope = new Set(L.scopeStores(D, S.role).map((s) => s.province));
+  const allProv = new Set(D.stores.map((s) => s.province));
+  const by = {};
+  for (const w of window4(S.week)) for (const r of rowsAt(w, f)) (by[r.store.province] = by[r.store.province] || []).push(r);
+  const vals = {};
+  for (const [p, rs] of Object.entries(by)) vals[p] = L.aggregate(rs);
+  const nums = Object.values(vals).map((a) => a[k]).filter((x) => x.s === "ok").map((x) => x.v);
+  const lo = Math.min(...nums), hi = Math.max(...nums);
+  const layout = [["YT", 1, 1], ["NT", 2, 1], ["NU", 3, 1], ["NL", 8, 1], ["BC", 1, 2], ["AB", 2, 2], ["SK", 3, 2], ["MB", 4, 2], ["ON", 5, 2], ["QC", 6, 2], ["PE", 8, 2], ["NB", 7, 3], ["NS", 8, 3]];
+  let html = `<div class="tiles" role="list">`;
+  const tableRows = [];
+  for (const [code, col, row] of layout) {
+    const pos = `style="grid-column:${col};grid-row:${row}"`;
+    if (!allProv.has(code)) { html += `<div class="tile empty" role="listitem" ${pos}><b>${code}</b><span>No synthetic stores</span></div>`; continue; }
+    if (!inScope.has(code)) { html += `<div class="tile out" role="listitem" ${pos}><b>${code}</b><span>Outside your scope</span></div>`; tableRows.push([code, "Outside your scope", ""]); continue; }
+    const a = vals[code];
+    if (!a || S.province && S.province !== code) { html += `<div class="tile empty" role="listitem" ${pos}><b>${code}</b><span>${a ? "Filtered out" : "No stores match"}</span></div>`; tableRows.push([code, a ? "Filtered out" : "No stores match", ""]); continue; }
+    const x = a[k];
+    let bg = "#eef1f2", fg = "#1d2a33", txt = stateText(x);
+    if (x.s === "ok") {
+      txt = L.fmtValue(k, x.v).replace(" days", " d");
+      let t = nums.length > 1 && hi > lo ? (x.v - lo) / (hi - lo) : 0.5;
+      if (!L.KPI[k].hib) t = 1 - t;
+      const c0 = [168, 74, 20], c1 = [11, 93, 87];
+      bg = `rgb(${c0.map((c, i) => Math.round(c + (c1[i] - c) * t)).join(",")})`; fg = "#fff";
+    }
+    html += `<div role="listitem" ${pos}><button type="button" class="tile" style="background:${bg};color:${fg};width:100%" data-set-province="${code}" aria-label="${code}: ${esc(txt)}, ${a.stores} stores. Select to filter to ${code}." title="${code}: ${esc(txt)} · ${a.stores} stores · ${a.red} Red store-weeks excluded"><b>${code}</b><span>${esc(txt)}</span></button></div>`;
+    tableRows.push([code, x.s === "ok" ? L.fmtValue(k, x.v) : stateText(x), String(a.stores)]);
+  }
+  html += `</div><p class="note">4 calendar weeks ending the week of ${wk(S.week)}; pooled across stores in view. Colour runs from <b style="color:var(--text-accent)">less favourable</b> to <b style="color:var(--brand)">more favourable</b> relative to the provinces shown (${L.KPI[k].hib ? "higher is better" : "lower is better"}). Tile map, not to scale. Select a tile to filter.</p>`;
+  $("tiles").innerHTML = html + dataTable("Province values", ["Province", L.KPI[k].short, "Stores"], tableRows);
+}
+function renderRegionTable() {
+  const scope = L.ROLES[S.role].scope;
+  const rows4 = window4(S.week).flatMap((w) => rowsAt(w));
+  const regions = [...new Set(rows4.map((r) => r.store.region))].sort();
+  const flags = L.stageFlags(rowsAt(S.week));
+  const fulfilFlag = (rg) => new Set(flags.filter((f) => f.stage === "Fulfilment" && f.store.region === rg).map((f) => f.id)).size;
+  const storesNow = (rg) => rowsAt(S.week).filter((r) => r.store.region === rg).length;
+  const cell = (a, k) => (a[k].s === "ok" ? L.fmtValue(k, a[k].v) : stateText(a[k]));
+  const ks = ["utilization", "attendance", "conversion", "on_time", "turnaround"];
+  let html = `<div class="scroll"><table><caption>4 calendar weeks ending the week of ${wk(S.week)} · pooled (ratio of sums) · Red store-weeks excluded</caption><thead><tr><th scope="col">Region</th><th scope="col" class="num">Stores</th>${ks.map((k) => `<th scope="col" class="num">${esc(L.KPI[k].short)}</th>`).join("")}<th scope="col" class="num">Stores with a fulfilment flag this week</th></tr></thead><tbody>`;
+  for (const rg of regions) {
+    const a = L.aggregate(rows4.filter((r) => r.store.region === rg));
+    const name = scope.type === "network" && !S.region ? `<button type="button" class="link" data-set-region="${esc(rg)}" aria-label="Filter to ${esc(rg)} region">${esc(rg)}</button>` : esc(rg);
+    html += `<tr data-test="region-row" data-region="${esc(rg)}"><th scope="row">${name}</th><td class="num">${storesNow(rg)}</td>${ks.map((k) => `<td class="num">${cell(a, k)}</td>`).join("")}<td class="num">${fulfilFlag(rg)} of ${storesNow(rg)}</td></tr>`;
+  }
+  if (scope.type === "network") {
+    const a = L.aggregate(rows4);
+    html += `<tr><th scope="row">${L.FILTER_KEYS.some((k) => S[k]) ? "All stores in view" : "Network"}</th><td class="num">${rowsAt(S.week).length}</td>${ks.map((k) => `<td class="num">${cell(a, k)}</td>`).join("")}<td class="num">${new Set(flags.filter((f) => f.stage === "Fulfilment").map((f) => f.id)).size}</td></tr>`;
+  } else {
+    const ref = L.aggregate(window4(S.week).flatMap((w) => rowsAt(w, {}, "ROL")));
+    html += `<tr data-test="network-reference"><th scope="row">Network reference*</th><td class="num">${ref.stores}</td>${ks.map((k) => `<td class="num">${cell(ref, k)}</td>`).join("")}<td class="num">—</td></tr>`;
+  }
+  html += `</tbody></table></div>`;
+  if (scope.type === "region") html += `<p class="note" data-test="network-reference-note">* Network reference: all 30 stores, aggregate only — a comparison population, not your scope. Other regions' figures are not shown to regional managers until U-38 is decided (demonstration assumption). Store-level peers outside your region are anonymous.</p>`;
+  $("regionTable").innerHTML = html;
+}
+function flagCell(f) {
+  return f.items.map((it) => {
+    const kr = f.rec.k[it.k];
+    const ref = it.rule === "b" ? `own baseline ${L.fmtValue(it.k, kr.bs)}` : `peer median ${L.fmtValue(it.k, kr.m)}`;
+    return `<div>${esc(L.KPI[it.k].short)}: <b>${L.fmtValue(it.k, kr.v)}</b> vs ${ref} · rule (${it.rule})${it.rule.includes("a") && it.rule.includes("b") ? "" : it.rule === "a" ? " peer" : " own trend"}</div>`;
+  }).join("");
+}
+function renderExceptions(rows) {
+  const flags = L.stageFlags(rows).sort((a, b) => b.stageRun - a.stageRun || a.id.localeCompare(b.id));
+  const statuses = rows.map((r) => ({ r, st: L.exceptionStatus(r.rec) }));
+  const nFlag = statuses.filter((x) => x.st.status === "flagged").length, nNone = statuses.filter((x) => x.st.status === "none").length;
+  const nPartial = statuses.filter((x) => x.st.status === "partial").length, nRed = statuses.filter((x) => x.st.status === "data_check").length;
+  let html = `<p class="sub" data-test="exc-summary">${rows.length} stores in view, week of ${wk(S.week)}: <b>${nFlag}</b> with a triggered rule · <b>${nNone}</b> with no triggered rule · <b>${nPartial}</b> where some comparisons are unavailable · <b>${nRed}</b> data checks (Red).</p>`;
+  if (flags.length || nRed) {
+    html += `<div class="scroll"><table><caption>Grouped by journey stage; every triggering KPI listed. Rule (a) = below comparable stores; rule (b) = worse than the store's own recent history.</caption><thead><tr><th scope="col">Store</th><th scope="col">Cohort</th><th scope="col">Stage</th><th scope="col">Triggering KPIs (4-week value)</th><th scope="col" class="num">Consecutive weeks</th><th scope="col">Data quality</th></tr></thead><tbody>`;
+    for (const f of flags) html += `<tr data-test="exc-row" data-store="${f.id}" data-stage="${f.stage}"><th scope="row"><button type="button" class="link" data-go-store="${f.id}" aria-label="Open Store Diagnostic for ${esc(storeLabel(f.id))}">${esc(storeLabel(f.id))}</button></th><td>${esc(f.rec.c)}</td><td>${esc(f.stage)}</td><td>${flagCell(f)}</td><td class="num">${f.stageRun}</td><td>${dqText(f.rec.dq)}${f.rec.prov ? '<div class="note">Provisional</div>' : ""}</td></tr>`;
+    for (const x of statuses.filter((y) => y.st.status === "data_check")) html += `<tr data-test="exc-row" data-store="${x.r.id}" data-stage="Data"><th scope="row"><button type="button" class="link" data-go-store="${x.r.id}">${esc(storeLabel(x.r.id))}</button></th><td>${esc(x.r.rec.c)}</td><td>Data check</td><td>KPIs withheld: data quality Red. No performance rules evaluated.</td><td class="num">—</td><td>${dqText("Red")}</td></tr>`;
+    html += `</tbody></table></div>`;
+  } else html += `<p class="info">No triggered rules for the stores in view this week. This does not show that every store is performing well; see comparisons that are unavailable below and historical flags on each store's diagnostic.</p>`;
+  const partial = statuses.filter((x) => x.st.status === "partial");
+  if (partial.length) html += `<details class="tbl"><summary>Stores where some comparisons are unavailable (${partial.length})</summary><ul>${partial.map((x) => `<li>${esc(storeLabel(x.r.id))}: ${esc(x.st.reasons.join("; "))}</li>`).join("")}</ul></details>`;
+  $("excTable").innerHTML = html;
+}
+
+/* ------------------------------------------------------------------ store pages shared */
+function storeOptions(el) {
+  const rows = rowsAt(S.week);
+  el.innerHTML = rows.length ? rows.map((r) => `<option value="${r.id}"${r.id === S.store ? " selected" : ""}>${esc(storeLabel(r.id))} (${esc(r.rec.c)})</option>`).join("") : `<option value="">No stores match the filters</option>`;
+  el.disabled = rows.length <= 1 && L.ROLES[S.role].scope.type === "store";
+}
+function rampText(rec) {
+  const r = rec.ramp;
+  if (!r || r.s === "not_eligible") return "Ramp index: not applicable (Mature store)";
+  if (r.s === "ok") return `Ramp index <b>${r.i.toFixed(0)}</b> (${r.b === "same format" ? "same-format" : "all-format"} peers at week ${rec.a}, n = ${r.n})${r.x ? ' · <span class="flag">below 80 for 4+ weeks</span>' : r.run ? ` · below 80 for ${r.run} week(s)` : ""}`;
+  return `Ramp index: ${{ red: "withheld (data quality Red)", insufficient_history: "unavailable (first weeks after opening)", peer_suppressed: `unavailable (${r.n} peers at week ${rec.a}; minimum 5)` }[r.s] || "unavailable"}`;
+}
+function storeHeader(el, rec) {
+  const s = idx.byStore[S.store];
+  el.innerHTML = `<span><b>${esc(storeLabel(S.store))}</b></span><span>${esc(s.format)} · ${esc(s.province)} · ${esc(s.region)} · ${esc(s.banner)}</span><span><b>${esc(rec.c)}</b> as at week of ${wk(S.week)} · week ${rec.a} since opening</span>` +
+    `<span>Data quality: ${dqText(rec.dq)}${rec.prov && rec.dq !== "Red" ? ' <span class="note">(provisional: Amber data in the 4-week window)</span>' : ""}</span><span>${rampText(rec)}</span>`;
+}
+function kpiRecCell(k, kr) {
+  if (L.KPI[k].restricted && !L.canSeeRevenue(S.role)) return { store: '<span class="restricted">Restricted for this role</span>', restricted: true };
+  return { store: kr.s === "ok" ? L.fmtValue(k, kr.v) : `<span class="muted">${esc(L.STATE_SHORT[kr.s] || kr.s)}</span>` };
+}
+function excCell(k, kr) {
+  if (!L.EXCEPTION_KPIS.includes(k)) return '<span class="muted">Context only (no rules)</span>';
+  if (kr.x) return `<span class="flag">■ Flag</span> · ${kr.xa && kr.xb ? "rules (a) peer and (b) own trend" : kr.xa ? "rule (a) peer" : "rule (b) own trend"} · ${kr.xr} wk`;
+  return { no_flag: "No triggered rule", no_flag_own_baseline_only: "No triggered rule (peer rule unavailable; own-trend rule only)", unavailable: "Comparison unavailable", not_eligible: "Not eligible (recall rule: Developing/Mature, 40+ contacts)" }[kr.es] || "—";
+}
+function quartileBand(k, kr) {
+  if (kr.s !== "ok" || kr.q1 === null) return "—";
+  if (kr.v < kr.q1) return L.KPI[k].hib ? "Below P25" : "Below P25 (favourable)";
+  if (kr.v > kr.q3) return L.KPI[k].hib ? "Above P75" : "Above P75 (less favourable)";
+  return "P25–P75";
+}
+
+/* ------------------------------------------------------------------ PAGE 2 */
+function renderP2() {
+  storeOptions($("p2store"));
+  const kOpts = ["conversion", "utilization", "attendance", "on_time", "turnaround", "recall_rate", "exams"].concat(L.canSeeRevenue(S.role) ? ["rev_per_exam"] : []);
+  if (!kOpts.includes(S.kpi)) S.kpi = "conversion";
+  $("p2kpi").innerHTML = kOpts.map((k) => `<option value="${k}"${k === S.kpi ? " selected" : ""}>${esc(L.KPI[k].label)}</option>`).join("");
+  const rec = idx.get(S.store, S.week);
+  if (!S.store || !rec) { ["p2head", "cmpTable", "dist", "ramp", "varChart"].forEach((i) => { $(i).innerHTML = `<p class="note">No store selected: no stores match the filters in this week.</p>`; }); $("p2warn").innerHTML = ""; return; }
+  const s = idx.byStore[S.store];
+  storeHeader($("p2head"), rec);
+  const keys = ["exams", "utilization", "attendance", "conversion", "on_time", "turnaround", "recall_rate", "rev_per_exam"];
+  const warns = [];
+  if (rec.dq === "Red") warns.push(`<div class="warn" data-test="red-warning"><b>Data check required.</b> Data quality is Red in the week of ${wk(S.week)} (${rec.comp}% complete, refresh ${esc(rec.ref)}). KPI values, peer comparisons and flags are withheld for this week. Earlier weeks remain available in the charts below.</div>`);
+  const fallback = keys.filter((k) => rec.k[k].b === "cohort (fallback)" && !(L.KPI[k].restricted && !L.canSeeRevenue(S.role)));
+  if (fallback.length) {
+    const groups = {};
+    for (const k of fallback) { const key = `${rec.k[k].nf}|${rec.k[k].n}`; (groups[key] = groups[key] || []).push(L.KPI[k].short); }
+    const detail = Object.entries(groups).map(([key, names]) => { const [nf, n] = key.split("|"); return `${names.length === fallback.length && fallback.length > 1 ? "all listed KPIs" : names.join(", ")}: ${nf} ${esc(s.format)} peer${nf === "1" ? "" : "s"}, so ${n} ${esc(rec.c)} peers used`; }).join("; ");
+    warns.push(`<div class="warn" data-test="fallback-warning">▲ Small peer group for ${fallback.map((k) => L.KPI[k].short).join(", ")}: fewer than 5 ${esc(rec.c)} · ${esc(s.format)} peers had a reportable value, so the comparison uses all ${esc(rec.c)} stores (${detail}).</div>`);
+  }
+  const supp = keys.filter((k) => rec.k[k].b === "suppressed" && rec.dq !== "Red");
+  if (supp.length) warns.push(`<div class="info" data-test="suppressed-peers">Peer comparison not available for ${supp.map((k) => L.KPI[k].short).join(", ")}: fewer than 5 ${esc(rec.c)} peers with a reportable value this week (minimum group size). The store's own values remain visible.</div>`);
+  $("p2warn").innerHTML = warns.join("");
+
+  let t = `<div class="scroll"><table data-test="cmp-table"><caption>Week of ${wk(S.week)} · store and peers use 4-week values</caption><thead><tr><th scope="col">KPI</th><th scope="col" class="num">Store</th><th scope="col" class="num">Peer median</th><th scope="col" class="num">Variance</th><th scope="col">Position</th><th scope="col">Peer basis</th><th scope="col">Exception rules</th></tr></thead><tbody>`;
+  for (const k of keys) {
+    const kr = rec.k[k], c = kpiRecCell(k, kr);
+    if (c.restricted) { t += `<tr data-test="cmp-${k}"><th scope="row">${esc(L.KPI[k].label)}</th><td colspan="6" class="restricted">Restricted for this role (SR-03)</td></tr>`; continue; }
+    const variance = kr.s === "ok" && L.isNum(kr.m) ? (L.KPI[k].unit === "pct" ? `${kr.v - kr.m >= 0 ? "+" : "−"}${Math.abs((kr.v - kr.m) * 100).toFixed(1)} pts` : L.KPI[k].unit === "days" ? `${kr.v - kr.m >= 0 ? "+" : "−"}${Math.abs(kr.v - kr.m).toFixed(1)} days` : L.KPI[k].unit === "money" ? `${kr.v - kr.m >= 0 ? "+" : "−"}$${Math.abs(kr.v - kr.m).toFixed(0)}` : `${kr.v - kr.m >= 0 ? "+" : "−"}${Math.abs(kr.v - kr.m).toFixed(0)}`) + ` (${kr.m ? (((kr.v - kr.m) / kr.m) * 100).toFixed(0) : "0"}%)` : "—";
+    t += `<tr data-test="cmp-${k}"><th scope="row">${esc(L.KPI[k].label)}${helpBtn(HELP_KEY[k], L.KPI[k].label)}</th><td class="num">${c.store}</td><td class="num">${L.isNum(kr.m) && rec.dq !== "Red" ? L.fmtValue(k, kr.m) : "—"}</td><td class="num">${variance}</td><td>${quartileBand(k, kr)}</td><td>${rec.dq === "Red" ? "—" : esc(L.basisText(kr, rec.c, s.format))}</td><td>${rec.dq === "Red" ? "Withheld (data quality Red)" : excCell(k, kr)}</td></tr>`;
+  }
+  $("cmpTable").innerHTML = t + `</tbody></table></div><p class="note">Variance = store minus peer median. For turnaround, lower is better. Peers never include the selected store.</p>`;
+
+  renderDistribution(rec, s);
+  renderRamp(s);
+  renderVariance(s);
+}
+function renderDistribution(rec, s) {
+  const k = S.kpi;
+  $("dist-h").textContent = `Peer distribution · ${L.KPI[k].short} · week of ${wk(S.week)}`;
+  if (L.KPI[k].restricted && !L.canSeeRevenue(S.role)) { $("dist").innerHTML = `<p class="restricted">Restricted for this role.</p>`; return; }
+  if (rec.dq === "Red") { $("dist").innerHTML = `<p class="info">Withheld: data quality Red in the selected week.</p>`; return; }
+  const P = L.peersFor(D, idx, S.store, S.week, k);
+  const kr = rec.k[k];
+  if (!P.peers.length) { $("dist").innerHTML = `<p class="info">${esc(L.basisText(kr, rec.c, s.format))}. No distribution is shown.</p>`; return; }
+  const el = $("dist");
+  const w = Math.max(260, el.clientWidth || 480), h = 150, ml = 34, mr = 34;
+  const vals = P.peers.map((p) => p.v).concat(kr.s === "ok" ? [kr.v] : []);
+  const t = L.niceTicks(Math.min(...vals), Math.max(...vals), { kind: L.KPI[k].unit === "pct" ? "pct" : L.KPI[k].unit, count: 4 });
+  const X = (v) => ml + ((w - ml - mr) * (v - t.lo)) / (t.hi - t.lo || 1);
+  const scope = L.ROLES[S.role].scope;
+  let svg = `<svg width="${w}" height="${h}" role="img" aria-labelledby="dist-t dist-d"><title id="dist-t">Peer distribution for ${esc(L.KPI[k].label)}</title><desc id="dist-d">${P.peers.length} peer stores (${esc(P.basis)}); peer median ${L.fmtValue(k, kr.m)}; this store ${kr.s === "ok" ? L.fmtValue(k, kr.v) : "unavailable"}.</desc>`;
+  svg += `<line x1="${ml}" x2="${w - mr}" y1="92" y2="92" stroke="#c7d1d6"/>`;
+  t.ticks.forEach((tk, i) => {
+    const anchor = i === 0 ? "start" : i === t.ticks.length - 1 ? "end" : "middle";
+    const lx = anchor === "start" ? Math.max(2, X(tk.v) - 10) : anchor === "end" ? Math.min(w - 2, X(tk.v) + 10) : X(tk.v);
+    svg += `<line x1="${X(tk.v)}" x2="${X(tk.v)}" y1="88" y2="96" stroke="#8a979e"/><text x="${lx.toFixed(1)}" y="114" font-size="12" text-anchor="${anchor}" fill="#56656f">${esc(tk.label)}</text>`;
+  });
+  [["P25", kr.q1], ["Median", kr.m], ["P75", kr.q3]].forEach(([lab, v]) => { if (L.isNum(v)) svg += `<line x1="${X(v)}" x2="${X(v)}" y1="44" y2="100" stroke="#0b5d57" stroke-dasharray="${lab === "Median" ? "0" : "3 3"}"/><text x="${X(v)}" y="138" font-size="11.5" text-anchor="middle" fill="#0b5d57">${lab}</text>`; });
+  P.peers.slice().sort((a, b) => a.v - b.v).forEach((p, i) => { svg += `<circle cx="${X(p.v).toFixed(1)}" cy="${60 + (i % 3) * 12}" r="6" fill="#7a8a94" opacity=".8"><title>${esc(L.peerLabel(S.role, p.store))}: ${L.fmtValue(k, p.v)}</title></circle>`; });
+  if (kr.s === "ok") svg += `<circle cx="${X(kr.v).toFixed(1)}" cy="72" r="8" fill="${COL.store}" stroke="#fff" stroke-width="2"><title>This store: ${L.fmtValue(k, kr.v)}</title></circle><text x="${Math.min(Math.max(X(kr.v), 60), w - 60)}" y="28" font-size="12.5" text-anchor="middle" fill="#a84a14" font-weight="600">This store ${L.fmtValue(k, kr.v)}</text>`;
+  svg += "</svg>";
+  const inRegion = scope.type === "region" ? P.peers.filter((p) => p.store.region === scope.region).length : null;
+  const population = `Comparison population: ${P.peers.length} ${P.basis === "cohort x format" ? `${esc(rec.c)} · ${esc(s.format)}` : `${esc(rec.c)} (all formats)`} stores across all regions with a reportable value this week` + (inRegion !== null ? ` (${inRegion} in ${scope.region}; others anonymous)` : "") + ".";
+  const naming = S.role === "ROL" ? "Hover a dot for the store." : scope.type === "region" ? "Store names are shown only for peers inside your region." : "Peers are anonymous for partners.";
+  const tableRows = P.peers.slice().sort((a, b) => a.v - b.v).map((p) => [L.peerLabel(S.role, p.store), L.fmtValue(k, p.v)]);
+  if (kr.s === "ok") tableRows.push(["This store", L.fmtValue(k, kr.v)]);
+  el._chart = null;
+  el.innerHTML = svg + `<ul class="legend"><li><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="#7a8a94"/></svg>Peer store</li><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="${COL.store}"/></svg>This store</li><li>Dashed lines: P25 and P75; solid: median</li></ul><p class="note">${population} ${naming}</p>` + dataTable("Peer values (anonymised per role)", ["Store", L.KPI[k].short], tableRows);
+}
+function renderRamp(s) {
+  const recs = D.store_weekly[S.store].filter((r) => r.a <= PAR.ramp_max_age);
+  const el = $("ramp");
+  if (!recs.length) { el._chart = null; el.innerHTML = `<p class="info">Not applicable: this store is Mature (over ${PAR.ramp_max_age} weeks since opening) throughout the sample. Mature stores are compared on cohort variance instead (KPI-10).</p>`; return; }
+  const labels = recs.map((r) => r.a);
+  const sel = recs.findIndex((r) => r.w === S.week);
+  const gapItems = [];
+  recs.forEach((r) => { if (r.ramp.s !== "ok") gapItems.push({ a: r.a, reason: { red: "data quality Red (withheld)", insufficient_history: "first weeks after opening (incomplete window)", peer_suppressed: "fewer than 5 peers observed at that age" }[r.ramp.s] || r.ramp.s }); });
+  const byReason = {};
+  gapItems.forEach((g) => (byReason[g.reason] = byReason[g.reason] || []).push(g.a));
+  const gapTxt = Object.entries(byReason).map(([r, ages]) => `${r}: weeks since opening ${L.rangesText(ages)}`).join("; ");
+  const cross = recs.findIndex((r) => r.a === 27);
+  const cur = recs[sel] || recs[recs.length - 1];
+  lineChart(el, {
+    labels, xfmt: (a) => "W" + a, kind: "count", min: 0,
+    series: [{ name: "This store: completed exams per week (4-week average)", values: recs.map((r) => (r.ramp.s === "ok" || r.ramp.s === "peer_suppressed" ? r.k.exams.v : null)), color: COL.store },
+             { name: "Peer median at the same weeks since opening", values: recs.map((r) => r.ramp.m), color: COL.peer, dash: "6 4" }],
+    band: recs.map((r) => (L.isNum(r.ramp.q1) ? [r.ramp.q1, r.ramp.q3] : null)),
+    vlines: cross > 0 ? [{ i: cross, label: "New → Developing" }] : [], selected: sel >= 0 ? sel : null,
+    title: "Ramp-up by weeks since opening", desc: `${storeLabel(S.store)}; ${rampText(cur).replace(/<[^>]+>/g, "")}.`,
+    notes: `<p class="note">${rampText(cur)} (week of ${wk(cur.w)}). Trigger: index below ${PAR.ramp_threshold} for ${PAR.ramp_run} consecutive weeks with an available index.</p>` +
+      `<p class="note">Peers at each age are other stores observed at the same weeks since opening in any week of the 26-week sample, so the peer set changes with age (n in the table)${cross > 0 ? "; the dotted line marks this store moving from New to Developing" : ""}.${gapTxt ? " Gaps — " + esc(gapTxt) + "." : ""}</p>`,
+    table: dataTable("Ramp values by weeks since opening", ["Weeks since opening", "Week of", "Store exams/week", "Peer median", "Peer n", "Ramp index", "Status"], recs.map((r) => ["W" + r.a, wk(r.w), L.isNum(r.k.exams.v) ? r.k.exams.v.toFixed(0) : "n/a", L.isNum(r.ramp.m) ? r.ramp.m.toFixed(0) : "n/a", String(r.ramp.n), L.isNum(r.ramp.i) ? r.ramp.i.toFixed(0) : "n/a", r.ramp.s])),
+  });
+}
+function reasonFor(rec, k, forPeer) {
+  if (!rec) return "store not open";
+  if (rec.dq === "Red") return "data quality Red (withheld)";
+  const kr = rec.k[k];
+  if (forPeer) return kr.b === "suppressed" ? "peer group under 5" : null;
+  if (kr.s !== "ok") return (L.STATE_SHORT[kr.s] || kr.s).toLowerCase();
+  if (!L.isNum(kr.m)) return "peer group under 5";
+  return null;
+}
+function renderVariance(s) {
+  const k = S.kpi, el = $("varChart");
+  $("var-h").textContent = `Variance from peer median over time · ${L.KPI[k].short}`;
+  if (L.KPI[k].restricted && !L.canSeeRevenue(S.role)) { el._chart = null; el.innerHTML = `<p class="restricted">Restricted for this role.</p>`; return; }
+  const recs = WEEKS.map((w) => idx.get(S.store, w));
+  const vals = recs.map((r) => (r && r.dq !== "Red" && r.k[k].s === "ok" && L.isNum(r.k[k].m) ? r.k[k].v - r.k[k].m : null));
+  const gaps = [];
+  recs.forEach((r, i) => { if (vals[i] === null) gaps.push({ i, reason: reasonFor(r, k, false) || "unavailable" }); });
+  const kind = L.KPI[k].unit === "pct" ? "delta_pct" : L.KPI[k].unit === "days" ? "delta_days" : L.KPI[k].unit === "money" ? "money" : "count";
+  lineChart(el, {
+    labels: WEEKS, xfmt: (w) => L.fmtWeek(w, false), xfmtLong: wk, kind, zero: true,
+    series: [{ name: "Store minus peer median (4-week values)", values: vals, color: COL.store, flags: recs.map((r) => !!(r && r.k[k] && r.k[k].x)) }],
+    selected: WEEKS.indexOf(S.week), markers: recs.map((r, i) => (r && r.dq === "Red" ? { i, symbol: "■", color: COL.flag, title: `Week of ${wk(WEEKS[i])}: data quality Red` } : null)),
+    title: `Variance from peer median for ${L.KPI[k].label}`, desc: `Weeks of ${wk(WEEKS[0])} to ${wk(LATEST)}.`,
+    notes: `<p class="note">${L.KPI[k].unit === "days" ? "Positive = slower than peers (less favourable)." : "Negative = below peers."} Red dots mark weeks with a triggered rule for this KPI (rule a compares with peers; rule b with the store's own history, so a dot can appear where the variance is small).${gaps.length ? " No variance shown — " + esc(groupReasons(gaps)) + "." : ""}</p>`,
+    table: dataTable("Variance by week", ["Week", "Store", "Peer median", "Variance", "Flag"], recs.map((r, i) => [wk(WEEKS[i]), r && r.k[k].s === "ok" ? L.fmtValue(k, r.k[k].v) : reasonFor(r, k, false) || "n/a", r && L.isNum(r.k[k].m) && r.dq !== "Red" ? L.fmtValue(k, r.k[k].m) : "n/a", vals[i] === null ? "n/a" : L.fmtDelta(k, vals[i]), r && r.k[k].x ? "Flag" : ""])),
+  });
+}
+
+/* ------------------------------------------------------------------ PAGE 3 */
+function renderP3() {
+  storeOptions($("p3store"));
+  const rec = idx.get(S.store, S.week);
+  if (!S.store || !rec) { ["p3head", "funnel", "prompts", "trendCards", "dqPanel"].forEach((i) => { $(i).innerHTML = `<p class="note">No store selected: no stores match the filters in this week.</p>`; }); return; }
+  storeHeader($("p3head"), rec);
+  renderFunnel(rec);
+  renderPrompts(rec);
+  renderTrendCards();
+  renderDQ();
+}
+function renderFunnel(rec) {
+  const wks = window4(S.week);
+  const usable = wks.map((w) => idx.get(S.store, w)).filter((r) => r && r.dq !== "Red");
+  const el = $("funnel");
+  if (rec.dq === "Red") { el.innerHTML = `<p class="warn" data-test="funnel-withheld"><b>Data check required.</b> Data quality is Red in the week of ${wk(S.week)}; the funnel is withheld for this week. Select an earlier week to see valid history.</p>`; return; }
+  if (usable.length < PAR.min_usable_weeks) { el.innerHTML = `<p class="info">Unavailable: only ${usable.length} usable week(s) in the 4-week window (minimum ${PAR.min_usable_weeks}).</p>`; return; }
+  const sum = (f) => usable.reduce((a, r) => a + r[f], 0);
+  const slots = sum("slots"), held = sum("held"), done = sum("done"), buy = sum("buy"), unres = sum("unres");
+  const pr = (k) => (rec.k[k].s === "ok" ? `${L.KPI[k].short} <b>${L.fmtValue(k, rec.k[k].v)}</b>` : `${L.KPI[k].short}: ${esc(L.STATE_SHORT[rec.k[k].s])}`) + `<br><span class="note">peer median ${L.isNum(rec.k[k].m) ? L.fmtValue(k, rec.k[k].m) : "not available"}</span>`;
+  const bar = (v, cls = "") => `<div class="fbar ${cls}" style="width:${slots ? Math.max(1, (100 * v) / slots).toFixed(1) : 0}%" aria-hidden="true"></div>`;
+  const rows = [
+    ["slots", "Available slots", "Bookable examination slots offered", slots, "", "cap"],
+    ["held", "Held appointments", "Booked minus cancelled; includes attended, no-shows and statuses not recorded", held, pr("utilization")],
+    ["done", "Completed exams", "Examinations completed", done, pr("attendance")],
+    ["buy", "Exam-linked purchasing customers", "Distinct customers with an eligible eyewear purchase within 30 days of the exam", buy, pr("conversion")],
+  ];
+  let html = `<p class="sub" data-test="funnel-window">4 calendar weeks ending the week of ${wk(S.week)} · ${usable.length} of 4 weeks usable (Red weeks excluded)</p><div class="scroll"><table class="funnel"><caption class="sr">Appointment-to-purchase funnel</caption><thead><tr><th scope="col">Stage</th><th scope="col">Volume</th><th scope="col" class="num">Count</th><th scope="col">Stage rate</th></tr></thead><tbody>`;
+  for (const [key, lab, def, v, rate, cls] of rows) html += `<tr><th scope="row">${lab}<br><span class="note">${def}</span></th><td class="bar">${bar(v, cls)}</td><td class="num" data-test="funnel-${key}"><b>${esc(L.countDisplay(v).text)}</b></td><td class="rate">${rate || ""}</td></tr>`;
+  html += `</tbody></table></div>`;
+  const u = L.countDisplay(unres);
+  if (unres > 0) html += `<p class="warn">▲ ${esc(u.text)} appointment(s) with status not recorded in these weeks: counted against data completeness, not treated as attended or no-show.</p>`;
+  if (L.canSeeRevenue(S.role)) html += `<p class="note">Context (not a rule input): revenue per completed exam ${rec.k.rev_per_exam.s === "ok" ? L.fmtValue("rev_per_exam", rec.k.rev_per_exam.v) : "n/a"} (peer median ${L.isNum(rec.k.rev_per_exam.m) ? L.fmtValue("rev_per_exam", rec.k.rev_per_exam.m) : "n/a"}).${helpBtn("rev_per_exam", "Revenue per completed exam")}</p>`;
+  else html += `<p class="note">Revenue per completed exam: restricted for this role. Conversion is shown to Optometry Partners as a demonstration assumption pending U-41.</p>`;
+  el.innerHTML = html;
+}
+function renderPrompts(rec) {
+  const el = $("prompts");
+  $("prompts-h").textContent = `Investigation areas · week of ${wk(S.week)}`;
+  const s = idx.byStore[S.store];
+  const note = `<p class="note">Areas to investigate, not causes. Rule (a) compares the store with comparable stores; rule (b) with its own recent history. Follow-up conversations establish why.</p>`;
+  const box = (stage, detail, attn) => `<div class="promptbox${attn ? " attn" : ""}" data-test="prompt-${stage}"><h4>${esc(stage)}</h4><div>${detail}</div><div>→ ${esc(PROMPTS[stage][0])}</div><div class="note">Typical follow-up: ${esc(PROMPTS[stage][1])} · Prompt library ${VER.prompt_library}</div></div>`;
+  if (rec.dq === "Red") { el.innerHTML = box("Data", `Data quality Red (${rec.comp}% complete, refresh ${esc(rec.ref)}). No performance rules are evaluated for this week.`, true) + note; return; }
+  let html = "";
+  const flags = L.stageFlags([{ id: S.store, store: s, rec }]);
+  for (const f of flags) html += box(f.stage, f.items.map((it) => `<p style="margin:2px 0"><b>${esc(L.KPI[it.k].label)}.</b> ${esc(L.explainFlag(it.k, rec.k[it.k], rec.c, s.format))}</p>`).join(""), true);
+  if (rec.ramp && rec.ramp.x) html += box("Ramp", `Ramp index ${rec.ramp.i.toFixed(0)}: below ${PAR.ramp_threshold} for ${rec.ramp.run} consecutive weeks against same-age peers.`, true);
+  const st = L.exceptionStatus(rec);
+  if (!html) {
+    const hist = D.store_weekly[S.store].filter((r) => r.w <= S.week && L.EXCEPTION_KPIS.some((k) => r.k[k].x));
+    html += `<div class="info" data-test="no-flags"><b>No triggered rule for this store in the week of ${wk(S.week)}.</b> ${hist.length ? `${hist.length} earlier store-week(s) in the sample had a flag (most recent: week of ${wk(hist[hist.length - 1].w)}); see the red dots in the trends.` : "No flags in earlier weeks of the sample."} This does not show that every area is performing well.</div>`;
+  }
+  if (st.reasons.length) html += `<p class="note" data-test="unavailable-reasons">Comparisons unavailable this week: ${esc(st.reasons.join("; "))}.</p>`;
+  if (rec.prov) html += `<p class="note">Provisional: Amber data quality in the 4-week window.</p>`;
+  el.innerHTML = html + note;
+}
+function renderTrendCards() {
+  const specs = [["utilization", "Appointment utilization"], ["attendance", "Attendance rate"], ["conversion", "Exam-to-purchase conversion"], ["on_time", "On-time fulfilment"], ["turnaround", "Average order turnaround (days)"], ["recall_rate", "Recall-booking rate"]];
+  const host = $("trendCards");
+  host.innerHTML = specs.map(([k, t]) => `<div class="card"><div class="cardhead"><h3>${esc(t)}${helpBtn(HELP_KEY[k], t)}</h3></div><p class="sub">Store 4-week value vs peer median · weeks of ${L.fmtWeek(WEEKS[0], false)} – ${wk(LATEST)}</p><div class="chart" id="tc-${k}"></div>${k === "recall_rate" ? '<div id="rbStrip"></div>' : ""}</div>`).join("");
+  const recs = WEEKS.map((w) => idx.get(S.store, w));
+  for (const [k] of specs) {
+    const storeVals = recs.map((r) => (r && r.dq !== "Red" && r.k[k].s === "ok" ? r.k[k].v : null));
+    const peerVals = recs.map((r) => (r && r.dq !== "Red" && L.isNum(r.k[k].m) ? r.k[k].m : null));
+    const sg = [], pg = [];
+    recs.forEach((r, i) => { if (storeVals[i] === null) sg.push({ i, reason: reasonFor(r, k, false) === "peer group under 5" ? "unavailable" : reasonFor(r, k, false) || "unavailable" }); if (peerVals[i] === null) pg.push({ i, reason: !r ? "store not open" : r.dq === "Red" ? "data quality Red" : "peer group under 5" }); });
+    const markers = recs.map((r, i) => (r && r.dq === "Red" ? { i, symbol: "■", color: COL.flag, title: `Week of ${wk(WEEKS[i])}: data quality Red, values withheld` } : r && r.prov ? { i, symbol: "▲", color: COL.amber, title: `Week of ${wk(WEEKS[i])}: Amber data in window` } : null));
+    const kind = L.KPI[k].unit;
+    const cur = idx.get(S.store, S.week);
+    lineChart($("tc-" + k), {
+      labels: WEEKS, xfmt: (w) => L.fmtWeek(w, false), xfmtLong: wk, kind, min: kind === "pct" ? 0 : kind === "days" ? 0 : undefined, max: kind === "pct" ? 1 : undefined, height: 200,
+      series: [{ name: "Store (4-week value)", values: storeVals, color: COL.store, flags: recs.map((r) => !!(r && r.k[k].x)) }, { name: "Peer median", values: peerVals, color: COL.peer, dash: "6 4" }],
+      markers, selected: WEEKS.indexOf(S.week),
+      title: `${L.KPI[k].label}: store versus peer median`, desc: `Week of ${wk(S.week)}: store ${cur && cur.k[k].s === "ok" && cur.dq !== "Red" ? L.fmtValue(k, cur.k[k].v) : "unavailable"}, peer median ${cur && L.isNum(cur.k[k].m) && cur.dq !== "Red" ? L.fmtValue(k, cur.k[k].m) : "unavailable"}.`,
+      notes: (sg.length ? `<p class="note">Store line gaps — ${esc(groupReasons(sg))}.</p>` : "") + (pg.length ? `<p class="note">Peer line gaps — ${esc(groupReasons(pg))}.</p>` : ""),
+      table: dataTable(`${L.KPI[k].label} by week`, ["Week", "Store", "Peer median", "Peer basis", "Flag"], recs.map((r, i) => [wk(WEEKS[i]), storeVals[i] === null ? (reasonFor(r, k, false) || "n/a") : L.fmtValue(k, storeVals[i]), peerVals[i] === null ? "n/a" : L.fmtValue(k, peerVals[i]), r ? (r.dq === "Red" ? "withheld" : r.k[k].b) : "not open", r && r.k[k].x ? "Flag" : ""])),
+    });
+  }
+  // weekly recall bookings as text cells: suppressed values never get a position or height
+  let strip = `<p class="sub" style="margin-top:8px">Weekly recall bookings (counts from 1 to 4 shown as "&lt;5")</p><div class="rbstrip" role="list" data-test="rb-strip">`;
+  recs.forEach((r, i) => {
+    let txt, cls = "";
+    if (!r) txt = "Not open";
+    else if (r.dq === "Red") txt = "Withheld";
+    else if (r.rb === null) txt = "n/a";
+    else txt = L.countDisplay(r.rb).text;
+    strip += `<div class="rbcell${WEEKS[i] === S.week ? " sel" : ""}" role="listitem" data-test="rb-cell" data-week="${WEEKS[i]}"><span class="note">${L.fmtWeek(WEEKS[i], false)}</span><b>${esc(txt)}</b></div>`;
+  });
+  $("rbStrip").innerHTML = strip + `</div><p class="note">n/a = recall programme not active (not zero). 0 = contacts sent, no bookings. Withheld = Red data quality.</p>`;
+}
+function renderDQ() {
+  const recs = WEEKS.map((w) => idx.get(S.store, w));
+  let html = `<div class="dqstrip" role="list">`;
+  recs.forEach((r, i) => {
+    const w = WEEKS[i];
+    if (!r) { html += `<div class="dqcell none" role="listitem">${L.fmtWeek(w, false)}<br>Not open</div>`; return; }
+    html += `<div role="listitem"><button type="button" class="dqcell ${r.dq}${w === S.week ? " sel" : ""}" style="width:100%" data-set-week="${w}" aria-label="Week of ${wk(w)}: data quality ${r.dq}, ${r.comp}% complete, refresh ${r.ref}. Select to view this week."${w === S.week ? ' aria-current="true"' : ""}>${L.fmtWeek(w, false)}<br><span class="dq dq-${r.dq}">${ICON[r.dq]} ${r.dq}</span></button></div>`;
+  });
+  html += `</div><ul class="legend"><li class="dq dq-Green">● Green: ≥98% complete and current</li><li class="dq dq-Amber">▲ Amber: 90–98% or delayed (values provisional)</li><li class="dq dq-Red">■ Red: under 90% or stale (values withheld)</li></ul><p class="note">Select a week to view it. Completeness and refresh values are simulated in this prototype.${helpBtn("completeness", "Data completeness")}${helpBtn("freshness", "Data freshness")}</p>`;
+  const issues = recs.map((r, i) => [r, WEEKS[i]]).filter(([r]) => r && r.dq !== "Green");
+  html += issues.length ? `<div class="scroll"><table><caption>Weeks that are not Green</caption><thead><tr><th scope="col">Week</th><th scope="col">Status</th><th scope="col" class="num">Completeness</th><th scope="col">Refresh</th><th scope="col" class="num">Appointments with status not recorded</th><th scope="col">Treatment</th></tr></thead><tbody>` +
+    issues.map(([r, w]) => `<tr><th scope="row">${wk(w)}</th><td>${dqText(r.dq)}</td><td class="num">${r.comp}%</td><td>${esc(r.ref)}</td><td class="num">${esc(L.countDisplay(r.unres).text)}</td><td>${r.dq === "Red" ? "KPIs withheld for this week; no performance rules" : "Values shown as provisional"}</td></tr>`).join("") + `</tbody></table></div>`
+    : `<p class="note">All weeks in the sample are Green for this store.</p>`;
+  $("dqPanel").innerHTML = html;
+}
+
+/* ------------------------------------------------------------------ help dialog */
+let helpReturn = null;
+function openHelp(key, invoker) {
+  const h = HELP[key];
+  if (!h) return;
+  helpReturn = invoker || document.activeElement;
+  $("help-title").textContent = `${h.id} · ${h.name}`;
+  $("help-body").innerHTML = `<dl><dt>Formula</dt><dd>${esc(h.formula)}</dd><dt>Units</dt><dd>${esc(h.units)}</dd><dt>Period</dt><dd>${esc(["completeness", "freshness", "capacity"].includes(key) ? "Store-week" : key === "ramp" ? "4-week average at each week since opening" : D.meta.period_text)}</dd>` +
+    `<dt>Exclusions</dt><dd>${esc(h.exclusions)}</dd><dt>Proposed owner</dt><dd>${esc(h.owner)}</dd><dt>Version</dt><dd>KPI dictionary ${VER.kpi_dictionary} (draft; illustrative, not a Specsavers definition)</dd><dt>Limitations</dt><dd>${esc(h.limitations)}</dd>` +
+    `<dt>Small counts</dt><dd>Counts from 1 to 4 are shown as "&lt;5"; a rate is hidden when its denominator is under 5 or its numerator is 1–4.</dd></dl>`;
+  $("helpDialog").hidden = false;
+  $("help-close").focus();
+}
+function closeHelp() { $("helpDialog").hidden = true; if (helpReturn && helpReturn.focus) helpReturn.focus(); }
+
+/* ------------------------------------------------------------------ events */
+const PAGE_CONTAINERS = { p1: ["p1-scope", "kpiCards", "trend", "tiles", "regionTable", "excTable"], p2: ["p2head", "p2warn", "cmpTable", "dist", "ramp", "varChart", "p2store"], p3: ["p3head", "funnel", "prompts", "trendCards", "dqPanel", "p3store"] };
+function render() {
+  aggCache.clear();
+  renderChrome();
+  // Clear inactive pages so content rendered for a previous role or store never remains in the DOM.
+  for (const [p, ids] of Object.entries(PAGE_CONTAINERS)) if (p !== S.page) ids.forEach((i) => { const el = $(i); el.innerHTML = ""; el._chart = null; });
+  if (S.page === "p1") renderP1(); if (S.page === "p2") renderP2(); if (S.page === "p3") renderP3();
+}
+$("role").addEventListener("change", (e) => { backStack.length = 0; const role = e.target.value; const blank = {}; L.FILTER_KEYS.forEach((k) => (blank[k] = "")); setState(Object.assign(blank, { role, page: L.ROLES[role].landing, store: DEFAULT_STORE[role] })); });
+$("f-week").addEventListener("change", (e) => setState({ week: e.target.value }));
+L.FILTER_KEYS.forEach((k) => $("f-" + k).addEventListener("change", (e) => setState({ [k]: e.target.value })));
+$("f-reset").addEventListener("click", () => { const blank = { week: LATEST }; L.FILTER_KEYS.forEach((k) => (blank[k] = "")); setState(blank); $("f-summary").focus && $("f-summary").setAttribute("tabindex", "-1"); });
+$("trendKpi").addEventListener("change", (e) => setState({ trend: e.target.value }));
+$("mapKpi").addEventListener("change", (e) => setState({ map: e.target.value }));
+$("p2store").addEventListener("change", (e) => setState({ store: e.target.value }));
+$("p3store").addEventListener("change", (e) => setState({ store: e.target.value }));
+$("p2kpi").addEventListener("change", (e) => setState({ kpi: e.target.value }));
+$("to-p3").addEventListener("click", () => setState({ page: "p3" }, { push: true, focus: true }));
+$("to-p2").addEventListener("click", () => setState({ page: "p2" }, { push: true, focus: true }));
+const tabs = [...document.querySelectorAll('nav.tabs [role="tab"]')];
+tabs.forEach((b, i) => {
+  b.addEventListener("click", () => { if (b.getAttribute("aria-disabled") === "true") return; setState({ page: b.dataset.page }); });
+  b.addEventListener("keydown", (e) => {
+    const allowed = tabs.filter((t) => t.getAttribute("aria-disabled") !== "true");
+    const j = allowed.indexOf(b);
+    let next = null;
+    if (e.key === "ArrowRight") next = allowed[(j + 1) % allowed.length];
+    else if (e.key === "ArrowLeft") next = allowed[(j - 1 + allowed.length) % allowed.length];
+    else if (e.key === "Home") next = allowed[0];
+    else if (e.key === "End") next = allowed[allowed.length - 1];
+    if (next) { e.preventDefault(); setState({ page: next.dataset.page }); const t = document.querySelector(`nav.tabs [data-page="${next.dataset.page}"]`); if (t) t.focus(); }
+  });
+});
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("button");
+  if (!t) return;
+  if (t.id === "backBtn") return goBack();
+  if (t.dataset.help) return openHelp(t.dataset.help, t);
+  if (t.dataset.goStore) return setState({ page: "p3", store: t.dataset.goStore }, { push: true, focus: true });
+  if (t.dataset.setRegion) return setState({ region: t.dataset.setRegion });
+  if (t.dataset.setProvince) return setState({ province: t.dataset.setProvince });
+  if (t.dataset.setWeek) return setState({ week: t.dataset.setWeek });
+});
+$("help-close").addEventListener("click", closeHelp);
+$("helpDialog").addEventListener("click", (e) => { if (e.target.id === "helpDialog") closeHelp(); });
+document.addEventListener("keydown", (e) => {
+  if ($("helpDialog").hidden) return;
+  if (e.key === "Escape") { e.preventDefault(); closeHelp(); }
+  if (e.key === "Tab") { e.preventDefault(); $("help-close").focus(); }
+});
+
+window.__dash = { getState: () => Object.assign({}, S), setState, goBack, render, backStack, D, L, idx };
+normalise(); writeHash(); render();
+</script>
+</body>
+</html>

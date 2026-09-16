@@ -1,0 +1,14 @@
+# Row-level data: rebuilt by scripts/01_download.py, too large for version control
+data/raw/
+data/processed/
+*.parquet
+cohort_*.csv
+
+# Build artefacts
+build/
+outputs/
+*.pyc
+__pycache__/
+
+# Office lock files
+~$*

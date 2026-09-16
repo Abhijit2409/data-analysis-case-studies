@@ -1,0 +1,762 @@
+week_start,store_id,store_name,province,region,retail_banner,store_format,opening_date,maturity_cohort,weeks_since_opening,available_appointment_slots,booked_appointments,completed_exams,cancelled_appointments,no_show_appointments,purchasing_customers,eyewear_revenue,orders_placed,orders_ready_on_time,average_turnaround_days,recall_contacts,recall_bookings,data_completeness_pct,data_refresh_status
+2026-02-23,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,206,194,188,166,13,9,107,37785.66,129,122,6.7,140,24,98.9,Current
+2026-03-02,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,207,194,185,161,12,12,101,34066.47,125,117,6.9,104,17,99.6,Current
+2026-03-09,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,208,191,182,152,17,13,93,30007.30,106,97,6.0,145,25,98.4,Current
+2026-03-16,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,209,184,174,150,11,13,92,30675.81,110,103,6.3,121,19,99.7,Current
+2026-03-23,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,210,200,194,168,16,10,100,33329.24,126,119,6.3,117,20,98.9,Current
+2026-03-30,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,211,176,175,152,15,8,92,30207.84,110,103,5.6,121,19,99.6,Current
+2026-04-06,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,212,191,183,157,16,10,100,33160.99,124,115,5.4,122,28,99.2,Current
+2026-04-13,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,213,188,181,152,17,12,96,32072.16,114,103,6.0,144,23,99.3,Current
+2026-04-20,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,214,183,172,149,13,10,93,31661.29,110,102,6.0,95,16,99.4,Current
+2026-04-27,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,215,187,175,150,12,13,91,30338.32,105,101,6.1,111,21,98.5,Current
+2026-05-04,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,216,198,192,163,17,12,100,34701.03,121,118,5.4,116,18,99.8,Current
+2026-05-11,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,217,192,180,159,14,7,102,36595.39,116,110,6.9,93,15,99.1,Current
+2026-05-18,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,218,191,190,162,16,12,101,32225.53,129,122,5.5,123,23,99.7,Current
+2026-05-25,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,219,187,187,162,14,11,101,35853.90,121,115,5.4,125,22,99.0,Current
+2026-06-01,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,220,189,182,160,13,9,101,34612.79,122,114,6.0,106,18,99.9,Current
+2026-06-08,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,221,186,177,154,15,8,95,33018.00,115,107,6.2,102,18,99.0,Current
+2026-06-15,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,222,185,181,156,16,9,93,29978.30,114,106,5.7,120,22,99.7,Current
+2026-06-22,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,223,196,188,165,14,9,104,35655.56,123,114,5.6,132,23,99.1,Current
+2026-06-29,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,224,191,183,158,15,10,102,33699.00,121,113,6.4,110,17,98.6,Current
+2026-07-06,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,225,192,180,159,11,10,102,34539.38,127,118,6.2,138,23,99.2,Current
+2026-07-13,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,226,185,174,157,11,6,100,35035.49,119,112,5.0,133,25,99.5,Current
+2026-07-20,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,227,182,166,149,10,7,94,33028.27,112,101,5.4,106,19,100.0,Current
+2026-07-27,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,228,193,191,161,17,13,102,34354.61,121,110,5.9,110,18,99.8,Current
+2026-08-03,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,229,191,181,161,12,8,101,33786.39,119,109,6.7,120,23,99.2,Current
+2026-08-10,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,230,188,170,145,13,12,93,31787.47,108,98,5.6,125,21,99.8,Current
+2026-08-17,SYN-001,Synthetic - Aurora Point,BC,West,Standalone (no host),Street-front,2022-03-14,Mature,231,193,184,160,11,13,97,33074.38,118,112,6.6,108,19,99.7,Current
+2026-02-23,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,192,213,178,156,14,8,95,31246.97,114,106,5.6,130,24,99.6,Current
+2026-03-02,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,193,217,189,164,15,10,92,28439.68,115,106,6.2,133,25,99.2,Current
+2026-03-09,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,194,205,179,154,14,11,88,27709.68,101,92,5.8,128,23,98.9,Current
+2026-03-16,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,195,205,189,160,19,10,91,29015.63,108,102,5.3,116,22,99.6,Current
+2026-03-23,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,196,197,185,156,18,11,87,27389.82,107,99,6.6,147,25,100.0,Current
+2026-03-30,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,197,191,161,142,11,8,85,27297.96,101,93,5.7,110,21,99.3,Current
+2026-04-06,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,198,212,182,159,13,10,91,28992.90,105,98,5.4,126,19,100.0,Current
+2026-04-13,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,199,209,182,154,15,13,93,31813.93,113,103,5.6,130,22,99.3,Current
+2026-04-20,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,200,212,192,159,21,12,93,28998.97,115,102,5.7,134,23,98.6,Current
+2026-04-27,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,201,207,182,156,15,11,95,30572.95,117,112,6.0,119,22,98.7,Current
+2026-05-04,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,202,200,179,159,12,8,94,29393.64,110,100,6.6,125,21,99.0,Current
+2026-05-11,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,203,210,173,153,10,10,88,26277.04,106,97,5.9,146,24,99.3,Current
+2026-05-18,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,204,207,176,151,15,10,83,25202.59,98,90,6.1,124,21,99.4,Current
+2026-05-25,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,205,209,187,156,19,12,85,25941.01,107,100,4.9,124,25,99.6,Current
+2026-06-01,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,206,218,193,169,15,9,100,31216.86,121,111,6.0,179,35,99.4,Current
+2026-06-08,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,207,207,187,160,18,9,92,29263.83,111,105,5.6,114,18,99.7,Current
+2026-06-15,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,208,206,178,153,14,11,88,27156.91,109,96,6.0,100,18,99.5,Current
+2026-06-22,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,209,203,174,151,15,8,85,27832.78,106,101,6.2,121,21,99.4,Current
+2026-06-29,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,210,217,194,171,15,8,98,27991.19,117,109,6.2,133,26,99.0,Current
+2026-07-06,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,211,217,183,159,12,12,96,31656.24,113,108,5.8,134,20,98.9,Current
+2026-07-13,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,212,218,191,162,16,13,97,32660.50,119,110,5.8,144,27,99.6,Current
+2026-07-20,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,213,212,181,159,11,11,93,32832.20,116,114,6.5,133,26,99.2,Current
+2026-07-27,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,214,209,179,155,15,9,96,31515.61,119,107,6.1,109,21,98.6,Current
+2026-08-03,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,215,217,199,176,15,8,108,39099.76,134,123,5.8,122,24,99.1,Current
+2026-08-10,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,216,211,189,162,18,9,95,29926.38,115,104,6.0,136,24,99.0,Current
+2026-08-17,SYN-002,Synthetic - Birchwood Landing,BC,West,Standalone (no host),Shopping centre,2022-06-20,Mature,217,215,182,160,11,11,92,31555.56,114,108,6.4,102,19,98.6,Current
+2026-02-23,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,162,185,169,149,13,7,101,34061.90,124,113,6.9,114,21,99.2,Current
+2026-03-02,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,163,175,166,141,14,11,89,29646.65,109,98,5.9,117,23,99.0,Current
+2026-03-09,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,164,194,182,162,12,8,100,33550.91,118,112,6.1,109,19,98.7,Current
+2026-03-16,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,165,186,170,148,14,8,90,29185.51,111,104,7.1,103,18,98.6,Current
+2026-03-23,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,166,179,164,142,14,8,88,31477.41,113,103,5.9,129,25,99.0,Current
+2026-03-30,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,167,181,166,143,12,11,84,27269.16,102,95,5.6,112,19,99.9,Current
+2026-04-06,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,168,189,168,142,17,9,82,29005.74,99,91,6.0,110,21,99.2,Current
+2026-04-13,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,169,174,162,140,14,8,84,28193.89,99,89,6.3,113,19,99.2,Current
+2026-04-20,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,170,188,175,149,15,11,91,31653.46,101,89,6.2,112,21,99.1,Current
+2026-04-27,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,171,184,164,137,14,13,86,29618.03,102,98,6.3,113,19,99.5,Current
+2026-05-04,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,172,183,170,148,14,8,96,34304.14,113,106,6.1,136,25,99.3,Current
+2026-05-11,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,173,178,162,138,14,10,84,29225.21,100,93,5.7,91,16,99.0,Current
+2026-05-18,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,174,176,161,141,10,10,89,32206.26,104,96,6.2,106,19,99.4,Current
+2026-05-25,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,175,187,171,148,12,11,89,31887.15,107,96,5.9,125,23,99.1,Current
+2026-06-01,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,176,187,173,147,16,10,90,31420.02,104,102,5.3,126,24,98.8,Current
+2026-06-08,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,177,179,162,141,13,8,87,28990.91,105,96,5.2,108,20,99.4,Current
+2026-06-15,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,178,167,157,133,14,10,83,28305.96,98,93,5.3,116,22,99.0,Current
+2026-06-22,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,179,190,172,149,14,9,93,29738.82,112,104,5.5,134,31,99.4,Current
+2026-06-29,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,180,185,172,147,13,12,89,29205.60,105,96,6.3,102,19,99.3,Current
+2026-07-06,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,181,180,168,143,15,10,87,30526.16,104,97,5.9,106,19,99.7,Current
+2026-07-13,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,182,174,159,138,12,9,85,29709.69,99,90,6.4,109,18,99.0,Current
+2026-07-20,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,183,173,157,140,11,6,82,28550.60,98,90,6.1,122,25,100.0,Current
+2026-07-27,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,184,187,165,146,11,8,87,30582.97,105,96,5.9,122,20,99.3,Current
+2026-08-03,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,185,188,171,147,13,11,85,27448.24,100,93,6.2,116,16,98.5,Current
+2026-08-10,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,186,182,162,142,12,8,86,27990.34,101,93,5.6,112,20,99.4,Current
+2026-08-17,SYN-003,Synthetic - Cobalt Bay,BC,West,Standalone (no host),Shopping centre,2023-01-16,Mature,187,167,156,134,14,7,84,29780.74,101,93,6.1,86,13,96.0,Delayed
+2026-02-23,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,New,20,116,92,79,7,6,41,11409.86,52,47,6.2,12,2,99.7,Current
+2026-03-02,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,New,21,115,90,80,6,4,46,11920.48,56,51,6.1,12,1,99.6,Current
+2026-03-09,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,New,22,119,93,81,8,4,43,11935.47,53,48,5.8,15,2,99.5,Current
+2026-03-16,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,New,23,121,99,84,9,6,46,12848.07,54,50,5.9,14,2,99.0,Current
+2026-03-23,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,New,24,123,93,83,6,4,46,11515.40,57,53,5.8,14,1,98.8,Current
+2026-03-30,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,New,25,119,98,86,7,5,46,12955.49,57,53,6.4,14,1,99.3,Current
+2026-04-06,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,New,26,119,100,86,8,6,49,13988.29,60,56,5.9,15,2,99.1,Current
+2026-04-13,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,27,119,95,79,9,7,45,12466.55,54,49,5.7,17,3,99.2,Current
+2026-04-20,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,28,126,105,92,8,5,51,14937.29,59,54,5.8,17,3,98.8,Current
+2026-04-27,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,29,117,97,85,8,4,48,14060.02,59,54,5.6,15,2,99.1,Current
+2026-05-04,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,30,114,96,84,8,4,47,12636.68,57,51,6.2,17,3,99.2,Current
+2026-05-11,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,31,120,102,85,11,6,51,14511.55,62,57,6.3,22,4,99.7,Current
+2026-05-18,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,32,123,100,87,7,6,50,14639.51,60,56,6.6,22,4,99.2,Current
+2026-05-25,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,33,119,101,86,9,6,48,12989.21,60,56,6.3,19,3,99.1,Current
+2026-06-01,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,34,117,98,87,8,3,51,13395.83,61,55,6.3,22,4,99.2,Current
+2026-06-08,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,35,119,102,90,7,5,50,13284.34,60,56,6.4,22,3,99.1,Current
+2026-06-15,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,36,119,105,90,9,6,52,15059.25,66,60,5.9,23,4,99.3,Current
+2026-06-22,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,37,125,107,93,8,6,54,15270.41,64,58,5.5,19,2,99.0,Current
+2026-06-29,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,38,118,103,90,8,5,51,14367.62,60,54,6.8,26,4,99.8,Current
+2026-07-06,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,39,121,104,89,9,6,50,13542.52,61,58,5.6,19,3,99.3,Current
+2026-07-13,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,40,121,103,91,7,5,51,14940.44,62,55,5.9,24,3,99.4,Current
+2026-07-20,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,41,125,108,95,8,5,53,13921.97,65,62,5.5,27,4,99.4,Current
+2026-07-27,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,42,120,107,93,9,5,51,14158.89,60,57,6.7,28,5,99.1,Current
+2026-08-03,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,43,119,106,88,10,8,51,15010.11,63,60,6.2,22,3,99.1,Current
+2026-08-10,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,44,128,108,92,11,5,54,14835.35,66,62,5.4,30,5,99.3,Current
+2026-08-17,SYN-004,Synthetic - Driftwood Row,BC,West,Host Banner A,Grocery-hosted,2025-10-06,Developing,45,116,103,89,8,6,52,15461.65,63,57,5.8,26,3,99.5,Current
+2026-02-23,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,180,202,185,161,15,9,100,34783.10,120,113,6.8,129,21,99.2,Current
+2026-03-02,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,181,189,171,148,11,12,94,35321.86,116,101,5.9,127,23,99.2,Current
+2026-03-09,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,182,200,185,163,12,10,101,34869.19,126,117,6.2,133,21,99.4,Current
+2026-03-16,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,183,202,188,160,14,14,103,35448.81,123,109,5.8,141,24,99.2,Current
+2026-03-23,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,184,192,173,152,14,7,94,32055.85,113,108,6.2,132,23,99.7,Current
+2026-03-30,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,185,205,183,156,15,12,99,33359.22,121,113,6.5,120,22,99.0,Current
+2026-04-06,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,186,202,183,157,16,10,93,30515.74,112,102,6.0,137,27,98.8,Current
+2026-04-13,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,187,207,185,162,15,8,90,29029.87,105,97,5.4,104,19,98.6,Current
+2026-04-20,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,188,200,180,150,18,12,76,25033.08,93,84,5.5,128,22,99.6,Current
+2026-04-27,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,189,195,182,158,15,9,72,25100.97,87,81,6.5,114,18,99.4,Current
+2026-05-04,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,190,195,175,147,16,12,69,21644.54,85,76,5.9,103,19,99.3,Current
+2026-05-11,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,191,200,181,153,14,14,70,24504.68,86,78,6.1,111,21,99.9,Current
+2026-05-18,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,192,195,179,153,15,11,72,23619.49,86,80,6.4,121,21,99.9,Current
+2026-05-25,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,193,207,191,168,14,9,77,27806.56,99,94,6.6,119,20,98.8,Current
+2026-06-01,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,194,200,178,154,13,11,71,23423.74,87,80,6.0,110,20,99.7,Current
+2026-06-08,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,195,208,179,156,14,9,67,25588.79,83,80,5.5,125,23,99.4,Current
+2026-06-15,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,196,191,174,147,13,14,65,22404.44,80,74,5.6,108,21,99.0,Current
+2026-06-22,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,197,200,184,155,17,12,67,24624.59,77,70,5.5,130,22,99.4,Current
+2026-06-29,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,198,194,177,151,14,12,65,22986.55,79,75,5.9,128,26,99.7,Current
+2026-07-06,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,199,208,178,156,13,9,68,23417.56,84,79,6.3,110,19,99.3,Current
+2026-07-13,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,200,203,188,159,18,11,69,24376.31,85,76,5.7,96,15,99.4,Current
+2026-07-20,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,201,207,188,161,18,9,70,24791.39,88,81,6.5,117,20,99.7,Current
+2026-07-27,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,202,198,183,159,15,9,66,23239.48,85,80,6.3,107,20,99.8,Current
+2026-08-03,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,203,198,172,149,15,8,65,22098.36,80,76,5.9,113,20,99.4,Current
+2026-08-10,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,204,212,193,164,15,14,67,22947.83,84,77,6.5,119,23,99.0,Current
+2026-08-17,SYN-005,Synthetic - Elmstone Commons,BC,West,Standalone (no host),Shopping centre,2022-09-12,Mature,205,197,175,156,12,7,68,24608.88,84,79,6.2,126,23,99.5,Current
+2026-02-23,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,76,151,144,126,10,8,69,24362.64,86,79,5.7,65,10,99.0,Current
+2026-03-02,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,77,156,147,129,11,7,69,23467.87,87,82,5.3,68,11,99.0,Current
+2026-03-09,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,78,146,136,120,8,8,64,21952.61,76,73,5.8,62,9,100.0,Current
+2026-03-16,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,79,147,136,117,13,6,64,22607.90,77,71,6.1,55,7,99.5,Current
+2026-03-23,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,80,151,136,121,7,8,68,23924.69,80,76,6.5,77,12,100.0,Current
+2026-03-30,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,81,158,148,128,11,9,69,24793.76,84,78,5.6,71,11,99.0,Current
+2026-04-06,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,82,160,143,128,8,7,71,25230.90,87,79,6.2,68,10,99.2,Current
+2026-04-13,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,83,145,133,115,11,7,64,22748.07,77,72,7.3,74,10,99.1,Current
+2026-04-20,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,84,148,135,118,9,8,64,21719.45,78,73,5.4,74,10,99.6,Current
+2026-04-27,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,85,154,149,126,15,8,68,26235.93,83,76,6.1,66,10,98.6,Current
+2026-05-04,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,86,140,133,114,12,7,62,20634.67,72,67,5.8,84,13,99.6,Current
+2026-05-11,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,87,149,144,122,15,7,65,23419.38,78,72,5.5,63,9,99.8,Current
+2026-05-18,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,88,151,140,120,12,8,61,21858.53,75,70,6.1,75,11,99.4,Current
+2026-05-25,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,89,154,142,122,13,7,66,22687.85,81,78,6.0,58,8,99.4,Current
+2026-06-01,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,90,147,141,119,14,8,63,21787.48,75,70,5.6,78,12,99.4,Current
+2026-06-08,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,91,157,145,127,11,7,68,23956.91,83,78,6.0,80,12,99.0,Current
+2026-06-15,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,92,156,153,131,15,7,72,24627.04,88,84,6.0,59,10,99.4,Current
+2026-06-22,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,93,152,146,124,14,8,63,22692.36,77,72,5.5,71,12,98.8,Current
+2026-06-29,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,94,137,127,110,10,7,60,21047.17,69,63,6.0,80,12,98.8,Current
+2026-07-06,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,95,148,136,116,11,9,62,21075.44,73,69,5.9,104,18,99.1,Current
+2026-07-13,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,96,151,144,126,10,8,68,22943.36,82,75,5.3,91,13,98.8,Current
+2026-07-20,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,97,147,138,118,12,8,64,21111.36,78,72,5.9,90,12,99.6,Current
+2026-07-27,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,98,155,152,129,13,10,67,21663.68,84,77,6.2,88,12,99.3,Current
+2026-08-03,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,99,145,133,116,9,8,65,23216.15,82,76,6.6,81,10,99.2,Current
+2026-08-10,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,100,149,135,119,8,8,65,23184.14,83,77,5.5,108,16,99.7,Current
+2026-08-17,SYN-006,Synthetic - Fernhill Market,BC,West,Standalone (no host),Street-front,2024-09-09,Developing,101,156,143,123,12,8,69,26052.86,86,80,5.9,105,16,98.8,Current
+2026-02-23,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,149,192,172,145,17,10,90,27739.28,108,97,5.8,119,22,99.6,Current
+2026-03-02,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,150,189,164,144,13,7,95,32766.05,108,99,4.9,148,23,99.5,Current
+2026-03-09,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,151,197,178,155,16,7,97,30774.19,122,113,6.6,141,23,99.9,Current
+2026-03-16,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,152,186,172,153,12,7,94,32642.34,108,101,5.2,135,26,99.4,Current
+2026-03-23,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,153,199,175,152,12,11,94,30580.49,111,105,6.5,122,24,99.0,Current
+2026-03-30,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,154,189,173,144,20,9,93,30690.96,108,99,6.3,122,23,99.0,Current
+2026-04-06,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,155,193,165,145,11,9,85,27042.68,98,91,5.5,114,18,99.5,Current
+2026-04-13,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,156,191,167,144,16,7,86,27304.93,104,97,5.6,149,23,99.8,Current
+2026-04-20,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,157,189,172,150,13,9,96,29045.50,110,101,5.8,103,19,100.0,Current
+2026-04-27,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,158,189,168,147,13,8,99,31391.14,116,108,6.1,119,22,98.9,Current
+2026-05-04,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,159,192,165,147,10,8,93,30048.92,110,101,6.2,127,23,99.3,Current
+2026-05-11,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,160,194,172,153,12,7,98,29089.96,116,109,6.1,133,27,99.1,Current
+2026-05-18,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,161,177,157,135,13,9,88,28783.69,109,102,6.1,91,19,99.2,Current
+2026-05-25,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,162,194,172,152,12,8,95,31412.67,112,104,6.4,129,21,99.7,Current
+2026-06-01,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,163,187,160,143,9,8,88,31081.81,108,102,6.4,123,24,99.6,Current
+2026-06-08,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,164,198,165,147,9,9,98,32786.52,120,110,6.1,93,16,99.0,Current
+2026-06-15,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,165,193,165,144,11,10,92,29408.19,112,101,5.3,108,23,99.0,Current
+2026-06-22,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,166,198,181,152,15,14,97,31104.72,112,104,5.6,93,16,99.5,Current
+2026-06-29,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,167,185,165,144,14,7,93,28985.28,104,100,5.7,108,19,98.9,Current
+2026-07-06,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,168,185,166,142,15,9,90,30285.80,105,100,5.4,124,22,99.0,Current
+2026-07-13,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,169,183,171,148,15,8,100,34484.12,123,114,5.9,131,22,99.6,Current
+2026-07-20,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,170,203,187,161,16,10,103,32876.78,124,117,5.2,129,23,99.1,Current
+2026-07-27,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,171,193,173,154,12,7,100,32354.00,119,112,5.7,125,21,98.9,Current
+2026-08-03,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,172,193,170,144,15,11,94,30572.02,111,100,6.4,136,25,99.5,Current
+2026-08-10,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,173,184,166,142,13,11,89,29771.34,108,97,5.4,118,21,99.8,Current
+2026-08-17,SYN-007,Synthetic - Glacier Gate,AB,Prairies,Standalone (no host),Shopping centre,2023-04-17,Mature,174,181,155,138,9,8,83,27112.91,100,94,5.4,113,22,99.5,Current
+2026-02-23,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,16,116,84,76,5,3,44,11264.51,52,50,5.4,8,1,99.6,Current
+2026-03-02,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,17,116,91,79,6,6,46,12501.08,56,53,6.2,9,1,98.9,Current
+2026-03-09,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,18,107,86,73,8,5,42,11053.60,49,46,5.3,9,1,99.1,Current
+2026-03-16,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,19,111,88,74,9,5,41,10987.05,49,45,6.1,9,1,98.9,Current
+2026-03-23,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,20,124,102,90,7,5,50,12795.61,58,55,6.5,13,1,99.1,Current
+2026-03-30,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,21,121,96,82,8,6,45,12542.67,54,49,6.3,15,2,99.0,Current
+2026-04-06,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,22,121,101,86,10,5,47,11412.77,56,49,7.0,12,2,99.2,Current
+2026-04-13,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,23,119,94,80,8,6,46,11135.35,56,51,6.4,15,2,99.2,Current
+2026-04-20,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,24,120,100,86,9,5,49,13573.23,58,56,6.4,11,2,99.2,Current
+2026-04-27,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,25,126,107,92,10,5,54,13890.49,67,62,5.8,16,2,98.8,Current
+2026-05-04,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,New,26,120,100,86,9,5,49,12930.51,61,56,5.9,15,2,99.6,Current
+2026-05-11,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,27,124,99,86,7,6,51,14236.84,61,56,6.0,15,2,99.6,Current
+2026-05-18,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,28,120,98,86,7,5,52,14019.88,62,57,6.1,17,3,99.4,Current
+2026-05-25,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,29,119,104,88,10,6,49,12726.26,60,56,5.2,17,2,98.8,Current
+2026-06-01,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,30,120,97,85,7,5,49,12700.93,60,55,6.8,16,2,99.4,Current
+2026-06-08,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,31,122,98,85,7,6,51,13898.36,64,59,5.6,16,2,99.4,Current
+2026-06-15,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,32,127,107,92,8,7,57,14745.09,70,63,5.9,20,3,99.4,Current
+2026-06-22,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,33,124,105,93,7,5,51,14037.09,60,56,5.9,24,4,99.4,Current
+2026-06-29,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,34,118,98,85,8,5,51,13732.38,65,59,5.6,24,4,99.9,Current
+2026-07-06,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,35,126,112,97,10,5,59,16469.08,72,65,6.2,26,4,99.0,Current
+2026-07-13,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,36,120,105,91,6,8,56,15410.57,67,63,6.6,21,3,99.5,Current
+2026-07-20,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,37,120,107,93,7,7,53,14153.42,63,60,5.2,29,5,99.3,Current
+2026-07-27,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,38,125,110,96,9,5,56,15138.93,64,59,6.0,22,3,99.5,Current
+2026-08-03,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,39,116,98,89,5,4,58,14844.80,71,67,6.6,20,3,99.0,Current
+2026-08-10,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,40,115,97,85,8,4,47,12060.50,57,52,6.3,26,3,99.6,Current
+2026-08-17,SYN-008,Synthetic - Heronfield,AB,Prairies,Host Banner A,Grocery-hosted,2025-11-03,Developing,41,120,108,93,10,5,59,16521.75,73,69,5.9,31,5,99.0,Current
+2026-02-23,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,131,164,150,133,11,6,81,25162.50,101,93,5.9,106,21,98.5,Current
+2026-03-02,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,132,183,162,146,9,7,89,28636.83,108,96,5.3,129,19,99.3,Current
+2026-03-09,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,133,180,160,141,7,12,83,25990.83,97,89,6.2,93,18,99.6,Current
+2026-03-16,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,134,183,170,145,16,9,85,28741.06,103,93,6.4,118,22,99.1,Current
+2026-03-23,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,135,184,163,142,13,8,83,26882.10,94,88,5.5,105,19,98.9,Current
+2026-03-30,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,136,183,157,138,11,8,84,28278.22,98,92,5.4,139,25,99.1,Current
+2026-04-06,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,137,179,162,141,12,9,91,29386.28,110,102,6.5,113,21,99.1,Current
+2026-04-13,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,138,179,173,147,15,11,86,27691.35,103,100,5.1,116,22,99.7,Current
+2026-04-20,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,139,183,163,127,11,10,78,24064.09,94,84,7.0,123,22,93.5,Current
+2026-04-27,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,140,179,154,118,10,9,73,23562.14,89,83,7.0,130,23,92.0,Current
+2026-05-04,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,141,176,155,138,10,7,83,26529.54,101,91,6.2,123,20,98.9,Current
+2026-05-11,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,142,178,161,140,13,8,88,27002.10,104,95,6.5,102,18,99.4,Current
+2026-05-18,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,143,185,162,141,12,9,90,29003.13,109,98,5.1,109,19,99.3,Current
+2026-05-25,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,144,175,159,136,13,10,79,25283.71,99,92,5.2,115,19,99.0,Current
+2026-06-01,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,145,179,163,144,11,8,85,27235.16,103,92,6.0,105,17,99.8,Current
+2026-06-08,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,146,174,154,133,12,9,81,25851.40,97,89,6.3,90,15,98.7,Current
+2026-06-15,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,147,188,179,153,16,10,86,26306.51,106,98,6.7,131,24,99.1,Current
+2026-06-22,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,148,180,168,139,15,14,86,27083.86,104,99,6.4,127,25,98.7,Current
+2026-06-29,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,149,178,166,147,9,10,83,26294.88,102,96,6.6,117,20,99.3,Current
+2026-07-06,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,150,182,163,139,13,11,85,28211.55,108,100,6.2,100,18,98.6,Current
+2026-07-13,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,151,184,163,136,15,12,80,25593.26,93,87,5.9,95,19,99.3,Current
+2026-07-20,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,152,184,169,145,16,8,85,26705.88,104,95,5.7,89,15,99.1,Current
+2026-07-27,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,153,183,158,140,9,9,85,27616.52,102,96,5.6,113,20,99.4,Current
+2026-08-03,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,154,184,170,154,11,5,91,28177.90,108,97,5.1,117,22,100.0,Current
+2026-08-10,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,155,178,167,143,13,11,83,28836.26,97,90,5.8,97,20,99.6,Current
+2026-08-17,SYN-009,Synthetic - Ironwood Plaza,AB,Prairies,Standalone (no host),Shopping centre,2023-08-21,Mature,156,180,166,146,13,7,89,26822.28,103,93,5.7,103,18,99.4,Current
+2026-02-23,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,93,148,138,118,14,6,74,24305.61,87,83,5.3,72,10,98.6,Current
+2026-03-02,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,94,150,138,120,11,7,78,26503.54,94,87,5.3,64,9,98.5,Current
+2026-03-09,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,95,152,132,116,9,7,76,29810.89,88,81,5.8,87,14,99.5,Current
+2026-03-16,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,96,157,137,120,8,9,72,24560.53,84,80,5.5,87,13,99.4,Current
+2026-03-23,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,97,152,134,113,12,9,72,26135.31,86,79,6.0,70,10,99.4,Current
+2026-03-30,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,98,145,128,111,9,8,70,23801.07,87,76,6.3,73,11,99.3,Current
+2026-04-06,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,99,152,139,122,10,7,78,27448.99,92,86,5.8,91,13,99.5,Current
+2026-04-13,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,100,151,138,117,12,9,77,29150.23,97,89,5.2,78,14,99.4,Current
+2026-04-20,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,101,156,141,121,11,9,72,24577.99,87,83,5.7,61,10,98.9,Current
+2026-04-27,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,102,151,144,123,11,10,78,27008.31,90,83,5.6,94,12,99.2,Current
+2026-05-04,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,103,145,129,109,13,7,66,22963.91,80,76,5.7,113,18,99.3,Current
+2026-05-11,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Developing,104,147,133,116,11,6,77,25977.88,92,86,6.2,81,13,99.5,Current
+2026-05-18,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,105,142,135,119,11,5,80,27624.32,95,88,5.6,94,19,99.1,Current
+2026-05-25,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,106,149,134,119,8,7,76,27142.00,90,82,6.1,55,10,98.9,Current
+2026-06-01,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,107,151,140,123,11,6,78,28884.81,92,85,5.5,88,16,99.1,Current
+2026-06-08,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,108,150,138,120,11,7,79,26720.51,89,82,5.6,81,15,99.0,Current
+2026-06-15,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,109,147,136,117,11,8,74,25999.23,87,78,5.9,112,22,99.0,Current
+2026-06-22,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,110,144,142,119,14,9,77,26584.69,86,80,5.0,92,17,99.1,Current
+2026-06-29,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,111,144,136,117,13,6,80,27194.20,92,85,5.6,94,15,99.5,Current
+2026-07-06,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,112,149,137,117,12,8,79,27760.53,97,89,6.3,80,14,99.6,Current
+2026-07-13,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,113,147,133,117,8,8,79,29170.23,95,87,6.1,91,15,99.0,Current
+2026-07-20,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,114,150,131,115,10,6,74,24968.23,89,82,5.5,98,16,98.9,Current
+2026-07-27,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,115,141,136,117,14,5,78,27059.01,93,90,5.9,90,17,99.3,Current
+2026-08-03,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,116,148,138,118,12,8,73,24610.11,87,82,6.7,99,20,99.4,Current
+2026-08-10,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,117,149,143,121,14,8,78,27391.29,89,81,6.4,82,15,99.7,Current
+2026-08-17,SYN-010,Synthetic - Juniper Flats,AB,Prairies,Standalone (no host),Street-front,2024-05-13,Mature,118,149,136,116,11,9,75,25202.19,89,84,5.5,105,23,99.4,Current
+2026-02-23,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,New,23,109,81,69,7,5,35,9861.04,43,40,5.8,13,1,99.8,Current
+2026-03-02,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,New,24,110,81,72,6,3,37,10708.14,44,41,7.0,15,2,99.3,Current
+2026-03-09,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,New,25,110,79,71,4,4,41,11213.63,51,48,5.9,12,2,98.6,Current
+2026-03-16,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,New,26,111,82,71,6,5,37,10370.33,45,42,5.7,14,2,99.5,Current
+2026-03-23,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,27,113,83,72,7,4,37,10726.10,44,41,5.9,15,2,99.0,Current
+2026-03-30,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,28,107,80,68,7,5,37,9850.31,44,39,5.7,15,2,98.9,Current
+2026-04-06,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,29,114,89,77,7,5,41,12080.74,50,45,5.7,17,3,99.0,Current
+2026-04-13,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,30,111,83,73,6,4,41,11906.45,51,46,5.7,14,2,99.3,Current
+2026-04-20,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,31,111,83,70,8,5,37,10987.72,47,45,5.7,14,2,99.5,Current
+2026-04-27,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,32,108,81,72,5,4,41,11125.51,50,47,6.1,17,3,99.7,Current
+2026-05-04,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,33,110,87,76,7,4,44,12071.45,52,48,6.1,17,2,99.1,Current
+2026-05-11,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,34,110,89,74,8,7,40,10599.15,48,44,6.3,19,3,99.2,Current
+2026-05-18,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,35,112,83,74,5,4,42,12446.18,50,46,5.2,19,3,99.2,Current
+2026-05-25,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,36,112,87,72,9,6,42,12171.53,49,46,5.9,18,2,99.0,Current
+2026-06-01,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,37,106,86,74,7,5,43,12649.77,52,48,6.6,22,3,99.9,Current
+2026-06-08,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,38,111,85,74,6,5,42,12032.79,52,47,5.8,14,2,99.4,Current
+2026-06-15,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,39,111,88,77,6,5,43,13339.27,53,49,5.6,21,3,99.5,Current
+2026-06-22,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,40,119,97,81,9,7,44,12765.73,54,49,6.0,28,4,99.6,Current
+2026-06-29,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,41,110,90,77,7,6,45,13165.73,54,51,6.5,17,3,99.1,Current
+2026-07-06,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,42,106,88,76,8,4,45,12874.07,54,52,6.0,24,4,99.1,Current
+2026-07-13,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,43,106,88,75,8,5,42,12228.28,49,45,4.9,25,4,99.1,Current
+2026-07-20,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,44,107,86,74,7,5,42,12410.63,51,46,5.9,25,3,99.3,Current
+2026-07-27,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,45,112,92,80,7,5,44,12468.13,55,52,6.0,28,4,99.2,Current
+2026-08-03,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,46,109,89,77,6,6,39,11377.52,49,45,5.8,26,4,99.2,Current
+2026-08-10,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,47,109,91,78,8,5,46,13526.58,55,53,5.8,31,4,99.7,Current
+2026-08-17,SYN-011,Synthetic - Kestrel Park,SK,Prairies,Host Banner B,Grocery-hosted,2025-09-15,Developing,48,110,89,77,8,4,41,11731.78,50,45,6.3,38,5,99.2,Current
+2026-02-23,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,66,137,137,107,10,20,65,23059.77,74,70,5.5,38,5,99.3,Current
+2026-03-02,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,67,145,145,116,7,22,69,22870.89,85,79,6.2,51,8,99.5,Current
+2026-03-09,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,68,142,142,113,6,23,69,23968.32,81,73,6.4,67,9,98.9,Current
+2026-03-16,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,69,149,149,116,9,24,63,21172.85,74,69,6.2,58,8,99.6,Current
+2026-03-23,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,70,139,139,111,8,20,64,20882.46,74,67,5.5,55,9,99.2,Current
+2026-03-30,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,71,145,144,112,11,21,66,22137.46,78,72,6.1,57,8,99.3,Current
+2026-04-06,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,72,134,134,107,8,19,60,20353.33,69,61,5.6,52,8,99.6,Current
+2026-04-13,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,73,141,141,107,9,25,66,22098.35,83,77,6.1,52,10,99.2,Current
+2026-04-20,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,74,132,132,102,7,23,61,20909.23,74,69,5.9,42,6,99.3,Current
+2026-04-27,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,75,143,143,116,6,21,65,21003.81,77,74,6.2,70,11,99.5,Current
+2026-05-04,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,76,145,145,118,5,22,69,23145.57,85,80,5.9,45,8,98.8,Current
+2026-05-11,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,77,135,135,109,5,21,63,20016.86,73,68,6.4,57,7,99.1,Current
+2026-05-18,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,78,138,138,107,9,22,66,22075.47,78,73,5.3,54,9,99.6,Current
+2026-05-25,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,79,141,139,112,7,20,66,23788.84,78,75,5.5,63,11,98.5,Current
+2026-06-01,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,80,139,139,107,9,23,61,20214.76,76,72,6.2,46,7,99.3,Current
+2026-06-08,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,81,137,137,107,9,21,62,21266.91,74,70,6.1,54,8,99.5,Current
+2026-06-15,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,82,138,138,106,9,23,61,19259.15,72,67,5.3,75,10,99.6,Current
+2026-06-22,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,83,143,143,111,10,22,64,21653.49,77,74,6.5,58,8,99.5,Current
+2026-06-29,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,84,142,142,111,8,23,67,23356.60,82,77,6.0,74,11,98.8,Current
+2026-07-06,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,85,143,143,113,7,23,67,20406.28,81,76,5.9,63,9,99.3,Current
+2026-07-13,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,86,142,140,111,9,20,64,21779.48,77,71,6.5,82,13,99.1,Current
+2026-07-20,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,87,141,141,110,11,20,64,20622.84,78,70,6.0,66,9,99.4,Current
+2026-07-27,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,88,135,135,105,8,22,60,20133.26,71,64,5.8,75,10,99.6,Current
+2026-08-03,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,89,136,133,105,10,18,62,21562.25,72,67,6.1,75,11,99.2,Current
+2026-08-10,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,90,144,144,118,8,18,66,23416.93,79,72,6.3,55,8,99.1,Current
+2026-08-17,SYN-012,Synthetic - Lakeshore Vale,SK,Prairies,Standalone (no host),Shopping centre,2024-11-18,Developing,91,140,140,111,9,20,69,22655.50,81,74,6.7,68,11,98.8,Current
+2026-02-23,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,88,158,139,122,10,7,69,21738.03,84,79,5.8,72,12,98.9,Current
+2026-03-02,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,89,154,135,115,12,8,66,21358.19,78,74,6.1,68,10,99.4,Current
+2026-03-09,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,90,159,136,120,8,8,74,22213.14,87,82,5.9,91,11,99.1,Current
+2026-03-16,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,91,156,139,119,13,7,68,20869.12,83,80,6.2,83,13,99.8,Current
+2026-03-23,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,92,158,148,127,14,7,74,24308.67,92,84,6.1,90,13,95.5,Current
+2026-03-30,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,93,150,124,107,9,8,64,20747.83,76,70,5.7,77,10,99.7,Current
+2026-04-06,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,94,154,129,111,11,7,61,19778.67,73,68,5.4,96,12,99.7,Current
+2026-04-13,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,95,163,143,118,15,10,66,21943.61,81,77,5.3,91,13,99.4,Current
+2026-04-20,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,96,166,144,123,13,8,67,21528.28,80,75,6.2,71,9,99.6,Current
+2026-04-27,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,97,161,145,122,15,8,73,24073.79,87,80,6.0,104,15,99.2,Current
+2026-05-04,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,98,153,127,112,9,6,64,20085.61,76,73,6.0,77,12,98.7,Current
+2026-05-11,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,99,161,138,122,10,6,69,22688.28,84,78,6.3,73,9,99.8,Current
+2026-05-18,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,100,165,146,124,14,8,71,22105.59,86,83,5.9,84,15,99.3,Current
+2026-05-25,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,101,166,138,117,12,9,64,21762.80,80,73,5.8,96,15,98.7,Current
+2026-06-01,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,102,161,133,114,11,8,69,22989.32,81,75,5.8,73,13,100.0,Current
+2026-06-08,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,103,158,138,119,13,6,70,23043.95,83,79,5.2,78,12,99.1,Current
+2026-06-15,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Developing,104,161,140,123,9,8,72,21933.30,88,81,6.8,74,13,99.6,Current
+2026-06-22,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,105,160,147,128,12,7,72,22114.49,91,82,5.9,93,19,99.0,Current
+2026-06-29,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,106,164,151,128,14,9,71,23200.42,83,78,5.8,105,14,99.2,Current
+2026-07-06,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,107,159,150,129,14,7,73,22669.75,82,76,6.0,107,16,99.8,Current
+2026-07-13,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,108,161,143,125,12,6,77,21475.58,89,80,6.0,119,23,99.0,Current
+2026-07-20,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,109,162,142,124,10,8,72,23019.31,91,84,6.4,91,14,98.9,Current
+2026-07-27,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,110,158,144,126,10,8,74,23531.51,84,74,6.4,84,13,99.2,Current
+2026-08-03,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,111,149,130,109,12,9,59,18320.33,71,63,5.9,97,17,99.4,Current
+2026-08-10,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,112,161,142,126,8,8,74,23910.09,90,84,5.9,118,22,99.6,Current
+2026-08-17,SYN-013,Synthetic - Marigold Square,MB,Prairies,Standalone (no host),Shopping centre,2024-06-17,Mature,113,169,151,133,12,6,75,26608.24,92,83,6.1,109,23,99.2,Current
+2026-02-23,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,6,96,55,48,5,2,23,7091.34,30,27,5.5,,,99.5,Current
+2026-03-02,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,7,103,68,57,6,5,28,8309.46,34,30,6.7,,,99.1,Current
+2026-03-09,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,8,96,61,53,5,3,26,7413.53,32,28,6.1,,,99.1,Current
+2026-03-16,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,9,103,66,57,5,4,27,7788.70,35,31,5.7,,,99.5,Current
+2026-03-23,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,10,104,69,60,5,4,29,8130.05,34,31,6.9,,,99.0,Current
+2026-03-30,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,11,105,63,55,4,4,27,8034.82,33,30,6.4,,,99.4,Current
+2026-04-06,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,12,105,70,62,5,3,34,10113.39,42,39,6.4,5,0,99.6,Current
+2026-04-13,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,13,106,72,63,5,4,33,9457.32,40,37,5.9,7,1,100.0,Current
+2026-04-20,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,14,110,77,67,5,5,34,9476.96,40,37,7.1,5,1,99.5,Current
+2026-04-27,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,15,101,73,63,6,4,33,9940.54,41,39,5.6,6,1,99.4,Current
+2026-05-04,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,16,109,84,74,8,2,39,11395.72,46,44,6.2,10,1,99.2,Current
+2026-05-11,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,17,112,87,75,9,3,39,10605.77,46,43,6.3,8,1,99.1,Current
+2026-05-18,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,18,117,88,75,8,5,43,12539.80,54,50,5.9,11,1,99.7,Current
+2026-05-25,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,19,111,83,74,5,4,40,11955.89,47,43,5.4,10,1,99.2,Current
+2026-06-01,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,20,113,83,73,6,4,39,11266.38,46,42,6.0,12,1,99.2,Current
+2026-06-08,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,21,114,86,76,6,4,40,11158.89,49,44,5.9,14,2,99.4,Current
+2026-06-15,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,22,118,93,79,8,6,42,12329.84,50,45,6.7,12,1,98.7,Current
+2026-06-22,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,23,119,98,84,8,6,47,13821.50,56,52,5.9,12,1,99.1,Current
+2026-06-29,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,24,120,92,80,7,5,48,13249.29,58,54,5.7,12,2,99.6,Current
+2026-07-06,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,25,113,92,78,9,5,43,13388.31,52,46,5.3,12,1,99.5,Current
+2026-07-13,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,New,26,116,97,81,10,6,46,13630.20,55,52,5.5,18,2,99.4,Current
+2026-07-20,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,Developing,27,116,95,81,8,6,46,12187.71,56,53,6.0,21,3,100.0,Current
+2026-07-27,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,Developing,28,114,94,81,7,6,49,14026.23,59,56,6.9,18,3,99.1,Current
+2026-08-03,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,Developing,29,111,94,80,8,6,44,11419.36,51,47,6.2,18,3,99.5,Current
+2026-08-10,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,Developing,30,118,94,81,7,6,45,13362.52,54,51,6.7,13,2,99.8,Current
+2026-08-17,SYN-014,Synthetic - Northstar Mews,MB,Prairies,Host Banner B,Grocery-hosted,2026-01-12,Developing,31,117,97,84,7,6,49,14940.74,58,53,6.4,17,3,99.2,Current
+2026-02-23,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,214,222,211,181,14,16,105,36287.74,123,120,6.5,130,23,99.3,Current
+2026-03-02,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,215,217,203,172,17,14,94,31011.94,112,105,6.8,119,19,99.2,Current
+2026-03-09,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,216,211,201,171,18,12,98,32338.03,117,111,6.5,143,29,98.7,Current
+2026-03-16,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,217,226,213,189,14,10,109,36851.87,130,117,6.1,144,28,99.2,Current
+2026-03-23,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,218,218,207,179,16,12,103,33717.85,127,116,6.3,126,22,99.3,Current
+2026-03-30,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,219,219,205,175,18,12,105,33547.43,129,118,5.9,139,23,99.2,Current
+2026-04-06,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,220,229,219,190,16,13,109,39413.46,127,117,6.6,120,25,99.3,Current
+2026-04-13,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,221,210,199,172,15,12,103,35917.27,126,118,5.8,99,19,99.2,Current
+2026-04-20,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,222,224,222,195,15,12,117,39209.19,139,127,5.7,176,34,99.3,Current
+2026-04-27,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,223,217,217,190,16,11,113,38236.49,132,125,5.8,144,26,98.5,Current
+2026-05-04,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,224,217,194,166,15,13,97,31973.35,111,105,6.3,129,25,99.2,Current
+2026-05-11,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,225,216,206,170,22,14,98,32720.00,115,107,5.1,143,24,99.8,Current
+2026-05-18,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,226,208,207,176,16,15,98,30970.09,120,110,6.5,111,20,99.5,Current
+2026-05-25,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,227,222,221,188,19,14,109,36517.00,131,121,5.9,130,23,99.7,Current
+2026-06-01,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,228,228,216,190,17,9,111,35445.80,134,122,5.0,161,28,99.7,Current
+2026-06-08,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,229,221,210,181,17,12,106,32089.99,128,119,6.4,137,23,99.7,Current
+2026-06-15,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,230,204,196,171,15,10,97,33483.63,119,114,6.2,130,22,99.2,Current
+2026-06-22,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,231,230,219,190,17,12,115,37757.17,146,137,5.5,126,24,99.4,Current
+2026-06-29,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,232,219,216,188,20,8,115,39943.16,141,126,6.5,153,25,99.1,Current
+2026-07-06,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,233,216,210,178,18,14,100,32411.24,120,108,6.2,149,21,99.0,Current
+2026-07-13,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,234,230,217,186,18,13,114,35639.55,133,121,6.4,134,25,99.2,Current
+2026-07-20,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,235,213,194,168,14,12,98,32771.74,119,114,6.0,154,21,99.6,Current
+2026-07-27,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,236,223,208,184,11,13,105,32742.68,124,119,6.9,128,21,98.8,Current
+2026-08-03,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,237,220,207,181,14,12,108,35549.62,124,114,5.5,155,25,99.4,Current
+2026-08-10,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,238,220,203,180,12,11,104,30947.53,124,115,6.2,127,25,98.7,Current
+2026-08-17,SYN-015,Synthetic - Oakhaven Centre,ON,Ontario,Standalone (no host),Shopping centre,2022-01-17,Mature,239,231,211,183,17,11,102,32440.51,126,118,6.5,133,23,99.6,Current
+2026-02-23,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,172,181,165,142,12,11,83,28165.09,101,97,5.9,106,19,99.4,Current
+2026-03-02,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,173,181,170,144,15,11,77,26385.75,92,87,7.2,89,17,98.8,Current
+2026-03-09,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,174,182,171,147,17,7,87,30148.67,107,103,6.0,105,20,98.7,Current
+2026-03-16,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,175,173,154,134,13,7,79,28019.83,93,87,5.6,133,21,98.8,Current
+2026-03-23,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,176,185,170,147,13,10,89,30377.79,105,97,6.1,112,22,99.3,Current
+2026-03-30,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,177,176,163,141,14,8,84,30479.27,104,95,5.6,106,15,99.7,Current
+2026-04-06,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,178,179,167,141,16,10,77,27278.11,93,85,6.4,122,23,99.3,Current
+2026-04-13,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,179,179,164,139,15,10,84,28767.51,106,100,5.9,96,17,99.0,Current
+2026-04-20,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,180,184,170,147,12,11,83,29138.39,101,93,5.6,100,15,99.8,Current
+2026-04-27,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,181,176,155,138,9,8,83,28333.92,100,92,5.7,116,23,99.3,Current
+2026-05-04,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,182,177,168,144,14,10,82,27991.66,102,96,6.0,98,16,99.3,Current
+2026-05-11,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,183,171,163,142,14,7,79,27663.15,97,92,7.0,130,24,99.1,Current
+2026-05-18,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,184,174,163,139,15,9,83,30748.59,102,94,5.8,96,13,99.5,Current
+2026-05-25,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,185,178,167,141,13,13,78,26949.54,97,87,6.0,95,19,99.7,Current
+2026-06-01,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,186,187,185,156,19,10,87,30709.97,107,98,6.0,95,16,99.0,Current
+2026-06-08,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,187,181,165,142,13,10,82,28392.47,101,97,5.7,117,24,99.1,Current
+2026-06-15,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,188,173,164,140,14,10,75,26363.73,88,79,5.3,132,24,99.4,Current
+2026-06-22,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,189,174,152,134,9,9,79,27533.63,97,91,5.7,120,24,99.2,Current
+2026-06-29,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,190,182,165,144,11,10,89,33201.35,108,98,5.9,102,20,99.3,Current
+2026-07-06,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,191,189,173,148,14,11,86,30024.19,105,100,6.3,105,17,98.9,Current
+2026-07-13,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,192,176,160,142,10,8,87,29817.18,110,103,6.6,128,18,99.4,Current
+2026-07-20,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,193,185,167,142,12,13,84,29528.74,103,96,6.0,111,17,98.6,Current
+2026-07-27,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,194,179,169,143,17,9,84,27629.75,103,96,6.1,151,20,99.0,Current
+2026-08-03,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,195,175,157,135,13,9,82,25875.48,101,92,6.6,114,18,99.3,Current
+2026-08-10,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,196,171,155,133,14,8,78,27595.02,94,85,6.5,96,17,99.1,Current
+2026-08-17,SYN-016,Synthetic - Pinecrest Terrace,ON,Ontario,Standalone (no host),Street-front,2022-11-07,Mature,197,171,161,141,11,8,83,29838.90,98,88,6.5,102,20,96.0,Delayed
+2026-02-23,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,142,186,165,146,11,8,91,31677.42,106,96,6.1,106,20,99.3,Current
+2026-03-02,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,143,191,168,145,13,10,89,29395.04,105,97,5.5,131,27,99.3,Current
+2026-03-09,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,144,209,185,157,16,12,92,30232.30,111,102,6.0,123,24,99.0,Current
+2026-03-16,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,145,206,184,162,13,9,96,35213.05,116,110,5.6,109,22,99.0,Current
+2026-03-23,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,146,206,191,163,16,12,99,31923.34,114,106,6.1,128,24,99.0,Current
+2026-03-30,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,147,206,178,156,10,12,96,33137.39,120,111,6.6,118,21,99.4,Current
+2026-04-06,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,148,200,179,158,12,9,89,28136.12,110,100,6.0,104,18,98.8,Current
+2026-04-13,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,149,199,182,156,14,12,91,31197.76,111,104,6.0,132,19,99.2,Current
+2026-04-20,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,150,202,181,154,16,11,96,30404.74,118,106,6.7,128,25,99.2,Current
+2026-04-27,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,151,200,179,157,10,12,99,31540.61,123,110,6.4,133,24,99.4,Current
+2026-05-04,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,152,201,192,164,16,12,94,29367.99,112,102,6.0,128,28,99.6,Current
+2026-05-11,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,153,199,175,152,15,8,98,36002.61,118,109,5.8,111,19,98.5,Current
+2026-05-18,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,154,200,185,158,16,11,98,32000.04,114,105,6.5,133,24,99.8,Current
+2026-05-25,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,155,203,187,160,17,10,97,35985.31,118,111,6.1,131,28,98.9,Current
+2026-06-01,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,156,195,174,150,13,11,92,30815.63,111,102,5.6,128,24,99.1,Current
+2026-06-08,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,157,195,177,153,14,10,94,33022.63,113,105,6.1,134,23,99.6,Current
+2026-06-15,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,158,199,183,160,14,9,97,33168.82,117,108,5.6,88,15,99.0,Current
+2026-06-22,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,159,220,205,174,19,12,102,34028.31,121,104,6.3,99,18,99.7,Current
+2026-06-29,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,160,202,183,162,13,8,93,33637.76,112,101,6.4,135,25,99.8,Current
+2026-07-06,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,161,184,170,147,14,9,90,29116.81,107,100,5.2,122,20,99.7,Current
+2026-07-13,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,162,202,189,165,13,11,96,33183.72,118,109,5.5,101,16,99.0,Current
+2026-07-20,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,163,203,191,161,20,10,94,29402.64,117,110,5.6,119,20,99.3,Current
+2026-07-27,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,164,200,184,159,16,9,94,33482.61,112,103,6.2,122,19,99.9,Current
+2026-08-03,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,165,203,181,158,15,8,100,33844.48,118,111,5.8,134,29,98.9,Current
+2026-08-10,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,166,198,193,163,20,10,99,33473.36,119,112,5.4,116,20,99.3,Current
+2026-08-17,SYN-017,Synthetic - Quarry Lane,ON,Ontario,Standalone (no host),Shopping centre,2023-06-05,Mature,167,195,175,147,17,11,89,29425.39,101,91,5.4,124,24,99.4,Current
+2026-02-23,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,18,121,91,79,6,6,36,10700.25,43,41,5.5,11,1,98.8,Current
+2026-03-02,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,19,115,89,77,8,4,40,11726.11,50,47,5.8,11,1,98.9,Current
+2026-03-09,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,20,120,92,81,7,4,43,13231.64,54,51,5.9,12,1,99.9,Current
+2026-03-16,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,21,120,95,81,8,6,44,13621.93,54,49,5.8,12,1,99.7,Current
+2026-03-23,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,22,124,95,82,8,5,41,13021.04,50,46,5.5,11,1,98.7,Current
+2026-03-30,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,23,130,100,85,9,6,42,11865.27,53,50,5.3,13,2,99.5,Current
+2026-04-06,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,24,121,98,84,9,5,41,13458.71,50,47,5.9,14,1,98.7,Current
+2026-04-13,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,25,120,93,82,8,3,45,14227.46,54,50,5.7,15,2,99.6,Current
+2026-04-20,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,New,26,118,96,82,8,6,40,12037.96,50,45,5.1,17,2,99.3,Current
+2026-04-27,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,27,124,100,89,6,5,47,14600.06,57,53,6.1,17,3,98.9,Current
+2026-05-04,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,28,124,99,86,8,5,46,13771.65,56,51,6.4,16,2,99.4,Current
+2026-05-11,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,29,116,97,84,9,4,48,14443.91,57,53,6.6,18,2,99.9,Current
+2026-05-18,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,30,119,99,84,10,5,43,12454.19,53,50,5.9,18,3,99.1,Current
+2026-05-25,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,31,122,99,83,9,7,45,14248.20,55,51,6.0,17,3,99.2,Current
+2026-06-01,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,32,119,97,84,8,5,44,12231.52,53,51,5.4,21,3,99.3,Current
+2026-06-08,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,33,114,95,82,8,5,44,14567.02,56,51,5.5,22,4,99.8,Current
+2026-06-15,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,34,117,93,80,7,6,46,14361.51,55,52,5.9,19,3,99.1,Current
+2026-06-22,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,35,125,104,91,7,6,49,15666.07,57,51,6.6,22,3,99.3,Current
+2026-06-29,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,36,121,102,90,6,6,50,16138.11,61,55,5.8,19,2,98.9,Current
+2026-07-06,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,37,118,96,83,7,6,44,13961.65,53,47,5.9,26,4,99.7,Current
+2026-07-13,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,38,129,108,96,5,7,49,15839.63,61,56,5.2,21,3,99.4,Current
+2026-07-20,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,39,124,103,92,7,4,48,15311.96,58,54,6.4,24,4,99.2,Current
+2026-07-27,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,40,125,104,90,9,5,46,15582.24,55,51,6.5,26,4,99.3,Current
+2026-08-03,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,41,115,98,85,8,5,46,13648.70,55,52,6.0,33,4,99.4,Current
+2026-08-10,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,42,119,103,89,9,5,48,14727.71,58,53,6.3,29,5,99.2,Current
+2026-08-17,SYN-018,Synthetic - Riverbend Commons,ON,Ontario,Host Banner A,Grocery-hosted,2025-10-20,Developing,43,116,98,84,9,5,45,14363.82,56,52,5.8,25,3,99.1,Current
+2026-02-23,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Developing,103,177,177,144,7,26,81,26426.42,96,90,5.4,105,15,98.7,Current
+2026-03-02,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Developing,104,168,168,133,9,26,76,25491.48,91,84,6.1,94,12,99.1,Current
+2026-03-09,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,105,175,175,137,13,25,81,27416.85,97,86,5.4,111,20,98.4,Current
+2026-03-16,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,106,169,169,136,10,23,78,25882.41,94,86,6.2,97,17,100.0,Current
+2026-03-23,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,107,181,181,140,14,27,78,26121.98,92,84,6.1,99,18,99.4,Current
+2026-03-30,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,108,176,173,132,12,29,72,23422.37,86,78,5.8,100,15,99.4,Current
+2026-04-06,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,109,170,170,135,9,26,79,24897.80,95,88,6.0,129,24,99.6,Current
+2026-04-13,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,110,177,170,135,9,26,80,24962.03,100,94,5.7,110,20,99.5,Current
+2026-04-20,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,111,162,162,129,10,23,70,23894.55,83,79,5.8,88,17,99.2,Current
+2026-04-27,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,112,171,171,137,9,25,77,25403.56,91,85,5.9,115,23,99.4,Current
+2026-05-04,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,113,173,173,137,11,25,81,27084.88,92,85,5.9,83,15,99.6,Current
+2026-05-11,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,114,165,165,131,7,27,73,23927.75,90,83,6.5,103,18,99.9,Current
+2026-05-18,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,115,174,173,133,12,28,75,24403.68,90,82,6.1,102,20,98.7,Current
+2026-05-25,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,116,165,165,127,8,30,71,24492.46,86,79,6.7,112,19,99.2,Current
+2026-06-01,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,117,169,169,133,12,24,74,23437.40,86,78,6.2,98,16,99.0,Current
+2026-06-08,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,118,173,172,133,12,27,79,27321.56,92,84,6.0,130,24,99.6,Current
+2026-06-15,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,119,168,168,132,8,28,76,24841.83,86,78,5.4,122,22,98.9,Current
+2026-06-22,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,120,182,182,146,7,29,87,29953.20,106,101,5.7,115,18,99.1,Current
+2026-06-29,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,121,175,175,132,14,29,70,20481.61,89,83,5.9,101,19,99.4,Current
+2026-07-06,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,122,161,161,128,11,22,69,23608.92,85,78,5.7,79,17,99.1,Current
+2026-07-13,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,123,160,160,126,9,25,73,24360.29,88,79,6.0,88,19,99.1,Current
+2026-07-20,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,124,177,177,135,14,28,78,25915.51,95,86,6.3,114,21,99.7,Current
+2026-07-27,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,125,172,172,137,10,25,78,26846.85,93,83,5.9,108,19,99.3,Current
+2026-08-03,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,126,167,165,127,12,26,71,22060.01,83,73,6.5,81,15,99.5,Current
+2026-08-10,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,127,174,173,133,12,28,78,26477.33,95,88,5.9,96,19,99.1,Current
+2026-08-17,SYN-019,Synthetic - Sumac Hollow,ON,Ontario,Standalone (no host),Shopping centre,2024-03-04,Mature,128,177,177,145,9,23,72,22010.82,87,83,6.8,117,23,98.7,Current
+2026-04-06,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,0,88,39,34,2,3,13,3636.75,17,15,7.0,,,98.6,Current
+2026-04-13,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,1,86,42,37,3,2,16,4550.38,19,17,6.6,,,98.8,Current
+2026-04-20,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,2,87,47,42,2,3,16,4488.91,21,18,7.2,,,99.5,Current
+2026-04-27,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,3,88,43,37,3,3,16,4398.57,19,17,5.6,,,99.1,Current
+2026-05-04,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,4,91,53,45,5,3,18,4908.67,22,20,6.7,,,100.0,Current
+2026-05-11,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,5,94,54,47,4,3,22,6450.91,27,24,6.6,,,99.1,Current
+2026-05-18,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,6,93,58,50,5,3,21,5916.69,26,23,5.8,,,99.4,Current
+2026-05-25,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,7,95,56,48,4,4,22,5839.54,27,24,6.3,,,99.7,Current
+2026-06-01,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,8,90,56,48,4,4,23,6309.32,28,25,6.7,,,99.1,Current
+2026-06-08,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,9,99,62,53,6,3,23,6038.30,28,26,6.9,,,99.0,Current
+2026-06-15,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,10,100,66,57,6,3,25,6925.49,32,28,6.0,,,99.7,Current
+2026-06-22,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,11,98,64,55,5,4,26,7280.69,32,28,6.6,,,99.3,Current
+2026-06-29,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,12,98,67,60,4,3,28,8375.99,35,32,6.4,5,1,98.8,Current
+2026-07-06,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,13,105,74,65,6,3,33,8886.40,41,37,5.5,6,1,99.3,Current
+2026-07-13,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,14,100,67,59,4,4,30,8962.82,38,35,5.7,7,1,99.3,Current
+2026-07-20,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,15,105,74,66,5,3,32,9395.16,39,36,6.1,6,1,99.1,Current
+2026-07-27,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,16,101,77,66,7,4,34,9874.59,42,39,5.5,8,1,99.3,Current
+2026-08-03,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,17,102,71,60,6,5,29,8163.89,35,33,5.6,6,1,99.9,Current
+2026-08-10,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,18,110,77,68,5,4,34,10123.90,42,39,6.7,10,1,99.9,Current
+2026-08-17,SYN-020,Synthetic - Tamarack Grove,ON,Ontario,Host Banner B,Grocery-hosted,2026-04-06,New,19,111,80,69,7,4,32,8699.55,40,36,5.4,11,1,99.2,Current
+2026-02-23,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,80,146,124,105,11,8,65,22637.04,78,73,5.9,66,10,99.8,Current
+2026-03-02,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,81,146,122,110,5,7,63,22384.07,75,68,6.4,53,8,99.5,Current
+2026-03-09,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,82,146,128,110,10,8,62,22769.45,75,67,5.7,76,12,99.2,Current
+2026-03-16,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,83,151,137,115,15,7,63,22084.56,75,69,5.7,71,11,99.1,Current
+2026-03-23,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,84,151,133,112,13,8,71,25689.69,88,83,5.6,67,10,100.0,Current
+2026-03-30,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,85,152,127,108,11,8,64,22959.18,77,68,5.9,84,13,99.5,Current
+2026-04-06,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,86,160,141,124,9,8,71,27207.17,82,75,6.0,69,10,99.6,Current
+2026-04-13,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,87,142,124,107,10,7,64,24495.75,79,74,4.6,74,12,99.5,Current
+2026-04-20,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,88,148,127,111,10,6,66,23735.28,81,75,5.7,76,12,99.4,Current
+2026-04-27,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,89,151,129,114,8,7,68,24647.57,84,78,6.8,71,9,99.1,Current
+2026-05-04,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,90,150,129,114,8,7,69,23963.36,81,75,6.6,77,10,99.2,Current
+2026-05-11,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,91,150,127,110,11,6,66,22571.86,81,76,6.8,79,11,99.6,Current
+2026-05-18,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,92,146,124,105,10,9,61,21794.85,72,68,5.7,79,13,99.0,Current
+2026-05-25,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,93,153,132,115,11,6,69,23750.02,83,75,6.1,69,11,99.1,Current
+2026-06-01,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,94,147,126,112,9,5,66,23329.02,84,79,6.3,91,13,99.8,Current
+2026-06-08,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,95,152,133,116,10,7,67,24510.99,80,74,6.2,60,9,99.6,Current
+2026-06-15,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,96,155,140,122,10,8,72,27027.42,89,83,6.6,98,14,99.2,Current
+2026-06-22,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,97,145,123,107,10,6,65,22192.35,79,68,6.5,76,9,99.6,Current
+2026-06-29,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,98,150,127,108,11,8,67,25426.14,80,75,6.2,89,14,99.7,Current
+2026-07-06,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,99,146,123,107,10,6,65,23632.82,76,68,6.1,99,16,99.4,Current
+2026-07-13,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,100,155,133,116,12,5,65,23476.41,83,73,6.3,78,11,99.5,Current
+2026-07-20,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,101,152,126,111,8,7,65,22097.07,80,75,6.0,94,13,98.6,Current
+2026-07-27,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,102,158,133,115,11,7,68,23871.67,79,71,6.0,80,13,99.1,Current
+2026-08-03,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,103,153,134,116,11,7,65,23936.54,75,71,6.0,91,14,99.0,Current
+2026-08-10,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Developing,104,155,129,113,9,7,67,25143.02,78,75,6.4,79,11,99.8,Current
+2026-08-17,SYN-021,Synthetic - Upland Crossing,ON,Ontario,Standalone (no host),Street-front,2024-08-12,Mature,105,138,122,107,9,6,64,22917.41,80,76,6.3,106,18,99.8,Current
+2026-02-23,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,156,208,182,157,12,13,90,32424.81,107,99,5.8,101,18,99.7,Current
+2026-03-02,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,157,198,182,155,17,10,95,33449.07,114,107,5.9,88,16,99.6,Current
+2026-03-09,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,158,196,177,150,17,10,93,29998.84,108,101,6.7,149,28,99.2,Current
+2026-03-16,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,159,206,191,162,19,10,97,33997.92,122,113,6.0,134,25,99.6,Current
+2026-03-23,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,160,195,180,156,15,9,97,33529.23,118,111,5.2,116,22,99.3,Current
+2026-03-30,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,161,207,181,159,14,8,93,30061.72,113,103,6.3,116,19,98.3,Current
+2026-04-06,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,162,199,180,158,13,9,95,32762.91,119,107,6.7,114,19,99.3,Current
+2026-04-13,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,163,198,182,155,16,11,99,32235.61,120,108,5.4,99,18,99.7,Current
+2026-04-20,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,164,193,184,157,16,11,98,33368.86,111,102,6.0,131,22,99.7,Current
+2026-04-27,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,165,195,182,154,17,11,91,31323.33,106,96,6.0,118,23,99.0,Current
+2026-05-04,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,166,212,191,165,16,10,100,35043.13,124,112,5.7,130,22,98.9,Current
+2026-05-11,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,167,205,187,161,16,10,97,33258.55,117,112,5.5,96,15,99.2,Current
+2026-05-18,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,168,204,183,159,17,7,98,33532.82,115,109,5.9,150,24,99.1,Current
+2026-05-25,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,169,171,158,136,14,7,81,29413.05,95,88,6.8,118,21,84.0,Delayed
+2026-06-01,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,170,158,146,127,10,7,80,29025.97,94,86,5.7,88,14,78.5,Stale
+2026-06-08,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,171,181,164,138,16,9,84,28411.47,102,99,6.3,99,19,88.0,Delayed
+2026-06-15,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,172,200,183,160,16,7,102,35587.35,119,108,5.5,141,30,99.5,Current
+2026-06-22,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,173,205,199,172,18,9,100,34796.02,125,116,6.1,123,20,99.3,Current
+2026-06-29,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,174,201,186,161,14,11,99,35442.88,120,106,6.5,126,25,100.0,Current
+2026-07-06,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,175,197,182,157,15,10,97,35338.29,112,104,6.1,116,21,99.0,Current
+2026-07-13,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,176,198,181,155,16,10,97,34483.15,113,104,5.4,91,19,99.6,Current
+2026-07-20,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,177,206,184,162,13,9,101,33813.48,125,117,5.5,156,26,98.9,Current
+2026-07-27,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,178,210,193,168,16,9,106,36731.85,123,112,7.2,146,26,99.5,Current
+2026-08-03,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,179,206,188,161,16,11,100,35017.29,124,109,5.4,111,21,99.7,Current
+2026-08-10,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,180,196,187,163,17,7,95,36328.28,116,110,5.7,124,26,99.0,Current
+2026-08-17,SYN-022,Synthetic - Violet Hill,ON,Ontario,Standalone (no host),Shopping centre,2023-02-27,Mature,181,207,187,166,13,8,101,33936.42,118,106,6.1,143,27,99.9,Current
+2026-05-04,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,0,91,42,36,4,2,16,4768.95,20,18,6.5,,,99.3,Current
+2026-05-11,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,1,89,46,40,3,3,17,4981.76,21,19,5.9,,,99.7,Current
+2026-05-18,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,2,91,45,38,3,4,19,5112.78,23,21,6.4,,,99.4,Current
+2026-05-25,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,3,91,49,42,4,3,20,6277.85,24,21,6.9,,,99.3,Current
+2026-06-01,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,4,94,56,48,5,3,21,5669.02,25,23,6.6,,,99.3,Current
+2026-06-08,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,5,93,54,48,3,3,22,6573.06,26,24,6.3,,,99.6,Current
+2026-06-15,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,6,96,59,49,6,4,24,7165.15,29,26,6.4,,,99.1,Current
+2026-06-22,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,7,94,56,48,5,3,23,6620.63,27,24,7.2,,,99.7,Current
+2026-06-29,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,8,101,64,56,5,3,29,8176.64,36,32,6.3,,,99.6,Current
+2026-07-06,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,9,97,64,55,5,4,28,8474.35,33,29,6.9,,,99.7,Current
+2026-07-13,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,10,102,66,57,5,4,29,8176.00,35,31,7.5,,,99.1,Current
+2026-07-20,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,11,100,70,61,6,3,31,9612.71,38,35,6.8,,,98.9,Current
+2026-07-27,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,12,110,74,63,6,5,30,8692.14,37,33,5.8,5,1,99.5,Current
+2026-08-03,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,13,105,72,62,6,4,34,8962.84,40,39,5.9,5,1,100.0,Current
+2026-08-10,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,14,110,79,69,6,4,36,10778.48,44,40,5.9,6,1,99.5,Current
+2026-08-17,SYN-023,Synthetic - Willowmere,ON,Ontario,Host Banner A,Grocery-hosted,2026-05-04,New,15,108,81,69,6,6,35,10983.69,43,42,5.7,7,1,99.7,Current
+2026-02-23,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,52,156,126,108,11,7,59,18438.86,72,68,5.6,54,7,98.5,Current
+2026-03-02,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,53,165,140,121,12,7,70,23060.21,86,80,6.4,47,6,99.0,Current
+2026-03-09,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,54,164,138,120,10,8,68,21956.15,82,77,5.0,51,8,99.7,Current
+2026-03-16,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,55,156,134,120,7,7,68,22604.56,79,72,6.0,45,7,99.4,Current
+2026-03-23,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,56,159,135,116,12,7,62,21760.96,77,71,6.2,52,8,99.1,Current
+2026-03-30,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,57,164,139,121,11,7,68,22740.00,83,75,5.8,40,6,99.2,Current
+2026-04-06,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,58,160,139,120,11,8,68,22098.87,80,73,6.5,33,4,99.0,Current
+2026-04-13,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,59,162,140,124,10,6,68,23429.12,82,76,6.0,66,11,99.5,Current
+2026-04-20,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,60,161,135,118,9,8,68,23176.74,80,74,5.7,41,6,99.4,Current
+2026-04-27,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,61,158,139,118,14,7,63,21133.29,72,66,6.5,56,9,100.0,Current
+2026-05-04,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,62,162,147,125,15,7,72,23635.30,89,83,6.5,40,5,98.9,Current
+2026-05-11,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,63,168,144,125,11,8,68,24085.00,82,76,6.7,57,9,99.0,Current
+2026-05-18,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,64,153,132,116,10,6,66,23037.39,83,80,5.8,61,9,98.7,Current
+2026-05-25,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,65,161,141,121,11,9,68,21603.59,81,76,6.4,51,7,98.9,Current
+2026-06-01,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,66,157,132,113,9,10,64,21837.68,75,70,6.3,57,7,99.3,Current
+2026-06-08,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,67,154,132,111,11,10,64,20989.71,78,73,6.8,58,9,99.5,Current
+2026-06-15,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,68,148,128,112,9,7,63,21439.98,80,75,5.4,73,11,99.3,Current
+2026-06-22,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,69,164,145,127,10,8,71,23815.17,86,80,6.6,57,9,99.9,Current
+2026-06-29,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,70,164,141,121,11,9,65,21223.04,80,73,6.1,67,10,99.1,Current
+2026-07-06,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,71,161,143,123,11,9,70,24020.05,85,77,6.2,68,11,99.7,Current
+2026-07-13,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,72,165,131,117,8,6,68,22146.53,86,80,5.8,72,11,99.2,Current
+2026-07-20,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,73,164,139,122,10,7,68,20997.98,84,77,6.2,72,12,99.5,Current
+2026-07-27,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,74,153,130,113,10,7,62,20920.83,72,67,6.2,76,13,98.8,Current
+2026-08-03,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,75,162,141,122,12,7,74,24337.30,89,83,6.3,80,12,99.2,Current
+2026-08-10,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,76,158,133,114,11,8,68,22506.77,82,77,6.9,87,12,99.8,Current
+2026-08-17,SYN-024,Synthetic - Yarrow Heights,ON,Ontario,Standalone (no host),Shopping centre,2025-02-24,Developing,77,160,141,120,13,8,64,21482.14,77,70,5.5,80,14,99.3,Current
+2026-02-23,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,New,21,113,88,79,5,4,42,13471.34,52,39,9.2,12,1,99.2,Current
+2026-03-02,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,New,22,111,88,77,7,4,39,11711.80,49,33,9.7,10,1,99.6,Current
+2026-03-09,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,New,23,111,89,76,7,6,41,13434.49,49,38,10.5,12,1,99.4,Current
+2026-03-16,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,New,24,115,94,84,6,4,46,13910.66,54,40,10.2,10,1,99.7,Current
+2026-03-23,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,New,25,114,95,83,7,5,46,13750.23,56,41,8.3,11,1,99.1,Current
+2026-03-30,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,New,26,106,83,73,6,4,41,12279.01,48,35,10.0,17,2,100.0,Current
+2026-04-06,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,27,113,94,80,8,6,44,13645.72,55,40,9.5,13,2,98.5,Current
+2026-04-13,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,28,104,86,77,5,4,44,12818.15,54,40,10.1,19,2,100.0,Current
+2026-04-20,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,29,103,89,77,7,5,40,12647.48,48,35,10.0,17,2,99.0,Current
+2026-04-27,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,30,104,83,72,6,5,40,12159.44,49,38,9.0,17,3,100.0,Current
+2026-05-04,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,31,112,97,84,7,6,47,15272.42,57,44,9.5,15,2,98.8,Current
+2026-05-11,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,32,105,84,74,6,4,44,13535.87,53,40,9.1,18,3,99.7,Current
+2026-05-18,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,33,108,88,78,5,5,42,12467.71,51,38,10.1,19,3,99.3,Current
+2026-05-25,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,34,108,96,82,10,4,46,14892.06,56,44,9.9,14,2,99.2,Current
+2026-06-01,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,35,108,92,80,6,6,41,12219.39,48,36,7.8,22,3,99.3,Current
+2026-06-08,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,36,111,99,88,6,5,51,14786.44,62,44,8.5,17,2,99.1,Current
+2026-06-15,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,37,104,90,78,6,6,44,13169.94,51,37,9.0,14,2,99.3,Current
+2026-06-22,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,38,115,99,84,9,6,50,15434.46,59,45,8.8,24,4,99.3,Current
+2026-06-29,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,39,105,92,81,6,5,42,12708.03,50,35,9.0,18,2,99.0,Current
+2026-07-06,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,40,105,93,81,7,5,46,14369.58,56,43,8.7,25,4,99.1,Current
+2026-07-13,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,41,113,100,87,8,5,48,15156.91,57,40,8.7,16,3,98.8,Current
+2026-07-20,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,42,108,95,82,8,5,47,14159.14,57,42,8.9,26,4,99.7,Current
+2026-07-27,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,43,109,95,82,8,5,46,13679.07,56,40,9.5,32,5,100.0,Current
+2026-08-03,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,44,113,95,84,6,5,46,14213.36,56,42,8.9,27,5,99.3,Current
+2026-08-10,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,45,115,101,87,8,6,53,16676.25,65,50,9.6,24,4,99.5,Current
+2026-08-17,SYN-025,Synthetic - Amberfield,NS,Atlantic,Host Banner A,Grocery-hosted,2025-09-29,Developing,46,109,97,83,8,6,46,12738.35,54,38,10.5,29,4,99.6,Current
+2026-02-23,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,72,151,141,119,14,8,70,23071.75,85,67,9.0,58,10,99.1,Current
+2026-03-02,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,73,152,143,122,12,9,78,24194.12,92,70,9.6,58,7,99.4,Current
+2026-03-09,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,74,150,127,114,6,7,72,23015.78,86,61,10.3,72,13,99.0,Current
+2026-03-16,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,75,146,131,111,11,9,72,23364.82,86,62,10.4,67,10,99.3,Current
+2026-03-23,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,76,144,129,109,10,10,66,19804.45,76,55,10.0,56,8,99.4,Current
+2026-03-30,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,77,145,132,111,13,8,66,19834.05,78,53,9.9,54,8,99.6,Current
+2026-04-06,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,78,146,136,117,12,7,70,21469.56,84,63,9.2,62,10,99.4,Current
+2026-04-13,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,79,149,135,120,9,6,73,22662.09,87,66,9.2,60,9,99.5,Current
+2026-04-20,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,80,155,138,120,11,7,74,23082.90,91,68,9.5,65,9,98.7,Current
+2026-04-27,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,81,147,140,119,14,7,72,22393.56,87,67,9.2,64,9,98.6,Current
+2026-05-04,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,82,146,133,115,12,6,69,22307.24,79,60,9.8,82,13,99.4,Current
+2026-05-11,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,83,157,144,123,13,8,76,24561.37,91,70,8.8,70,10,99.1,Current
+2026-05-18,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,84,148,136,120,10,6,71,23908.85,87,59,10.2,61,9,98.8,Current
+2026-05-25,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,85,142,127,114,8,5,67,21933.99,78,54,9.9,67,11,99.3,Current
+2026-06-01,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,86,148,132,113,10,9,72,23596.13,86,67,9.5,73,9,99.2,Current
+2026-06-08,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,87,147,131,112,10,9,71,23100.22,89,67,10.2,69,12,99.6,Current
+2026-06-15,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,88,144,130,111,11,8,65,20570.47,79,55,11.8,69,10,99.5,Current
+2026-06-22,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,89,152,141,119,15,7,73,23871.55,90,67,8.1,83,14,99.2,Current
+2026-06-29,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,90,147,138,116,14,8,71,24003.92,84,59,8.5,90,12,99.3,Current
+2026-07-06,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,91,153,139,116,15,8,72,21461.70,85,64,9.1,95,13,99.5,Current
+2026-07-13,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,92,150,133,116,8,9,71,23093.11,81,62,9.4,60,9,99.6,Current
+2026-07-20,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,93,157,138,118,11,9,73,21764.07,87,60,9.4,60,9,98.7,Current
+2026-07-27,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,94,152,138,119,13,6,74,22884.88,86,63,9.4,81,13,99.5,Current
+2026-08-03,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,95,146,128,108,12,8,67,20901.24,80,63,9.8,71,11,99.2,Current
+2026-08-10,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,96,153,135,116,10,9,71,22163.03,84,64,9.4,89,12,99.3,Current
+2026-08-17,SYN-026,Synthetic - Bluewater Reach,NS,Atlantic,Standalone (no host),Shopping centre,2024-10-07,Developing,97,147,137,118,12,7,70,22991.51,83,59,10.1,57,8,99.2,Current
+2026-02-23,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,14,103,80,68,7,5,33,9577.67,41,31,10.9,6,1,99.1,Current
+2026-03-02,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,15,112,82,72,6,4,34,9755.50,43,29,9.7,6,1,99.4,Current
+2026-03-09,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,16,104,79,68,7,4,36,10763.15,45,33,9.7,7,1,100.0,Current
+2026-03-16,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,17,103,78,69,5,4,37,11206.69,45,33,9.8,9,1,99.6,Current
+2026-03-23,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,18,104,77,66,6,5,35,10036.02,45,34,9.7,8,1,99.3,Current
+2026-03-30,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,19,112,92,77,9,6,38,12318.42,46,35,10.0,12,1,99.1,Current
+2026-04-06,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,20,114,92,79,7,6,41,12830.57,51,39,9.4,9,1,99.7,Current
+2026-04-13,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,21,112,92,79,8,5,40,12322.11,48,35,10.8,13,1,100.0,Current
+2026-04-20,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,22,113,91,79,7,5,42,13490.76,54,39,10.1,11,1,99.0,Current
+2026-04-27,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,23,108,82,72,5,5,38,11797.33,47,35,9.7,12,1,99.1,Current
+2026-05-04,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,24,113,88,75,7,6,41,13195.80,50,37,9.4,12,1,99.3,Current
+2026-05-11,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,25,108,89,75,9,5,42,13263.93,51,39,10.6,16,2,99.4,Current
+2026-05-18,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,New,26,112,92,79,7,6,46,13759.20,55,44,9.2,13,2,99.2,Current
+2026-05-25,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,27,107,88,74,7,7,39,11791.72,48,35,10.0,17,3,99.7,Current
+2026-06-01,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,28,111,89,75,8,6,41,13159.77,49,37,9.8,16,2,99.0,Current
+2026-06-08,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,29,106,89,78,7,4,43,13209.31,52,38,7.8,18,3,99.3,Current
+2026-06-15,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,30,112,94,82,7,5,49,15407.62,58,42,9.9,15,2,99.1,Current
+2026-06-22,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,31,111,98,84,9,5,48,14329.91,59,41,11.1,17,2,99.3,Current
+2026-06-29,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,32,112,93,80,7,6,42,11791.73,49,35,9.1,13,2,98.9,Current
+2026-07-06,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,33,102,86,71,8,6,39,11093.80,46,34,8.0,15,1,91.0,Stale
+2026-07-13,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,34,111,95,80,7,8,46,13796.93,55,42,9.3,20,3,98.4,Current
+2026-07-20,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,35,104,93,79,9,5,47,13917.76,57,45,9.7,20,3,99.3,Current
+2026-07-27,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,36,112,99,86,7,6,49,15303.81,60,42,9.9,18,3,99.2,Current
+2026-08-03,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,37,107,94,80,8,6,45,13913.78,55,40,9.5,28,4,99.6,Current
+2026-08-10,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,38,107,89,79,5,5,45,14342.83,54,44,8.5,27,4,99.0,Current
+2026-08-17,SYN-027,Synthetic - Copperleaf,NS,Atlantic,Host Banner B,Grocery-hosted,2025-11-17,Developing,39,108,94,81,7,6,46,14436.55,57,46,9.8,25,5,99.7,Current
+2026-02-23,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,17,107,78,69,5,4,34,10867.87,41,32,8.5,6,1,99.5,Current
+2026-03-02,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,18,113,87,78,6,3,40,11677.64,47,34,10.5,10,1,99.5,Current
+2026-03-09,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,19,109,84,74,6,4,39,12317.42,46,33,9.6,10,1,99.4,Current
+2026-03-16,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,20,105,81,72,6,3,36,11133.52,43,32,10.3,11,1,99.2,Current
+2026-03-23,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,21,113,92,78,7,7,39,11481.33,49,37,10.2,8,1,99.7,Current
+2026-03-30,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,22,118,93,82,7,4,45,12635.31,57,42,9.0,8,1,99.6,Current
+2026-04-06,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,23,113,94,80,9,5,42,12067.96,53,41,9.0,12,1,99.1,Current
+2026-04-13,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,24,110,87,76,6,5,40,11945.80,48,39,7.8,14,2,99.8,Current
+2026-04-20,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,25,106,87,74,8,5,37,10826.67,44,34,10.3,10,1,99.1,Current
+2026-04-27,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,New,26,109,91,78,7,6,45,13183.30,56,43,9.6,13,2,99.5,Current
+2026-05-04,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,27,111,93,79,7,7,42,12765.85,50,35,9.3,17,3,99.5,Current
+2026-05-11,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,28,111,91,81,5,5,43,13269.18,52,35,9.5,20,3,99.6,Current
+2026-05-18,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,29,112,93,79,8,6,43,13823.47,52,39,8.8,14,2,99.4,Current
+2026-05-25,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,30,113,96,83,7,6,42,12449.15,52,40,9.5,11,2,99.0,Current
+2026-06-01,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,31,109,88,76,5,7,39,12273.11,48,33,9.8,17,3,99.6,Current
+2026-06-08,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,32,110,94,81,7,6,43,13503.60,52,37,9.7,17,2,99.0,Current
+2026-06-15,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,33,114,98,85,6,7,47,13774.44,58,45,9.3,15,2,99.5,Current
+2026-06-22,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,34,109,95,83,8,4,43,13219.88,52,36,8.8,16,3,98.7,Current
+2026-06-29,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,35,109,93,81,7,5,44,13163.06,53,41,9.7,18,3,99.4,Current
+2026-07-06,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,36,108,95,83,8,4,44,13065.42,52,41,9.9,21,3,98.7,Current
+2026-07-13,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,37,110,93,81,7,5,43,13953.77,53,41,10.3,19,3,99.6,Current
+2026-07-20,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,38,110,96,83,8,5,44,13112.39,54,39,8.7,22,4,98.9,Current
+2026-07-27,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,39,114,99,86,7,6,45,14068.92,53,36,9.6,20,3,99.1,Current
+2026-08-03,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,40,105,92,80,8,4,43,13488.91,54,42,9.5,15,2,99.6,Current
+2026-08-10,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,41,113,98,85,8,5,46,13466.49,55,39,10.7,17,3,99.3,Current
+2026-08-17,SYN-028,Synthetic - Dunmore Bend,NB,Atlantic,Host Banner A,Grocery-hosted,2025-10-27,Developing,42,104,96,84,8,4,44,14019.55,55,40,10.1,29,4,99.0,Current
+2026-02-23,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,45,146,120,101,10,9,65,20278.51,81,75,5.6,33,5,99.8,Current
+2026-03-02,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,46,143,124,106,10,8,67,21817.45,77,73,5.3,35,5,98.7,Current
+2026-03-09,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,47,144,122,105,10,7,65,20882.98,78,73,5.9,34,5,98.6,Current
+2026-03-16,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,48,146,122,107,10,5,64,19317.32,76,69,4.7,39,6,99.3,Current
+2026-03-23,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,49,143,121,102,13,6,63,18595.52,76,73,6.3,31,5,98.8,Current
+2026-03-30,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,50,137,113,97,8,8,59,19664.35,70,65,5.5,46,7,99.0,Current
+2026-04-06,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,51,146,126,109,10,7,68,22056.34,84,81,5.3,36,6,99.9,Current
+2026-04-13,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,52,140,118,104,8,6,64,20510.32,75,69,5.5,48,7,99.4,Current
+2026-04-20,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,53,140,118,103,8,7,62,20270.64,76,72,5.4,40,6,99.4,Current
+2026-04-27,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,54,142,120,106,9,5,67,23222.87,84,75,5.4,40,6,99.3,Current
+2026-05-04,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,55,143,127,110,10,7,66,20879.75,81,76,5.4,41,6,99.6,Current
+2026-05-11,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,56,147,125,109,10,6,68,21397.93,86,81,5.7,38,6,99.0,Current
+2026-05-18,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,57,130,115,98,8,9,61,19254.45,73,70,5.9,41,5,99.6,Current
+2026-05-25,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,58,141,118,102,9,7,62,19642.63,75,71,5.4,37,6,99.4,Current
+2026-06-01,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,59,136,111,96,9,6,54,16494.07,65,59,5.1,33,4,98.7,Current
+2026-06-08,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,60,131,107,94,6,7,59,18695.70,73,68,4.9,52,7,99.7,Current
+2026-06-15,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,61,134,119,105,8,6,64,20841.94,74,70,6.3,42,5,99.4,Current
+2026-06-22,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,62,132,112,96,10,6,60,19772.01,71,69,5.3,41,6,98.8,Current
+2026-06-29,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,63,150,129,112,10,7,67,21299.37,75,68,5.9,50,7,99.3,Current
+2026-07-06,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,64,135,120,103,11,6,62,19224.71,74,70,6.3,55,9,99.4,Current
+2026-07-13,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,65,144,125,104,12,9,63,21810.72,74,70,4.6,46,8,99.8,Current
+2026-07-20,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,66,148,124,108,9,7,66,19954.07,82,76,5.0,52,8,100.0,Current
+2026-07-27,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,67,144,124,108,11,5,67,20688.98,80,79,6.0,52,8,99.6,Current
+2026-08-03,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,68,139,119,108,6,5,63,19566.30,74,68,6.1,50,8,99.6,Current
+2026-08-10,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,69,137,118,103,9,6,65,20261.93,79,75,5.9,55,8,99.3,Current
+2026-08-17,SYN-029,Synthetic - Evergreen Wharf,NB,Atlantic,Standalone (no host),Street-front,2025-04-14,Developing,70,145,124,110,9,5,64,19987.15,75,71,5.4,44,7,98.8,Current
+2026-03-16,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,0,78,36,32,2,2,14,3713.44,17,13,11.2,,,99.5,Current
+2026-03-23,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,1,78,41,35,4,2,15,4243.94,19,13,10.6,,,99.2,Current
+2026-03-30,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,2,81,46,39,4,3,15,4082.88,18,12,11.4,,,99.7,Current
+2026-04-06,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,3,79,45,39,3,3,15,3855.65,18,12,9.3,,,99.3,Current
+2026-04-13,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,4,81,47,41,4,2,17,4220.63,22,15,10.3,,,99.6,Current
+2026-04-20,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,5,86,49,42,4,3,17,4218.21,22,16,10.5,,,99.2,Current
+2026-04-27,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,6,78,44,38,3,3,15,4042.81,19,14,10.8,,,99.0,Current
+2026-05-04,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,7,89,54,47,4,3,21,5965.35,27,19,10.0,,,98.9,Current
+2026-05-11,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,8,84,57,48,5,4,21,5674.86,26,20,10.6,,,99.3,Current
+2026-05-18,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,9,89,60,53,4,3,24,6448.08,30,22,10.3,,,98.8,Current
+2026-05-25,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,10,89,61,52,5,4,24,6350.96,30,22,10.3,,,99.8,Current
+2026-06-01,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,11,91,66,56,6,4,26,7724.95,34,25,9.7,,,99.2,Current
+2026-06-08,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,12,87,63,56,4,3,27,7704.27,33,23,12.0,3,0,99.3,Current
+2026-06-15,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,13,90,64,57,4,3,26,7118.16,32,21,10.0,5,1,99.6,Current
+2026-06-22,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,14,93,67,59,5,3,30,8649.12,39,29,9.6,7,1,99.3,Current
+2026-06-29,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,15,96,67,59,5,3,28,7460.00,36,27,10.2,6,1,99.5,Current
+2026-07-06,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,16,94,71,62,6,3,30,8209.42,36,27,10.1,7,1,99.6,Current
+2026-07-13,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,17,94,70,61,6,3,31,8670.75,38,28,10.7,8,1,99.4,Current
+2026-07-20,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,18,91,69,59,6,4,29,8110.04,36,27,10.0,7,1,98.7,Current
+2026-07-27,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,19,97,72,63,5,4,31,8968.21,39,30,9.5,9,1,99.2,Current
+2026-08-03,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,20,102,84,69,10,5,34,9468.54,42,32,9.3,7,1,99.0,Current
+2026-08-10,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,21,107,84,73,6,5,37,10454.05,44,31,9.9,10,1,98.9,Current
+2026-08-17,SYN-030,Synthetic - Foxglove Harbour,NL,Atlantic,Host Banner B,Grocery-hosted,2026-03-16,New,22,98,80,69,8,3,34,10113.13,42,29,9.7,12,1,98.7,Current

@@ -1,0 +1,33 @@
+# Repository-level backstop.
+# Each case study also has its own .gitignore for the artefacts its scripts regenerate.
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Office lock files
+~$*
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary output
+*.log
+*.tmp

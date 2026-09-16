@@ -1,0 +1,14 @@
+# Python dependencies for the Vancouver 3-1-1 analysis (tested with Python 3.13).
+# Versions resolved from the Python 3.13 environment these scripts run in
+# (the interpreter the README invokes as `py -3.13`).
+# Derived from the imports in scripts/ and scripts/v2/ — nothing here is optional.
+
+requests==2.32.3      # 01_download.py: Open Data Portal API export
+pandas==2.2.3         # 02_profile, 03_analyze, 05_build_workbook, 07_reconcile, 08_report
+numpy==2.1.3          # 03_analyze, 05_build_workbook: percentile and duration maths
+matplotlib==3.10.0    # 04_charts, v2/build_v2: report charts
+openpyxl==3.1.5       # 05_build_workbook, 07_reconcile, v2/*: workbook build and reconciliation
+pypdfium2==5.13.0     # 08_report, v2/render_v2: rendering the report PDF to images
+
+# scripts/06_workbook_com.ps1 is Windows-only and has no Python dependency:
+# it drives Excel through COM and needs PowerShell plus a local Excel installation.

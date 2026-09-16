@@ -1,0 +1,206 @@
+displayed,value,source,python_reference,check
+"272,580",272580,Analysis!B5,272580,match
+"269,798",269798,Analysis!B6,269798,match
+"2,782",2782,Analysis!B7,2782,match
+99.0%,0.9897938219972118,Analysis!B6 / Analysis!B5,,n/a
+"155,210",155210,Analysis!B16,,n/a
+57.5%,0.5752822482005056,Analysis!C16 (share of closed cases),,n/a
+"65,126",65126,Analysis!B17,,n/a
+24.1%,0.24138800139363523,Analysis!C17 (share of closed cases),,n/a
+"26,871",26871,Analysis!B18,,n/a
+10.0%,0.09959673533532494,Analysis!C18 (share of closed cases),,n/a
+"15,971",15971,Analysis!B20,,n/a
+5.9%,0.05919613933387201,Analysis!C20 (share of closed cases),,n/a
+"6,620",6620,Analysis!B19 + Analysis!B21,,n/a
+2.5%,0.024536875736662245,Analysis!C19 + Analysis!C21 (share of closed cases),,n/a
+"26,742",26742,Analysis!B71 (Jul),,n/a
+"19,517",19517,Analysis!B76 (Dec),,n/a
+"21,447",21447,Analysis!B65 (monthly chart bar),,n/a
+"22,087",22087,Analysis!B66 (monthly chart bar),,n/a
+"20,266",20266,Analysis!B67 (monthly chart bar),,n/a
+"22,157",22157,Analysis!B68 (monthly chart bar),,n/a
+"24,679",24679,Analysis!B69 (monthly chart bar),,n/a
+"24,875",24875,Analysis!B70 (monthly chart bar),,n/a
+"26,742",26742,Analysis!B71 (monthly chart bar),,n/a
+"23,493",23493,Analysis!B72 (monthly chart bar),,n/a
+"23,459",23459,Analysis!B73 (monthly chart bar),,n/a
+"21,464",21464,Analysis!B74 (monthly chart bar),,n/a
+"22,394",22394,Analysis!B75 (monthly chart bar),,n/a
+"19,517",19517,Analysis!B76 (monthly chart bar),,n/a
+"3,820",3820,Analysis!C145,,n/a
+77%,0.7696335078534031,Analysis!E145,,n/a
+18%,0.18481675392670158,Analysis!F145,,n/a
+0%,0.0007853403141361257,Analysis!H145 + Analysis!J145,,n/a
+"1,808",1808,Analysis!C146,,n/a
+38%,0.3810840707964602,Analysis!E146,,n/a
+44%,0.43860619469026546,Analysis!F146,,n/a
+17%,0.17311946902654868,Analysis!G146,,n/a
+0%,0.00331858407079646,Analysis!I146,,n/a
+0%,0.0038716814159292035,Analysis!H146 + Analysis!J146,,n/a
+"1,882",1882,Analysis!C147,,n/a
+48%,0.48034006376195537,Analysis!E147,,n/a
+40%,0.40435706695005313,Analysis!F147,,n/a
+11%,0.10892667375132838,Analysis!G147,,n/a
+0%,0.004782146652497344,Analysis!I147,,n/a
+0%,0.001594048884165781,Analysis!H147 + Analysis!J147,,n/a
+"7,510",7510,Analysis!C148,,n/a
+140,140,Analysis!D148,,n/a
+60%,0.603595206391478,Analysis!E148,,n/a
+30%,0.3009320905459387,Analysis!F148,,n/a
+9%,0.08801597869507323,Analysis!G148,,n/a
+0%,0.0017310252996005327,Analysis!H148 + Analysis!J148,,n/a
+"72,753",72753,Analysis!B49 (department chart label),,n/a
+67%,0.6718073481505917,Analysis!C49 (department chart),,n/a
+4%,0.04032823388726238,Analysis!D49 (department chart),,n/a
+16%,0.15955355792888265,Analysis!E49 (department chart),,n/a
+13%,0.12649650186246617,Analysis!G49 (department chart),,n/a
+0%,0.0018143581707970805,Analysis!F49 + Analysis!H49 (department chart),,n/a
+"26,026",26026,Analysis!B50 (department chart label),,n/a
+54%,0.5449934680703912,Analysis!C50 (department chart),,n/a
+15%,0.15426880811496196,Analysis!D50 (department chart),,n/a
+2%,0.024091293322062553,Analysis!E50 (department chart),,n/a
+26%,0.25666641051256434,Analysis!G50 (department chart),,n/a
+2%,0.01998001998001998,Analysis!F50 + Analysis!H50 (department chart),,n/a
+"22,552",22552,Analysis!B51 (department chart label),,n/a
+87%,0.867062788222774,Analysis!C51 (department chart),,n/a
+3%,0.030595956012770487,Analysis!D51 (department chart),,n/a
+0%,0.0035916991841078395,Analysis!E51 (department chart),,n/a
+0%,4.434196523589925e-05,Analysis!G51 (department chart),,n/a
+10%,0.09870521461511174,Analysis!F51 + Analysis!H51 (department chart),,n/a
+"15,536",15536,Analysis!B52 (department chart label),,n/a
+30%,0.3026519052523172,Analysis!C52 (department chart),,n/a
+49%,0.4857749742533471,Analysis!D52 (department chart),,n/a
+16%,0.1609165808444902,Analysis!E52 (department chart),,n/a
+0%,0.00012873326467559217,Analysis!G52 (department chart),,n/a
+5%,0.05052780638516993,Analysis!F52 + Analysis!H52 (department chart),,n/a
+"13,741",13741,Analysis!B53 (department chart label),,n/a
+55%,0.5506149479659413,Analysis!C53 (department chart),,n/a
+30%,0.30361691288843606,Analysis!D53 (department chart),,n/a
+14%,0.13972782184702714,Analysis!E53 (department chart),,n/a
+0%,0.0032748708245396987,Analysis!G53 (department chart),,n/a
+0%,0.0027654464740557456,Analysis!F53 + Analysis!H53 (department chart),,n/a
+"12,150",12150,Analysis!B54 (department chart label),,n/a
+17%,0.16765432098765432,Analysis!C54 (department chart),,n/a
+81%,0.8134156378600823,Analysis!D54 (department chart),,n/a
+2%,0.016954732510288065,Analysis!E54 (department chart),,n/a
+0%,0,Analysis!G54 (department chart),,n/a
+0%,0.0019753086419753087,Analysis!F54 + Analysis!H54 (department chart),,n/a
+"11,688",11688,Analysis!B55 (department chart label),,n/a
+56%,0.5605749486652978,Analysis!C55 (department chart),,n/a
+31%,0.3072381930184805,Analysis!D55 (department chart),,n/a
+5%,0.05022245037645448,Analysis!E55 (department chart),,n/a
+0%,0,Analysis!G55 (department chart),,n/a
+8%,0.08196440793976728,Analysis!F55 + Analysis!H55 (department chart),,n/a
+"10,456",10456,Analysis!B56 (department chart label),,n/a
+2%,0.01778882938026014,Analysis!C56 (department chart),,n/a
+90%,0.8951798010711554,Analysis!D56 (department chart),,n/a
+2%,0.020275439938791124,Analysis!E56 (department chart),,n/a
+0%,0,Analysis!G56 (department chart),,n/a
+7%,0.06675592960979342,Analysis!F56 + Analysis!H56 (department chart),,n/a
+"8,604",8604,Analysis!B57 (department chart label),,n/a
+68%,0.6818921431892143,Analysis!C57 (department chart),,n/a
+1%,0.006741050674105067,Analysis!D57 (department chart),,n/a
+30%,0.296373779637378,Analysis!E57 (department chart),,n/a
+0%,0,Analysis!G57 (department chart),,n/a
+1%,0.01499302649930265,Analysis!F57 + Analysis!H57 (department chart),,n/a
+"8,011",8011,Analysis!B58 (department chart label),,n/a
+69%,0.6854325302708776,Analysis!C58 (department chart),,n/a
+22%,0.21682686306328797,Analysis!D58 (department chart),,n/a
+9%,0.0897515915616028,Analysis!E58 (department chart),,n/a
+0%,0,Analysis!G58 (department chart),,n/a
+1%,0.007989015104231681,Analysis!F58 + Analysis!H58 (department chart),,n/a
+"7,792",7792,Analysis!B59 (department chart label),,n/a
+45%,0.4489219712525667,Analysis!C59 (department chart),,n/a
+50%,0.5048767967145791,Analysis!D59 (department chart),,n/a
+2%,0.022202258726899383,Analysis!E59 (department chart),,n/a
+0%,0,Analysis!G59 (department chart),,n/a
+2%,0.023998973305954827,Analysis!F59 + Analysis!H59 (department chart),,n/a
+"5,454",5454,Analysis!B60 (department chart label),,n/a
+66%,0.6639163916391639,Analysis!C60 (department chart),,n/a
+13%,0.12816281628162815,Analysis!D60 (department chart),,n/a
+21%,0.20535386872020536,Analysis!E60 (department chart),,n/a
+0%,0.00018335166850018335,Analysis!G60 (department chart),,n/a
+0%,0.0023835716905023837,Analysis!F60 + Analysis!H60 (department chart),,n/a
+30%,0.3009320905459387,Analysis!E152,,n/a
+11%,0.1073003429691328,Analysis!E153,,n/a
+9,9,Analysis!D200,,n/a
+551,551,Analysis!C200,,n/a
+5,5,Analysis!D198,,n/a
+904,904,Analysis!C198,,n/a
+1.8%,0.01778882938026014,Analysis!C56 (DBL - Property Use Inspections),,n/a
+86.7%,0.867062788222774,Analysis!C51 (DBL - Services Centre),,n/a
+79.6%,0.7960140549596365,Analysis!B61,,n/a
+99.4%,0.9944900131488323,Analysis!B113,0.9944900131488322,match
+0.6%,0.005725699067909454,Analysis!I148,,n/a
+"269,788",269788,Analysis!B205,,n/a
+10,10,Analysis!B207,,n/a
+"12,033",12033,Data_Quality_Log!D18,12033,match
+"257,765",257765,Analysis!D22,,n/a
+"65,116",65116,Analysis!C166,,n/a
+18 of 35,18,"v1 report p.4 options table: analyst judgement, not a workbook figure (Keep the current interpretation)",,n/a (judgement)
+31 of 35,31,"v1 report p.4 options table: analyst judgement, not a workbook figure (Clarify outcome definitions in reporting)",,n/a (judgement)
+17 of 35,17,"v1 report p.4 options table: analyst judgement, not a workbook figure (Improve intake guidance for repairs)",,n/a (judgement)
+25 of 35,25,"v1 report p.4 options table: analyst judgement, not a workbook figure (Add a recurring exception-review report)",,n/a (judgement)
+"9,203",9203,Analysis!B109,,n/a
+53.4%,0.5342815674891147,Analysis!D109,,n/a
+57.6%,0.5762319203556446,Analysis!E109,,n/a
+"6,680",6680,Analysis!B110,,n/a
+99.1%,0.9910979228486647,Analysis!D110,,n/a
+41.8%,0.41825809279318765,Analysis!E110,,n/a
+57.5%,0.5752822482005056,Analysis!C16,,n/a
+60.2%,0.6020677749112564,Analysis!E16,,n/a
+24.1%,0.24138800139363523,Analysis!C17,,n/a
+23.2%,0.23199813783872908,Analysis!E17,,n/a
+10.0%,0.09959673533532494,Analysis!C18,,n/a
+10.4%,0.10420732062149632,Analysis!E18,,n/a
+5.9%,0.05919613933387201,Analysis!C20,,n/a
+3.6%,0.03604445910034334,Analysis!E20,,n/a
+"155,210",155210,Analysis!C165,,n/a
+4,4,Analysis!D165,,n/a
+18,18,Analysis!F165,,n/a
+"65,116",65116,Analysis!C166,,n/a
+1,1,Analysis!D166,,n/a
+9,9,Analysis!F166,,n/a
+"26,871",26871,Analysis!C167,,n/a
+3,3,Analysis!D167,,n/a
+17,17,Analysis!F167,,n/a
+"15,971",15971,Analysis!C169,,n/a
+0,0,Analysis!D169,,n/a
+0,0,Analysis!F169,,n/a
+"269,788",269788,Analysis!C164,,n/a
+2,2,Analysis!D164,,n/a
+16,16,Analysis!F164,,n/a
+"155,210",155210,Closure_Outcome_Mapping!D5,,n/a
+1,1,Closure_Outcome_Mapping!E5,,n/a
+"23,220",23220,Closure_Outcome_Mapping!D6,,n/a
+2,2,Closure_Outcome_Mapping!E6,,n/a
+"14,185",14185,Closure_Outcome_Mapping!D7,,n/a
+3,3,Closure_Outcome_Mapping!E7,,n/a
+"3,117",3117,Closure_Outcome_Mapping!D8,,n/a
+0,0,Closure_Outcome_Mapping!E8,,n/a
+"10,368",10368,Closure_Outcome_Mapping!D9,,n/a
+17,17,Closure_Outcome_Mapping!E9,,n/a
+"14,236",14236,Closure_Outcome_Mapping!D10,,n/a
+10,10,Closure_Outcome_Mapping!E10,,n/a
+"14,931",14931,Closure_Outcome_Mapping!D11,,n/a
+0,0,Closure_Outcome_Mapping!E11,,n/a
+"8,021",8021,Closure_Outcome_Mapping!D12,,n/a
+0,0,Closure_Outcome_Mapping!E12,,n/a
+"3,726",3726,Closure_Outcome_Mapping!D13,,n/a
+0,0,Closure_Outcome_Mapping!E13,,n/a
+133,133,Closure_Outcome_Mapping!D14,,n/a
+0,0,Closure_Outcome_Mapping!E14,,n/a
+60,60,Closure_Outcome_Mapping!D15,,n/a
+0,0,Closure_Outcome_Mapping!E15,,n/a
+"4,608",4608,Closure_Outcome_Mapping!D16,,n/a
+0,0,Closure_Outcome_Mapping!E16,,n/a
+390,390,Closure_Outcome_Mapping!D17,,n/a
+0,0,Closure_Outcome_Mapping!E17,,n/a
+"15,971",15971,Closure_Outcome_Mapping!D18,,n/a
+0,0,Closure_Outcome_Mapping!E18,,n/a
+0,0,Closure_Outcome_Mapping!D19,,n/a
+"2,749",2749,Closure_Outcome_Mapping!E19,,n/a
+"1,616",1616,Closure_Outcome_Mapping!D20,,n/a
+0,0,Closure_Outcome_Mapping!E20,,n/a
+6,6,Closure_Outcome_Mapping!D21,,n/a
+0,0,Closure_Outcome_Mapping!E21,,n/a
