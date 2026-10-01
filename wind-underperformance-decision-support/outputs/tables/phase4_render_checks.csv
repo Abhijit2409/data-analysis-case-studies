@@ -1,12 +1,15 @@
 stage,check,result,detail
-phase4_render,deck_file_created,PASS,"La_Haute_Borne_performance_review.pptx, 127 KB"
-phase4_render,deck_reopens_with_six_slides,PASS,6 slides read back from the saved file
+phase4_render,deck_file_created,PASS,"La_Haute_Borne_performance_review.pptx, 150 KB"
+phase4_render,deck_reopens_with_eight_slides,PASS,8 slides read back from the saved file
+phase4_render,deck_contains_editable_charts,PASS,6 native charts read back from the saved file
+phase4_render,deck_contains_project_links,PASS,9 hyperlinks read back from the saved file
 phase4_render,deck_states_shortfall_is_not_recoverable,PASS,the disclaimer is present in the deck text
 phase4_render,deck_states_ml_not_ready_for_alerting,PASS,the alerting caveat is present in the deck text
 phase4_render,deck_carries_data_attribution,PASS,ENGIE / OpenOA attribution on every slide footer
-phase4_render,memo_pdf_created,PASS,"executive_memo.pdf, 5 KB"
+phase4_render,memo_pdf_created,PASS,"executive_memo.pdf, 120 KB"
 phase4_render,memo_pdf_is_a_valid_pdf,PASS,file header b'%PDF-'
-phase4_render,memo_fits_on_one_page,PASS,1 page(s)
+phase4_render,memo_is_three_page_visual_brief,PASS,3 page(s)
+phase4_render,memo_contains_project_link,PASS,1 hyperlink annotation(s) read back from the PDF
 phase4_render,memo_pdf_contains_the_recommendation,PASS,turbine and energy range read back from the rendered file
 phase4_render,memo_pdf_states_shortfall_is_not_recoverable,PASS,the disclaimer survived rendering
 phase4_render,memo_pdf_has_no_unrenderable_characters,PASS,no replacement characters in the rendered text

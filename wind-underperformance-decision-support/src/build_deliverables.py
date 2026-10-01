@@ -1,9 +1,10 @@
 """
 Phase 4: build the sendable deliverables.
 
-Produces a six-slide PowerPoint deck and a PDF of the executive memo, then checks
-that both files open and contain what they should. The editable sources stay in
-docs/ either way, so nothing is lost if a renderer is unavailable.
+Maintains the sendable PowerPoint and rebuilds the visual executive memo, then
+checks that both files open and contain what they should. The PowerPoint is kept
+as an editable design artifact; this script validates it without flattening or
+replacing its native charts.
 
 Outputs
     deliverables/La_Haute_Borne_performance_review.pptx
@@ -12,6 +13,8 @@ Outputs
 """
 
 from pathlib import Path
+import subprocess
+import sys
 
 import pandas as pd
 from pptx import Presentation
@@ -296,11 +299,13 @@ def main():
     checker = CheckRecorder("phase4_render")
     print("Building sendable deliverables...")
 
-    register = pd.read_csv(TABLES / "decision_event_register.csv")
-    accounting = pd.read_csv(TABLES / "energy_accounting.csv")
-
-    deck_path = build_deck(register, accounting)
-    memo_path = build_memo_pdf()
+    deck_path = DELIVERABLES / "La_Haute_Borne_performance_review.pptx"
+    subprocess.run(
+        [sys.executable, str(PROJECT_ROOT / "src" / "build_visual_memo.py")],
+        check=True,
+        cwd=PROJECT_ROOT,
+    )
+    memo_path = DELIVERABLES / "executive_memo.pdf"
 
     print("\nVerifying the rendered files open and contain what they should:")
     # Reopen the deck and count what is actually in it, rather than assuming.
@@ -309,11 +314,22 @@ def main():
     text_found = "\n".join(
         shape.text_frame.text for slide in reopened.slides
         for shape in slide.shapes if shape.has_text_frame)
+    chart_count = sum(
+        1 for slide in reopened.slides for shape in slide.shapes
+        if getattr(shape, "has_chart", False))
+    hyperlink_count = sum(
+        1 for slide in reopened.slides for shape in slide.shapes
+        if shape.has_text_frame for paragraph in shape.text_frame.paragraphs
+        for run in paragraph.runs if run.hyperlink.address)
 
     checker.require("deck_file_created", deck_path.exists(),
                     f"{deck_path.name}, {deck_path.stat().st_size/1024:.0f} KB")
-    checker.require("deck_reopens_with_six_slides", slide_count == 6,
+    checker.require("deck_reopens_with_eight_slides", slide_count == 8,
                     f"{slide_count} slides read back from the saved file")
+    checker.require("deck_contains_editable_charts", chart_count == 6,
+                    f"{chart_count} native charts read back from the saved file")
+    checker.require("deck_contains_project_links", hyperlink_count >= 8,
+                    f"{hyperlink_count} hyperlinks read back from the saved file")
     checker.require("deck_states_shortfall_is_not_recoverable",
                     "not confirmed recoverable energy" in text_found,
                     "the disclaimer is present in the deck text")
@@ -334,8 +350,13 @@ def main():
     from pypdf import PdfReader
     reader = PdfReader(str(memo_path))
     memo_text = "\n".join(page.extract_text() for page in reader.pages)
-    checker.require("memo_fits_on_one_page", len(reader.pages) == 1,
+    pdf_link_count = sum(
+        1 for page in reader.pages for annotation in (page.get("/Annots") or [])
+        if annotation.get_object().get("/Subtype") == "/Link")
+    checker.require("memo_is_three_page_visual_brief", len(reader.pages) == 3,
                     f"{len(reader.pages)} page(s)")
+    checker.require("memo_contains_project_link", pdf_link_count >= 1,
+                    f"{pdf_link_count} hyperlink annotation(s) read back from the PDF")
     checker.require("memo_pdf_contains_the_recommendation",
                     "R80711" in memo_text and "36.8" in memo_text,
                     "turbine and energy range read back from the rendered file")
