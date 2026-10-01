@@ -8,6 +8,24 @@ baseline is built and validated, a pooled fleet-relative counterfactual and a
 constrained machine-learning challenger have been benchmarked, and the results
 are packaged in an interactive application, executive memo and slide deck.**
 
+## Start here
+
+| Deliverable | What it contains |
+|---|---|
+| **[Executive memo](deliverables/executive_memo.pdf)** | Three-page visual decision brief: recommendation, energy accounting, data trust, method comparison and evidence requests. |
+| **[Case-study presentation](deliverables/La_Haute_Borne_performance_review.pptx)** | Eight-slide, evidence-led presentation with six editable charts, event prioritisation, method comparison and limitations. |
+| **[Interactive decision tool](RUN_APP.md)** | Five-page Streamlit application with scenario controls, event timelines and grounded question answering. |
+
+### Executive answer
+
+| Decision question | Evidence-backed answer |
+|---|---|
+| **Which turbine should be investigated first?** | **R80711** under the recommended fleet-relative method. Its own historical curve understates its relative weakness. |
+| **How much potential underperformance was measured?** | **672 MWh in 2015**, with a specification range of **538–834 MWh**. This is not confirmed recoverable energy. |
+| **How much is connected to identified events?** | **57%**; the remaining **43%** is diffuse sub-threshold deviation and should not be presented as directly actionable. |
+| **Did machine learning solve the problem?** | No. It improved synthetic-event recovery from **0.771 to 0.818**, but its approximately **41% alert burden** is too high for automated operational use. |
+| **What should happen next?** | Validate the priority events against alarms, work orders, curtailment instructions and operating records before assigning cause or value. |
+
 ---
 
 ## The question
@@ -60,6 +78,8 @@ cd src
 ../.venv/Scripts/python.exe prepare_data.py          # Phase 2B-D: processed dataset
 ../.venv/Scripts/python.exe baseline_model.py        # Phase 2E-H: baseline, sensitivity
 ../.venv/Scripts/python.exe ml_challenger.py         # Phase 3: pooled curve + challenger
+../.venv/Scripts/python.exe decision_register.py     # Phase 4: ranked investigation queue
+../.venv/Scripts/python.exe build_deliverables.py    # Verify deck and rebuild visual memo
 ```
 
 Built and run on CPython 3.11.0, Windows. All package versions are pinned in
@@ -67,8 +87,10 @@ Built and run on CPython 3.11.0, Windows. All package versions are pinned in
 
 Each script after Phase 1 writes its validation checks to a CSV in
 `outputs/tables/`. A script cannot report a check as passed unless the check
-actually ran: **84 of 85 pass** (9 timestamp, 11 data preparation, 9 baseline,
-13 Phase 3, 7 decision register, 11 render verification, 25 application). The single failure is the wind-direction leakage check, which is a
+actually ran: across the current individual suites, **87 of 88 pass** (9
+timestamp, 11 data preparation, 9 baseline, 13 Phase 3, 7 decision register,
+14 render verification and 25 application). The single failure is the
+wind-direction leakage check, which is a
 finding rather than a defect — it fired as designed, and the diagnostic it
 triggered showed the conclusion holds without the feature. Phase 1's audit
 predates this framework and reports in `outputs/audit_log.txt` instead. The raw
@@ -107,6 +129,11 @@ Full detail in [`docs/phase_2_findings.md`](docs/phase_2_findings.md).
 No cause is assigned to anything. Without event logs, "below the reference curve"
 is a description of the data, not a diagnosis.
 
+![Potential-loss sensitivity and confidence](outputs/figures/fig6_loss_sensitivity_and_confidence.png)
+
+*The headline is most sensitive to the reference-curve specification, not the
+frozen-wind threshold. The range is analytical uncertainty, not a revenue claim.*
+
 ## What Phase 3 found
 
 Full detail in [`docs/phase_3_findings.md`](docs/phase_3_findings.md). Method and
@@ -126,6 +153,28 @@ B is the control that separates the effect of pooling from the effect of the mod
 | **The wind-direction leakage check failed, and it did not matter.** | Sector difference 0.082 against a 0.05 limit. A post-hoc refit without the feature: recovery 0.8167 against 0.8183. The advantage survives. |
 | **All three methods flag ~40% of untouched control windows.** | Structural, since a median reference puts half of all records below it. None of these is a precision instrument at this setting. |
 | **Recommended primary method: B**, with A shown beside it and C as a second opinion. | C detects better but agrees with B on only 44.7% of flagged records. For a tool whose value is a number someone can interrogate, transparency leads. |
+
+![Detection benchmark](outputs/figures/fig8_detection_benchmark.png)
+
+*The challenger clears the pre-registered recovery test, but the absolute alert
+burden remains too high for automated operational alerting.*
+
+## Decision-ready deliverables
+
+The final materials are designed as case-study evidence, not as text-heavy
+reports:
+
+- The **presentation** uses editable charts to show the investigation queue,
+  timestamp validation, energy accounting, event behaviour, ranking reversal,
+  method comparison and the trade-off between recovery and alert burden.
+- The **executive memo** turns the same findings into a three-page operating
+  brief, separating what the data supports from what still requires operational
+  records.
+- Both retain the central caveats: potential loss is not confirmed recoverable
+  energy, causes are not assigned without event records, and the ML challenger
+  is not ready for automated alerting.
+- The latest deliverable verification is recorded in
+  [`outputs/tables/phase4_render_checks.csv`](outputs/tables/phase4_render_checks.csv).
 
 ## The application
 
@@ -149,7 +198,7 @@ than an AI-generated answer.
 ## Project layout
 
 ```
-clir_wind_case/
+wind-underperformance-decision-support/
 ├── data/
 │   ├── raw/            # Downloaded data, never edited, not in git
 │   └── processed/      # Cleaned outputs (Phase 2)
@@ -167,9 +216,13 @@ clir_wind_case/
 │   ├── baseline_model.py       # Phase 2E-H: curves, candidates, sensitivity
 │   ├── ml_challenger.py        # Phase 3: pooled curve, challenger, benchmark
 │   ├── decision_register.py    # Phase 4: decision register
-│   ├── build_deliverables.py   # Phase 4: deck and memo PDF
+│   ├── build_deliverables.py   # Phase 4: deliverable build and verification
+│   ├── build_visual_memo.py    # Reproducible three-page visual memo
 │   ├── export_presentation_tables.py  # Phase 4B: chart tables (no new analysis)
 │   └── validate_app.py         # Phase 4B: application validation
+├── deliverables/
+│   ├── La_Haute_Borne_performance_review.pptx
+│   └── executive_memo.pdf
 ├── outputs/
 │   ├── tables/         # CSV results, including every validation check
 │   ├── figures/        # Eight figures
