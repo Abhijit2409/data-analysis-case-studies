@@ -1,0 +1,10 @@
+method,severity_pct,duration_minutes,windows_tested,recovered,recovery_rate,median_detection_delay_min,control_windows,control_windows_alerting,apparent_alert_burden,note
+C_without_direction,5,30,1440,779,0.541,0.0,1440,442,0.3069,"Post-hoc diagnostic, not part of the pre-registered comparison"
+C_without_direction,5,60,1440,973,0.6757,0.0,1440,576,0.4,"Post-hoc diagnostic, not part of the pre-registered comparison"
+C_without_direction,5,120,1440,1121,0.7785,0.0,1440,739,0.5132,"Post-hoc diagnostic, not part of the pre-registered comparison"
+C_without_direction,10,30,1440,1039,0.7215,0.0,1440,442,0.3069,"Post-hoc diagnostic, not part of the pre-registered comparison"
+C_without_direction,10,60,1440,1219,0.8465,0.0,1440,576,0.4,"Post-hoc diagnostic, not part of the pre-registered comparison"
+C_without_direction,10,120,1440,1334,0.9264,0.0,1440,739,0.5132,"Post-hoc diagnostic, not part of the pre-registered comparison"
+C_without_direction,20,30,1440,1325,0.9201,0.0,1440,442,0.3069,"Post-hoc diagnostic, not part of the pre-registered comparison"
+C_without_direction,20,60,1440,1384,0.9611,0.0,1440,576,0.4,"Post-hoc diagnostic, not part of the pre-registered comparison"
+C_without_direction,20,120,1440,1411,0.9799,0.0,1440,739,0.5132,"Post-hoc diagnostic, not part of the pre-registered comparison"

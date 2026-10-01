@@ -1,0 +1,5 @@
+turbine,rows,expected_timestamps,duplicate_timestamps,absent_intervals,power_value_missing,windspeed_value_missing,coverage_pct
+R80711,105120,105120,12,12,475,475,99.99
+R80721,105120,105120,12,12,1209,1209,99.99
+R80736,105120,105120,12,12,435,435,99.99
+R80790,105120,105120,12,12,450,450,99.99

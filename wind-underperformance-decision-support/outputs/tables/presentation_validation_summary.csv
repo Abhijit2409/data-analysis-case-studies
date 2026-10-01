@@ -1,0 +1,86 @@
+stage,check,result,detail,source_file
+phase2_parts_efgh_baseline,expected_power_within_zero_and_rated,PASS,range 0.0 to 1998.1 kW,phase2_baseline_checks.csv
+phase2_parts_efgh_baseline,no_negative_potential_loss,PASS,"minimum 0.0000 kWh, 3,049 records left empty (unsupported bin)",phase2_baseline_checks.csv
+phase2_parts_efgh_baseline,sparse_bins_left_empty_not_interpolated,PASS,22 unsupported bins carry no value,phase2_baseline_checks.csv
+phase2_parts_efgh_baseline,reference_curve_built_only_from_reference_year,PASS,"curves fitted on 2014, applied to 2015",phase2_baseline_checks.csv
+phase2_parts_efgh_baseline,assessment_year_not_used_for_fitting,PASS,2015 records never entered the curve,phase2_baseline_checks.csv
+phase2_parts_efgh_baseline,median_residual_near_zero_on_reference_subset,PASS,"0.0 kW (near zero by construction; an arithmetic check, not proof of physical fit)",phase2_baseline_checks.csv
+phase2_parts_efgh_baseline,every_assessment_record_has_a_class,PASS,7 distinct categories used,phase2_baseline_checks.csv
+phase2_parts_efgh_baseline,missing_records_not_counted_as_loss,PASS,records with no power value contribute no loss,phase2_baseline_checks.csv
+phase2_parts_efgh_baseline,auxiliary_consumption_never_inflates_loss,PASS,"largest excess of loss over expected power: 0.000000 kW (negative power floored at zero, not added)",phase2_baseline_checks.csv
+phase2_part_b_prepare,raw_row_count_preserved_on_load,PASS,"420,480 rows",phase2_partb_checks.csv
+phase2_part_b_prepare,every_raw_record_present_in_processed,PASS,"420,480 rows in, 420,480 expected",phase2_partb_checks.csv
+phase2_part_b_prepare,no_record_silently_dropped,PASS,reconciliation starts from the full raw count,phase2_partb_checks.csv
+phase2_part_b_prepare,eligible_plus_excluded_equals_total,PASS,"336,928 + 83,552 = 420,480",phase2_partb_checks.csv
+phase2_part_b_prepare,every_exclusion_has_a_reason,PASS,no record is excluded without a recorded reason,phase2_partb_checks.csv
+phase2_part_b_prepare,every_eligible_record_has_no_reason,PASS,no eligible record carries an exclusion reason,phase2_partb_checks.csv
+phase2_part_b_prepare,no_missing_observation_became_zero,PASS,0 missing power values turned into zeros,phase2_partb_checks.csv
+phase2_part_b_prepare,missing_power_still_missing,PASS,"missing power values remain empty, not imputed",phase2_partb_checks.csv
+phase2_part_b_prepare,reference_eligible_records_all_producing,PASS,no zero or negative power in the reference subset,phase2_partb_checks.csv
+phase2_part_b_prepare,density_attached_to_all_records,PASS,0 records without density,phase2_partb_checks.csv
+phase2_part_b_prepare,confidence_levels_cover_all_records,PASS,every record has exactly one confidence level,phase2_partb_checks.csv
+phase3_challenger,wind_direction_feature_not_state_dependent,FAIL,largest sector share difference 0.0818 (ABOVE the 0.05 concern level),phase3_checks.csv
+phase3_challenger,no_method_trained_on_assessment_year,PASS,all three fitted on 2014 only,phase3_checks.csv
+phase3_challenger,challenger_excludes_turbine_identity,PASS,"features are ['wind_speed_density_corrected', 'air_density_kgm3', 'wind_dir_sin', 'wind_dir_cos']",phase3_checks.csv
+phase3_challenger,challenger_excludes_calendar_and_outcome_features,PASS,"no hour, calendar, power, residual, pitch or nacelle features",phase3_checks.csv
+phase3_challenger,model_parameters_fixed_and_seeded,PASS,"{'max_depth': 4, 'max_iter': 200, 'learning_rate': 0.05, 'min_samples_leaf': 200, 'l2_regularization': 1.0, 'random_state': 42}",phase3_checks.csv
+phase3_challenger,benchmark_windows_stratified_and_seeded,PASS,"1440 windows per combination, seed 42, stratified by turbine and wind band",phase3_checks.csv
+phase3_challenger,controls_and_injected_windows_matched,PASS,every injected window has an untouched control drawn the same way,phase3_checks.csv
+phase3_challenger,challenger_meets_prespecified_acceptance_rule,PASS,"recovery 0.7713->0.8183, burden 0.3993->0.4083 (+2.3%)",phase3_checks.csv
+phase3_challenger,benchmark_uses_synthetic_labels_only,PASS,"no real-world precision, recall or accuracy is reported",phase3_checks.csv
+phase3_challenger,all_methods_share_event_logic,PASS,"detection persistence 3 records for the benchmark, 6 for 2015 reporting, identical across methods",phase3_checks.csv
+phase3_challenger,benchmark_windows_stratified_and_seeded,PASS,"1440 windows per combination, seed 42, stratified by turbine and wind band",phase3_checks.csv
+phase3_challenger,controls_and_injected_windows_matched,PASS,every injected window has an untouched control drawn the same way,phase3_checks.csv
+phase3_challenger,challenger_advantage_survives_removing_suspect_feature,PASS,recovery without direction 0.8167 vs B 0.7713,phase3_checks.csv
+phase4_decision_register,register_prices_are_flat_multipliers,PASS,"Flat EUR/MWh scenarios cannot reorder events by MWh. Reported as exposure scaling, not as an independent robustness check.",phase4_checks.csv
+phase4_decision_register,register_built_from_frozen_methods_only,PASS,no model was refitted on 2015 and no threshold was changed,phase4_checks.csv
+phase4_decision_register,every_event_has_required_records_listed,PASS,no event is actionable without named operational records,phase4_checks.csv
+phase4_decision_register,no_event_claims_a_cause,PASS,explanations are listed as hypotheses only,phase4_checks.csv
+phase4_decision_register,mwh_range_is_ordered,PASS,maximum is never below minimum,phase4_checks.csv
+phase4_decision_register,no_event_graded_high_confidence,PASS,"no operational record exists, so nothing can be graded high",phase4_checks.csv
+phase4_decision_register,top_event_corroborated_by_more_than_one_method,PASS,rank 1 is flagged by A+B+C,phase4_checks.csv
+phase4_render,deck_file_created,PASS,"La_Haute_Borne_performance_review.pptx, 127 KB",phase4_render_checks.csv
+phase4_render,deck_reopens_with_six_slides,PASS,6 slides read back from the saved file,phase4_render_checks.csv
+phase4_render,deck_states_shortfall_is_not_recoverable,PASS,the disclaimer is present in the deck text,phase4_render_checks.csv
+phase4_render,deck_states_ml_not_ready_for_alerting,PASS,the alerting caveat is present in the deck text,phase4_render_checks.csv
+phase4_render,deck_carries_data_attribution,PASS,ENGIE / OpenOA attribution on every slide footer,phase4_render_checks.csv
+phase4_render,memo_pdf_created,PASS,"executive_memo.pdf, 5 KB",phase4_render_checks.csv
+phase4_render,memo_pdf_is_a_valid_pdf,PASS,file header b'%PDF-',phase4_render_checks.csv
+phase4_render,memo_fits_on_one_page,PASS,1 page(s),phase4_render_checks.csv
+phase4_render,memo_pdf_contains_the_recommendation,PASS,turbine and energy range read back from the rendered file,phase4_render_checks.csv
+phase4_render,memo_pdf_states_shortfall_is_not_recoverable,PASS,the disclaimer survived rendering,phase4_render_checks.csv
+phase4_render,memo_pdf_has_no_unrenderable_characters,PASS,no replacement characters in the rendered text,phase4_render_checks.csv
+phase4b_application,page_loads_without_exception::Executive cockpit,PASS,rendered cleanly,phase4b_app_checks.csv
+phase4b_application,page_loads_without_exception::Investigation explorer,PASS,rendered cleanly,phase4b_app_checks.csv
+phase4b_application,page_loads_without_exception::Method and scenario lab,PASS,rendered cleanly,phase4b_app_checks.csv
+phase4b_application,page_loads_without_exception::Data trust,PASS,rendered cleanly,phase4b_app_checks.csv
+phase4b_application,page_loads_without_exception::Ask the analysis,PASS,rendered cleanly,phase4b_app_checks.csv
+phase4b_application,explorer_survives_all_filters_empty,PASS,"4 multiselects cleared, page still renders",phase4b_app_checks.csv
+phase4b_application,empty_multiselect_means_no_filter_not_no_results,PASS,the page says so explicitly when a filter is empty,phase4b_app_checks.csv
+phase4b_application,event_chart_handles_zero_rows,PASS,"an empty selection draws an explanatory message, not an error",phase4b_app_checks.csv
+phase4b_application,method_lab_survives_all_filters_empty,PASS,"severity, duration and turbine selections cleared",phase4b_app_checks.csv
+phase4b_application,app_never_trains_a_model_at_runtime,PASS,no model-fitting call in any app module,phase4b_app_checks.csv
+phase4b_application,missing_power_values_remain_empty,PASS,"39 empty power values preserved as empty, none converted",phase4b_app_checks.csv
+phase4b_application,missing_runs_exported_for_display,PASS,"65 runs, longest 132.8 h",phase4b_app_checks.csv
+phase4b_application,app_constants_match_generated_tables,PASS,8 headline figures match their source tables,phase4b_app_checks.csv
+phase4b_application,top_event_is_corroborated_and_not_high_confidence,PASS,"rank 1: R80711, A+B+C, medium",phase4b_app_checks.csv
+phase4b_application,assistant_evidence_pack_builds,PASS,84 chunks from 5 documents and 6 tables,phase4b_app_checks.csv
+phase4b_application,assistant_retrieval_finds_relevant_sources,PASS,"8 chunks from ['README.md', 'executive_memo.md', 'phase_2_findings.md', 'phase_4_findings.md']",phase4b_app_checks.csv
+phase4b_application,assistant_retrieval_spreads_across_files,PASS,4 distinct source files in the top results,phase4b_app_checks.csv
+phase4b_application,assistant_returns_nothing_for_unrelated_question,PASS,retrieval returns no chunks rather than irrelevant ones,phase4b_app_checks.csv
+phase4b_application,assistant_reads_responses_api_output,PASS,output_text read from the Responses API result,phase4b_app_checks.csv
+phase4b_application,assistant_sends_instructions_and_bounded_output,PASS,max_output_tokens=700,phase4b_app_checks.csv
+phase4b_application,assistant_sends_only_retrieved_evidence,PASS,only the retrieved chunks are sent; the raw dataset never is,phase4b_app_checks.csv
+phase4b_application,assistant_reports_no_key_without_failing,PASS,returns a no-key signal so the page can fall back to passages,phase4b_app_checks.csv
+phase4b_application,no_api_key_in_tracked_files,PASS,no key-shaped string in any tracked file,phase4b_app_checks.csv
+phase4b_application,secrets_file_is_ignored,PASS,.streamlit/secrets.toml is listed in .gitignore,phase4b_app_checks.csv
+phase4b_application,secrets_example_contains_only_a_placeholder,PASS,the example file carries no real value,phase4b_app_checks.csv
+phase2_part_a_timestamps,raw_archive_unchanged_since_phase_1,PASS,sha256 be5ea66a3355286e...,timestamp_correction_validation.csv
+phase2_part_a_timestamps,row_count_matches_phase_1,PASS,"420,480 rows, expected 420,480",timestamp_correction_validation.csv
+phase2_part_a_timestamps,corrected_timestamps_unique_per_turbine,PASS,0 duplicate(s) remain,timestamp_correction_validation.csv
+phase2_part_a_timestamps,spring_duplicates_resolved_without_discarding,PASS,"48 duplicates under published time, 0 under corrected time, no rows removed",timestamp_correction_validation.csv
+phase2_part_a_timestamps,autumn_gaps_removed_by_correction,PASS,absent intervals: 48 published -> 0 corrected,timestamp_correction_validation.csv
+phase2_part_a_timestamps,no_new_timestamp_discontinuity,PASS,0 absent interval(s) under corrected time,timestamp_correction_validation.csv
+phase2_part_a_timestamps,seasonal_lag_difference_removed,PASS,winter-summer difference: -1 h published -> +0 h corrected,timestamp_correction_validation.csv
+phase2_part_a_timestamps,energy_conserved_across_relabelling,PASS,"24,630 MWh under both timestamps, difference 0.00e+00 kWh",timestamp_correction_validation.csv
+phase2_part_a_timestamps,monthly_energy_change_within_boundary_effect,PASS,largest monthly shift 0.339% (month-boundary records only),timestamp_correction_validation.csv

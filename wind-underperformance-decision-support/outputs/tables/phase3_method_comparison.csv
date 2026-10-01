@@ -1,0 +1,4 @@
+method,assessable_records,assessable_share_pct,mean_residual_kw,median_residual_kw,gross_shortfall_mwh,persistent_events,persistent_records,persistent_hours,shortfall_in_events_mwh
+A_turbine_specific,207191,98.55,1.73,5.12,671.6,2302,22065,3677.5,380.6
+B_pooled_transparent,207790,98.83,1.75,4.71,678.1,2435,23231,3871.8,392.5
+C_pooled_challenger,207790,98.83,1.77,6.84,569.5,2637,26777,4462.8,383.6

@@ -1,0 +1,8 @@
+specification,frozen_wind_records,persistence_records,curve_quantile,reference_records_used,supported_bins,assessable_share_pct,below_reference_events,below_reference_mwh,idle_in_usable_wind_events,idle_in_usable_wind_hours,total_potential_lost_mwh,illustrative_value_eur_at_40,illustrative_value_eur_at_60,illustrative_value_eur_at_80,note
+primary,6,6,0.5,166726,111,98.55,2239,223.38,434,429.2,671.64,26866.0,40298.0,53731.0,Illustrative value-at-risk sensitivity - not actual revenue.
+frozen_wind_3,3,6,0.5,166675,111,98.55,2239,223.38,434,429.2,671.61,26864.0,40297.0,53729.0,Illustrative value-at-risk sensitivity - not actual revenue.
+frozen_wind_12,12,6,0.5,166726,111,98.55,2239,223.38,434,429.2,671.64,26866.0,40298.0,53731.0,Illustrative value-at-risk sensitivity - not actual revenue.
+persistence_3,6,3,0.5,166726,111,98.55,7790,374.21,434,429.2,671.64,26866.0,40298.0,53731.0,Illustrative value-at-risk sensitivity - not actual revenue.
+persistence_12,6,12,0.5,166726,111,98.55,404,88.92,434,429.2,671.64,26866.0,40298.0,53731.0,Illustrative value-at-risk sensitivity - not actual revenue.
+curve_quantile_0.4,6,6,0.4,166726,111,98.55,1527,138.44,434,429.2,538.48,21539.0,32309.0,43078.0,Illustrative value-at-risk sensitivity - not actual revenue.
+curve_quantile_0.6,6,6,0.6,166726,111,98.55,3177,352.76,434,429.2,833.8,33352.0,50028.0,66704.0,Illustrative value-at-risk sensitivity - not actual revenue.

@@ -1,0 +1,168 @@
+series,wind_bin,expected_power_kw,reference_records,bin_basis,method,fleet_expected_power_kw,own_minus_fleet_kw
+R80711,0.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,0.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,1.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,1.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,2.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,2.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,3.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,3.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,4.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80711,4.5,91.97500199999999,4482,fitted_median,A_turbine_specific,98.440002,-6.47
+R80711,5.0,155.71001,5053,fitted_median,A_turbine_specific,165.06,-9.35
+R80711,5.5,240.41,5428,fitted_median,A_turbine_specific,252.56,-12.15
+R80711,6.0,347.17001,5165,fitted_median,A_turbine_specific,365.41,-18.24
+R80711,6.5,475.98001,4349,fitted_median,A_turbine_specific,496.20001,-20.22
+R80711,7.0,616.4500099999999,3389,fitted_median,A_turbine_specific,635.035005,-18.58
+R80711,7.5,757.66998,2525,fitted_median,A_turbine_specific,777.8950150000001,-20.23
+R80711,8.0,898.3400300000001,1779,fitted_median,A_turbine_specific,916.78,-18.44
+R80711,8.5,1034.8000000000002,1374,fitted_median,A_turbine_specific,1048.475,-13.67
+R80711,9.0,1165.52,996,fitted_median,A_turbine_specific,1182.2849999999999,-16.76
+R80711,9.5,1299.3049999999998,730,fitted_median,A_turbine_specific,1308.75,-9.45
+R80711,10.0,1415.87,555,fitted_median,A_turbine_specific,1434.15,-18.28
+R80711,10.5,1542.4301,397,fitted_median,A_turbine_specific,1555.72,-13.29
+R80711,11.0,1641.6801,317,fitted_median,A_turbine_specific,1660.91,-19.23
+R80711,11.5,1747.67,205,fitted_median,A_turbine_specific,1756.335,-8.66
+R80711,12.0,1827.03,178,fitted_median,A_turbine_specific,1833.13005,-6.1
+R80711,12.5,1893.375,120,fitted_median,A_turbine_specific,1898.03,-4.65
+R80711,13.0,1942.8199,77,fitted_median,A_turbine_specific,1934.98,7.84
+R80711,13.5,1974.64005,42,fitted_median,A_turbine_specific,1961.8199,12.82
+R80711,14.0,,25,unsupported,A_turbine_specific,1988.34,
+R80711,14.5,,16,unsupported,A_turbine_specific,2005.915,
+R80711,15.0,,8,unsupported,A_turbine_specific,,
+R80711,15.5,,6,unsupported,A_turbine_specific,,
+R80711,16.0,,2,unsupported,A_turbine_specific,,
+R80711,16.5,,1,unsupported,A_turbine_specific,,
+R80721,0.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,0.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,1.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,1.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,2.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,2.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,3.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,3.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,4.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80721,4.5,96.9850005,5132,fitted_median,A_turbine_specific,98.440002,-1.46
+R80721,5.0,163.575005,5888,fitted_median,A_turbine_specific,165.06,-1.48
+R80721,5.5,250.06,5839,fitted_median,A_turbine_specific,252.56,-2.5
+R80721,6.0,363.759995,4932,fitted_median,A_turbine_specific,365.41,-1.65
+R80721,6.5,493.625,3832,fitted_median,A_turbine_specific,496.20001,-2.58
+R80721,7.0,633.25,2664,fitted_median,A_turbine_specific,635.035005,-1.79
+R80721,7.5,778.44,1762,fitted_median,A_turbine_specific,777.8950150000001,0.54
+R80721,8.0,915.82001,1171,fitted_median,A_turbine_specific,916.78,-0.96
+R80721,8.5,1037.555,740,fitted_median,A_turbine_specific,1048.475,-10.92
+R80721,9.0,1175.315,624,fitted_median,A_turbine_specific,1182.2849999999999,-6.97
+R80721,9.5,1302.04,447,fitted_median,A_turbine_specific,1308.75,-6.71
+R80721,10.0,1424.12,353,fitted_median,A_turbine_specific,1434.15,-10.03
+R80721,10.5,1548.45,249,fitted_median,A_turbine_specific,1555.72,-7.27
+R80721,11.0,1660.74,175,fitted_median,A_turbine_specific,1660.91,-0.17
+R80721,11.5,1741.99,137,fitted_median,A_turbine_specific,1756.335,-14.35
+R80721,12.0,1808.48,95,fitted_median,A_turbine_specific,1833.13005,-24.65
+R80721,12.5,1855.72,67,fitted_median,A_turbine_specific,1898.03,-42.31
+R80721,13.0,1920.34,35,fitted_median,A_turbine_specific,1934.98,-14.64
+R80721,13.5,,16,unsupported,A_turbine_specific,1961.8199,
+R80721,14.0,,6,unsupported,A_turbine_specific,1988.34,
+R80721,14.5,,5,unsupported,A_turbine_specific,2005.915,
+R80721,15.0,,3,unsupported,A_turbine_specific,,
+R80721,15.5,,2,unsupported,A_turbine_specific,,
+R80721,16.0,,1,unsupported,A_turbine_specific,,
+R80736,0.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,0.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,1.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,1.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,2.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,2.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,3.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,3.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,4.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80736,4.5,96.940002,4908,fitted_median,A_turbine_specific,98.440002,-1.5
+R80736,5.0,162.88,5607,fitted_median,A_turbine_specific,165.06,-2.18
+R80736,5.5,250.175005,5434,fitted_median,A_turbine_specific,252.56,-2.38
+R80736,6.0,362.755005,4808,fitted_median,A_turbine_specific,365.41,-2.65
+R80736,6.5,493.20999000000006,3819,fitted_median,A_turbine_specific,496.20001,-2.99
+R80736,7.0,634.7000099999999,2802,fitted_median,A_turbine_specific,635.035005,-0.33
+R80736,7.5,782.19,1857,fitted_median,A_turbine_specific,777.8950150000001,4.29
+R80736,8.0,922.15997,1313,fitted_median,A_turbine_specific,916.78,5.38
+R80736,8.5,1060.86,999,fitted_median,A_turbine_specific,1048.475,12.38
+R80736,9.0,1201.3049999999998,716,fitted_median,A_turbine_specific,1182.2849999999999,19.02
+R80736,9.5,1333.5749999999998,494,fitted_median,A_turbine_specific,1308.75,24.82
+R80736,10.0,1465.5949999999998,394,fitted_median,A_turbine_specific,1434.15,31.44
+R80736,10.5,1586.195,334,fitted_median,A_turbine_specific,1555.72,30.47
+R80736,11.0,1688.51,281,fitted_median,A_turbine_specific,1660.91,27.6
+R80736,11.5,1781.42,211,fitted_median,A_turbine_specific,1756.335,25.09
+R80736,12.0,1860.66,161,fitted_median,A_turbine_specific,1833.13005,27.53
+R80736,12.5,1919.54,111,fitted_median,A_turbine_specific,1898.03,21.51
+R80736,13.0,1948.565,72,fitted_median,A_turbine_specific,1934.98,13.59
+R80736,13.5,1998.08,33,fitted_median,A_turbine_specific,1961.8199,36.26
+R80736,14.0,,14,unsupported,A_turbine_specific,1988.34,
+R80736,14.5,,10,unsupported,A_turbine_specific,2005.915,
+R80736,15.0,,7,unsupported,A_turbine_specific,,
+R80736,15.5,,2,unsupported,A_turbine_specific,,
+R80736,16.0,,1,unsupported,A_turbine_specific,,
+R80736,16.5,,1,unsupported,A_turbine_specific,,
+R80790,0.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,0.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,1.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,1.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,2.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,2.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,3.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,3.5,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,4.0,0.0,0,defined_zero_below_threshold,A_turbine_specific,0.0,0.0
+R80790,4.5,107.82,5146,fitted_median,A_turbine_specific,98.440002,9.38
+R80790,5.0,178.13,5633,fitted_median,A_turbine_specific,165.06,13.07
+R80790,5.5,271.68501000000003,5642,fitted_median,A_turbine_specific,252.56,19.13
+R80790,6.0,390.18501000000003,4812,fitted_median,A_turbine_specific,365.41,24.78
+R80790,6.5,527.84998,3763,fitted_median,A_turbine_specific,496.20001,31.65
+R80790,7.0,662.91998,2593,fitted_median,A_turbine_specific,635.035005,27.88
+R80790,7.5,796.614995,1842,fitted_median,A_turbine_specific,777.8950150000001,18.72
+R80790,8.0,934.35999,1435,fitted_median,A_turbine_specific,916.78,17.58
+R80790,8.5,1062.74,1045,fitted_median,A_turbine_specific,1048.475,14.27
+R80790,9.0,1191.75,684,fitted_median,A_turbine_specific,1182.2849999999999,9.47
+R80790,9.5,1307.3350500000001,594,fitted_median,A_turbine_specific,1308.75,-1.41
+R80790,10.0,1434.2,431,fitted_median,A_turbine_specific,1434.15,0.05
+R80790,10.5,1553.55,341,fitted_median,A_turbine_specific,1555.72,-2.17
+R80790,11.0,1643.96005,244,fitted_median,A_turbine_specific,1660.91,-16.95
+R80790,11.5,1743.41,205,fitted_median,A_turbine_specific,1756.335,-12.92
+R80790,12.0,1824.12,146,fitted_median,A_turbine_specific,1833.13005,-9.01
+R80790,12.5,1889.6801,107,fitted_median,A_turbine_specific,1898.03,-8.35
+R80790,13.0,1932.78,55,fitted_median,A_turbine_specific,1934.98,-2.2
+R80790,13.5,1943.35,42,fitted_median,A_turbine_specific,1961.8199,-18.47
+R80790,14.0,,20,unsupported,A_turbine_specific,1988.34,
+R80790,14.5,,13,unsupported,A_turbine_specific,2005.915,
+R80790,15.0,,8,unsupported,A_turbine_specific,,
+R80790,15.5,,6,unsupported,A_turbine_specific,,
+Fleet (pooled),0.0,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),0.5,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),1.0,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),1.5,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),2.0,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),2.5,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),3.0,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),3.5,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),4.0,0.0,0,defined_zero_below_threshold,B_pooled_transparent,0.0,0.0
+Fleet (pooled),4.5,98.440002,19668,fitted_median,B_pooled_transparent,98.440002,0.0
+Fleet (pooled),5.0,165.06,22181,fitted_median,B_pooled_transparent,165.06,0.0
+Fleet (pooled),5.5,252.56,22343,fitted_median,B_pooled_transparent,252.56,0.0
+Fleet (pooled),6.0,365.41,19717,fitted_median,B_pooled_transparent,365.41,0.0
+Fleet (pooled),6.5,496.20001,15763,fitted_median,B_pooled_transparent,496.20001,0.0
+Fleet (pooled),7.0,635.035005,11448,fitted_median,B_pooled_transparent,635.035005,0.0
+Fleet (pooled),7.5,777.8950150000001,7986,fitted_median,B_pooled_transparent,777.8950150000001,0.0
+Fleet (pooled),8.0,916.78,5698,fitted_median,B_pooled_transparent,916.78,0.0
+Fleet (pooled),8.5,1048.475,4158,fitted_median,B_pooled_transparent,1048.475,0.0
+Fleet (pooled),9.0,1182.2849999999999,3020,fitted_median,B_pooled_transparent,1182.2849999999999,0.0
+Fleet (pooled),9.5,1308.75,2265,fitted_median,B_pooled_transparent,1308.75,0.0
+Fleet (pooled),10.0,1434.15,1733,fitted_median,B_pooled_transparent,1434.15,0.0
+Fleet (pooled),10.5,1555.72,1321,fitted_median,B_pooled_transparent,1555.72,0.0
+Fleet (pooled),11.0,1660.91,1017,fitted_median,B_pooled_transparent,1660.91,0.0
+Fleet (pooled),11.5,1756.335,758,fitted_median,B_pooled_transparent,1756.335,0.0
+Fleet (pooled),12.0,1833.13005,580,fitted_median,B_pooled_transparent,1833.13005,0.0
+Fleet (pooled),12.5,1898.03,405,fitted_median,B_pooled_transparent,1898.03,0.0
+Fleet (pooled),13.0,1934.98,239,fitted_median,B_pooled_transparent,1934.98,0.0
+Fleet (pooled),13.5,1961.8199,133,fitted_median,B_pooled_transparent,1961.8199,0.0
+Fleet (pooled),14.0,1988.34,65,fitted_median,B_pooled_transparent,1988.34,0.0
+Fleet (pooled),14.5,2005.915,44,fitted_median,B_pooled_transparent,2005.915,0.0
+Fleet (pooled),15.0,,26,unsupported,B_pooled_transparent,,
+Fleet (pooled),15.5,,16,unsupported,B_pooled_transparent,,
+Fleet (pooled),16.0,,4,unsupported,B_pooled_transparent,,
+Fleet (pooled),16.5,,2,unsupported,B_pooled_transparent,,

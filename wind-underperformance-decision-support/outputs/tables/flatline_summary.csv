@@ -1,0 +1,5 @@
+turbine,records_in_flatline_runs,pct_of_turbine_rows,longest_run_records,wind_and_power_both_frozen,wind_only_frozen
+R80711,933,0.888,31,1,932
+R80721,1209,1.15,33,0,1209
+R80736,1447,1.377,42,0,1447
+R80790,1020,0.97,33,0,1020

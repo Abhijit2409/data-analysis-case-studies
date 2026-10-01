@@ -1,0 +1,6 @@
+Exporting presentation-only tables (no analytical result is changed)...
+  reference curves         167 rows
+  monthly completeness      96 rows
+  missing runs              65 rows (longest 132.8 h)
+  data funnel                6 stages
+  validation summary        85 checks (84 pass, 1 fail)

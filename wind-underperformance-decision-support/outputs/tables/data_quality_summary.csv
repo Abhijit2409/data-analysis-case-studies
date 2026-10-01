@@ -1,0 +1,15 @@
+section,check,records,pct_of_rows,interpretation
+plausibility,power_above_rated_plus_10pct,0,0.0,Possible sensor or scaling problem
+plausibility,power_negative_small,77431,18.415,Expected: turbine drawing its own power while idle
+plausibility,power_negative_large,0,0.0,Unusual; worth investigating
+plausibility,wind_outside_plausible_range,0,0.0,Sensor problem or extreme weather
+plausibility,zero_power_while_wind_above_operating,3824,0.909,Turbine not producing although the wind could support it
+plausibility,power_positive_while_wind_near_zero,0,0.0,"Suggests a failed, iced or stuck wind sensor"
+plausibility,pitch_angle_outside_minus5_to_95,43,0.01,Outside the physically sensible pitch range
+plausibility,nacelle_angle_outside_0_to_360,0,0.0,Outside the compass range
+plausibility,temperature_at_or_below_absolute_zero,33,0.008,"Sensor fault placeholder, not a measurement"
+plausibility,temperature_implausible_for_france,1,0.0,Too cold for this site; likely a sensor fault
+completeness,absent_intervals_total,48,0.0,Timestamps with no row for a turbine
+completeness,power_value_missing_total,2569,0.611,Row exists but the power value is empty
+sensors,windspeed_flatline_records_total,4609,1.096,Inside a run of 6+ identical wind readings
+downtime,no_power_while_windy_total,3824,0.909,Cause cannot be established without an event log

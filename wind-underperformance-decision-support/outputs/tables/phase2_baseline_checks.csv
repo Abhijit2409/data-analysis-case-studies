@@ -1,0 +1,10 @@
+stage,check,result,detail
+phase2_parts_efgh_baseline,expected_power_within_zero_and_rated,PASS,range 0.0 to 1998.1 kW
+phase2_parts_efgh_baseline,no_negative_potential_loss,PASS,"minimum 0.0000 kWh, 3,049 records left empty (unsupported bin)"
+phase2_parts_efgh_baseline,sparse_bins_left_empty_not_interpolated,PASS,22 unsupported bins carry no value
+phase2_parts_efgh_baseline,reference_curve_built_only_from_reference_year,PASS,"curves fitted on 2014, applied to 2015"
+phase2_parts_efgh_baseline,assessment_year_not_used_for_fitting,PASS,2015 records never entered the curve
+phase2_parts_efgh_baseline,median_residual_near_zero_on_reference_subset,PASS,"0.0 kW (near zero by construction; an arithmetic check, not proof of physical fit)"
+phase2_parts_efgh_baseline,every_assessment_record_has_a_class,PASS,7 distinct categories used
+phase2_parts_efgh_baseline,missing_records_not_counted_as_loss,PASS,records with no power value contribute no loss
+phase2_parts_efgh_baseline,auxiliary_consumption_never_inflates_loss,PASS,"largest excess of loss over expected power: 0.000000 kW (negative power floored at zero, not added)"

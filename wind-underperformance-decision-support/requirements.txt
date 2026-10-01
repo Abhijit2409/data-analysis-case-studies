@@ -1,0 +1,35 @@
+# Pinned to the versions the analysis was actually run with.
+#
+# Reproduce the environment from the project root:
+#
+#   python -m venv .venv
+#   .venv/Scripts/python.exe -m pip install -r requirements.txt     # Windows
+#   .venv/bin/python -m pip install -r requirements.txt             # macOS / Linux
+#
+# Then run the pipeline in order (see README).
+# Built and run on CPython 3.11.0, Windows.
+
+pandas==3.0.5
+numpy==2.4.6
+matplotlib==3.11.2
+
+# Phase 2: processed dataset written as Parquet rather than a large CSV.
+pyarrow==25.0.1
+
+# Phase 3: the constrained gradient-boosted challenger.
+scikit-learn==1.9.1
+
+# Pulled in by scikit-learn; pinned so the environment is fully determined.
+joblib==1.6.0
+scipy==1.17.1
+threadpoolctl==3.7.0
+
+# Phase 4: decision-support application and sendable deliverables.
+pypdf==6.19.0
+python-pptx==1.0.2
+reportlab==5.0.1
+streamlit==1.64.0
+
+# Phase 4B: interactive charts and the optional grounded assistant.
+openai==3.22.1
+plotly==7.1.0

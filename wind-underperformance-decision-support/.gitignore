@@ -1,0 +1,21 @@
+# Raw data is not committed. It is ~140 MB and is publicly available.
+# See data/README.md for how to obtain it.
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+.venv/
+
+# Streamlit server-side secrets. Never commit a real key.
+.streamlit/secrets.toml

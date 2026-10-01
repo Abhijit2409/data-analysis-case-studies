@@ -1,0 +1,4 @@
+year,era5_mean_wind_ms,era5_median_wind_ms,era5_p90_wind_ms,era5_mean_cubed_wind,scada_mean_wind_ms,scada_median_wind_ms,scada_records
+2014,5.78,5.573,9.265,324.2,5.357,5.42,206942.0
+2015,6.042,5.784,9.758,367.4,5.66,5.53,206360.0
+change_2015_vs_2014_pct,4.53,3.79,5.32,13.33,5.66,2.03,

@@ -1,0 +1,14 @@
+stage,check,result,detail
+phase3_challenger,wind_direction_feature_not_state_dependent,FAIL,largest sector share difference 0.0818 (ABOVE the 0.05 concern level)
+phase3_challenger,no_method_trained_on_assessment_year,PASS,all three fitted on 2014 only
+phase3_challenger,challenger_excludes_turbine_identity,PASS,"features are ['wind_speed_density_corrected', 'air_density_kgm3', 'wind_dir_sin', 'wind_dir_cos']"
+phase3_challenger,challenger_excludes_calendar_and_outcome_features,PASS,"no hour, calendar, power, residual, pitch or nacelle features"
+phase3_challenger,model_parameters_fixed_and_seeded,PASS,"{'max_depth': 4, 'max_iter': 200, 'learning_rate': 0.05, 'min_samples_leaf': 200, 'l2_regularization': 1.0, 'random_state': 42}"
+phase3_challenger,benchmark_windows_stratified_and_seeded,PASS,"1440 windows per combination, seed 42, stratified by turbine and wind band"
+phase3_challenger,controls_and_injected_windows_matched,PASS,every injected window has an untouched control drawn the same way
+phase3_challenger,challenger_meets_prespecified_acceptance_rule,PASS,"recovery 0.7713->0.8183, burden 0.3993->0.4083 (+2.3%)"
+phase3_challenger,benchmark_uses_synthetic_labels_only,PASS,"no real-world precision, recall or accuracy is reported"
+phase3_challenger,all_methods_share_event_logic,PASS,"detection persistence 3 records for the benchmark, 6 for 2015 reporting, identical across methods"
+phase3_challenger,benchmark_windows_stratified_and_seeded,PASS,"1440 windows per combination, seed 42, stratified by turbine and wind band"
+phase3_challenger,controls_and_injected_windows_matched,PASS,every injected window has an untouched control drawn the same way
+phase3_challenger,challenger_advantage_survives_removing_suspect_feature,PASS,recovery without direction 0.8167 vs B 0.7713

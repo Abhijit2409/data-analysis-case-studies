@@ -1,0 +1,91 @@
+==============================================================================
+PHASE 3 - pooled counterfactual and constrained challenger
+==============================================================================
+
+Loaded 420,480 records.
+
+Leakage review of the wind-direction feature:
+  producing records: 336,928, idle records: 80,983
+  largest difference in any 30-degree sector: 0.0818 (8.18 percentage points)
+  [FAIL] wind_direction_feature_not_state_dependent - largest sector share difference 0.0818 (ABOVE the 0.05 concern level)
+  NOTE: direction differs materially between producing and idle records.
+  The feature is retained, and every result using it is qualified.
+
+Fitting all three methods on the 2014 reference-eligible subset...
+  A: 111 supported bins across 4 turbines
+  B: 30 supported pooled bins
+  C: trained on 166,726 records, features ['wind_speed_density_corrected', 'air_density_kgm3', 'wind_dir_sin', 'wind_dir_cos']
+  [PASS] no_method_trained_on_assessment_year - all three fitted on 2014 only
+  [PASS] challenger_excludes_turbine_identity - features are ['wind_speed_density_corrected', 'air_density_kgm3', 'wind_dir_sin', 'wind_dir_cos']
+  [PASS] challenger_excludes_calendar_and_outcome_features - no hour, calendar, power, residual, pitch or nacelle features
+  [PASS] model_parameters_fixed_and_seeded - {'max_depth': 4, 'max_iter': 200, 'learning_rate': 0.05, 'min_samples_leaf': 200, 'l2_regularization': 1.0, 'random_state': 42}
+
+2015 results by method:
+              method  assessable_records  assessable_share_pct  mean_residual_kw  median_residual_kw  gross_shortfall_mwh  persistent_events  persistent_records  persistent_hours  shortfall_in_events_mwh
+  A_turbine_specific              207191                 98.55              1.73                5.12                671.6               2302               22065            3677.5                    380.6
+B_pooled_transparent              207790                 98.83              1.75                4.71                678.1               2435               23231            3871.8                    392.5
+ C_pooled_challenger              207790                 98.83              1.77                6.84                569.5               2637               26777            4462.8                    383.6
+
+Per turbine:
+method   A_turbine_specific  B_pooled_transparent  C_pooled_challenger
+turbine                                                               
+R80711                 4.36                  5.35                 4.72
+R80721                 4.22                  4.49                 3.56
+R80736                 4.25                  4.15                 3.23
+R80790                 6.15                  5.10                 4.58
+
+Event overlap between methods (ten-minute records flagged):
+                                method_pair  flagged_by_both  flagged_by_first_only  flagged_by_second_only  agreement_pct_of_union
+ A_turbine_specific vs B_pooled_transparent            18937                   3128                    4294                    71.8
+  A_turbine_specific vs C_pooled_challenger            14289                   7776                   12488                    41.4
+B_pooled_transparent vs C_pooled_challenger            15453                   7778                   11324                    44.7
+
+Building the synthetic derating benchmark...
+  4,320 candidate windows, stratified by turbine and wind band
+  17,280 windows (207,360 records) built once and scored for all three methods
+  [PASS] benchmark_windows_stratified_and_seeded - 1440 windows per combination, seed 42, stratified by turbine and wind band
+  [PASS] controls_and_injected_windows_matched - every injected window has an untouched control drawn the same way
+
+Recovery rate by severity and duration:
+method                         A_turbine_specific  B_pooled_transparent  C_pooled_challenger
+severity_pct duration_minutes                                                               
+5            30                            0.4597                0.4924               0.5417
+             60                            0.6049                0.6326               0.6868
+             120                           0.7083                0.7458               0.7861
+10           30                            0.6132                0.6319               0.7257
+             60                            0.7715                0.7938               0.8451
+             120                           0.8653                0.8736               0.9194
+20           30                            0.8222                0.8597               0.9153
+             60                            0.9139                0.9417               0.9632
+             120                           0.9542                0.9701               0.9812
+
+Apparent alert burden on untouched control windows:
+                      apparent_alert_burden
+method                                     
+A_turbine_specific                   0.3789
+B_pooled_transparent                 0.3993
+C_pooled_challenger                  0.4083
+
+==============================================================================
+PRE-SPECIFIED ACCEPTANCE RULE
+  B recovery 0.7713, burden 0.3993
+  C recovery 0.8183, burden 0.4083
+  recovery improved:          True
+  burden increase:            +2.27% (limit +10%)
+  CHALLENGER ACCEPTED
+==============================================================================
+  [PASS] challenger_meets_prespecified_acceptance_rule - recovery 0.7713->0.8183, burden 0.3993->0.4083 (+2.3%)
+  [PASS] benchmark_uses_synthetic_labels_only - no real-world precision, recall or accuracy is reported
+  [PASS] all_methods_share_event_logic - detection persistence 3 records for the benchmark, 6 for 2015 reporting, identical across methods
+
+Post-hoc diagnostic (leakage check failed, so C is refitted without
+wind direction). This does NOT replace the pre-registered result.
+  17,280 windows (207,360 records) built once and scored for all three methods
+  [PASS] benchmark_windows_stratified_and_seeded - 1440 windows per combination, seed 42, stratified by turbine and wind band
+  [PASS] controls_and_injected_windows_matched - every injected window has an untouched control drawn the same way
+  C with direction:    recovery 0.8183, burden 0.4083
+  C without direction: recovery 0.8167, burden 0.4067
+  Without direction, does C still beat B on recovery? True
+  [PASS] challenger_advantage_survives_removing_suspect_feature - recovery without direction 0.8167 vs B 0.7713
+
+  12/13 checks passed -> phase3_checks.csv

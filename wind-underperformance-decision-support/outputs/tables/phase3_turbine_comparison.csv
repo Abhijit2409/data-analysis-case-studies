@@ -1,0 +1,13 @@
+method,turbine,produced_mwh,gross_shortfall_mwh,shortfall_pct_of_potential,persistent_events,persistent_hours,mean_residual_kw
+A_turbine_specific,R80711,3802.9,173.3,4.36,514,795.7,9.24
+A_turbine_specific,R80721,2955.0,130.2,4.22,517,778.7,4.12
+A_turbine_specific,R80736,3210.0,142.6,4.25,511,797.0,1.3
+A_turbine_specific,R80790,3442.1,225.5,6.15,760,1306.2,-8.14
+B_pooled_transparent,R80711,3802.9,215.1,5.35,812,1286.2,-5.03
+B_pooled_transparent,R80721,2955.0,138.9,4.49,570,897.2,1.26
+B_pooled_transparent,R80736,3210.0,138.9,4.15,518,778.3,3.33
+B_pooled_transparent,R80790,3442.1,185.1,5.1,535,910.2,7.91
+C_pooled_challenger,R80711,3802.9,188.5,4.72,882,1516.5,-5.2
+C_pooled_challenger,R80721,2955.0,108.9,3.56,619,1009.0,1.38
+C_pooled_challenger,R80736,3210.0,107.1,3.23,587,979.0,3.32
+C_pooled_challenger,R80790,3442.1,165.1,4.58,549,958.3,8.06

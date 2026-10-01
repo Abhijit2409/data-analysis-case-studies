@@ -1,0 +1,26 @@
+stage,check,result,detail
+phase4b_application,page_loads_without_exception::Executive cockpit,PASS,rendered cleanly
+phase4b_application,page_loads_without_exception::Investigation explorer,PASS,rendered cleanly
+phase4b_application,page_loads_without_exception::Method and scenario lab,PASS,rendered cleanly
+phase4b_application,page_loads_without_exception::Data trust,PASS,rendered cleanly
+phase4b_application,page_loads_without_exception::Ask the analysis,PASS,rendered cleanly
+phase4b_application,explorer_survives_all_filters_empty,PASS,"4 multiselects cleared, page still renders"
+phase4b_application,empty_multiselect_means_no_filter_not_no_results,PASS,the page says so explicitly when a filter is empty
+phase4b_application,event_chart_handles_zero_rows,PASS,"an empty selection draws an explanatory message, not an error"
+phase4b_application,method_lab_survives_all_filters_empty,PASS,"severity, duration and turbine selections cleared"
+phase4b_application,app_never_trains_a_model_at_runtime,PASS,no model-fitting call in any app module
+phase4b_application,missing_power_values_remain_empty,PASS,"39 empty power values preserved as empty, none converted"
+phase4b_application,missing_runs_exported_for_display,PASS,"65 runs, longest 132.8 h"
+phase4b_application,app_constants_match_generated_tables,PASS,8 headline figures match their source tables
+phase4b_application,top_event_is_corroborated_and_not_high_confidence,PASS,"rank 1: R80711, A+B+C, medium"
+phase4b_application,assistant_evidence_pack_builds,PASS,84 chunks from 5 documents and 6 tables
+phase4b_application,assistant_retrieval_finds_relevant_sources,PASS,"8 chunks from ['README.md', 'executive_memo.md', 'phase_2_findings.md', 'phase_4_findings.md']"
+phase4b_application,assistant_retrieval_spreads_across_files,PASS,4 distinct source files in the top results
+phase4b_application,assistant_returns_nothing_for_unrelated_question,PASS,retrieval returns no chunks rather than irrelevant ones
+phase4b_application,assistant_reads_responses_api_output,PASS,output_text read from the Responses API result
+phase4b_application,assistant_sends_instructions_and_bounded_output,PASS,max_output_tokens=700
+phase4b_application,assistant_sends_only_retrieved_evidence,PASS,only the retrieved chunks are sent; the raw dataset never is
+phase4b_application,assistant_reports_no_key_without_failing,PASS,returns a no-key signal so the page can fall back to passages
+phase4b_application,no_api_key_in_tracked_files,PASS,no key-shaped string in any tracked file
+phase4b_application,secrets_file_is_ignored,PASS,.streamlit/secrets.toml is listed in .gitignore
+phase4b_application,secrets_example_contains_only_a_placeholder,PASS,the example file carries no real value

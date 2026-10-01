@@ -1,0 +1,5 @@
+turbine,missing_records,number_of_runs,longest_run_records,longest_run_hours,median_run_records,gaps_when_no_turbine_reported,gaps_unique_to_this_turbine
+R80711,475,20,206,34.3,6,388,87
+R80721,1209,19,797,132.8,10,388,821
+R80736,435,10,205,34.2,23,388,47
+R80790,450,16,206,34.3,8,388,62

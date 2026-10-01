@@ -1,0 +1,6 @@
+quantity,value,basis,interpretation
+gross_positive_residual_shortfall_mwh,671.64,"Sum of max(expected - actual, 0) over all assessable records",Total gap against a statistical reference. Not recoverable energy.
+shortfall_in_persistent_candidate_events_mwh,380.82,Shortfall inside events meeting the persistence rule,The part that forms reviewable events. Still not recoverable energy.
+nonpersistent_shortfall_mwh,290.82,Shortfall failing the persistence rule,"Short dips. As likely turbulence, sensor noise or curve approximation as anything operational."
+unmeasured_energy_from_missing_data_mwh,,"2,074 ten-minute records with no power or wind value","UNKNOWN, not zero. Cannot be quantified from this dataset."
+records_not_assessable,2771.0,"Frozen sensor, invalid temperature, or a wind bin with too little support","No expected value exists, so no shortfall can be computed."

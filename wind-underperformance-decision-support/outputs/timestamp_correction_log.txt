@@ -1,0 +1,45 @@
+==============================================================================
+PHASE 2 PART A - testing the timestamp hypothesis (P-11)
+==============================================================================
+
+Loaded 420,480 rows.
+
+Spring collision decisions (which copy moved back an hour):
+turbine collision_date  records_moved_back_one_hour  seam_gap_if_first_copy_moves_ms  seam_gap_if_second_copy_moves_ms copy_moved
+ R80711     2014-03-30                            6                             1.67                              0.09     second
+ R80711     2015-03-29                            6                             0.38                              0.16     second
+ R80721     2014-03-30                            6                             0.38                              1.84      first
+ R80721     2015-03-29                            6                             0.16                              0.87      first
+ R80736     2014-03-30                            6                             0.80                              0.15     second
+ R80736     2015-03-29                            6                             0.36                              0.85      first
+ R80790     2014-03-30                            6                             0.95                              0.26     second
+ R80790     2015-03-29                            6                             1.33                              1.04     second
+
+Seasonal alignment BEFORE correction (published timestamps):
+  winter  best lag -1 h (correlation 0.7461)
+  summer  best lag -2 h (correlation 0.8866)
+  difference: -1 h
+
+Seasonal alignment AFTER correction:
+  winter  best lag -1 h (correlation 0.7461)
+  summer  best lag -1 h (correlation 0.903)
+  difference: +0 h
+
+Validating the timestamp correction:
+  [PASS] raw_archive_unchanged_since_phase_1 - sha256 be5ea66a3355286e...
+  [PASS] row_count_matches_phase_1 - 420,480 rows, expected 420,480
+  [PASS] corrected_timestamps_unique_per_turbine - 0 duplicate(s) remain
+  [PASS] spring_duplicates_resolved_without_discarding - 48 duplicates under published time, 0 under corrected time, no rows removed
+  [PASS] autumn_gaps_removed_by_correction - absent intervals: 48 published -> 0 corrected
+  [PASS] no_new_timestamp_discontinuity - 0 absent interval(s) under corrected time
+  [PASS] seasonal_lag_difference_removed - winter-summer difference: -1 h published -> +0 h corrected
+  [PASS] energy_conserved_across_relabelling - 24,630 MWh under both timestamps, difference 0.00e+00 kWh
+  [PASS] monthly_energy_change_within_boundary_effect - largest monthly shift 0.339% (month-boundary records only)
+
+  9/9 checks passed -> timestamp_correction_validation.csv
+
+==============================================================================
+P-11 VERDICT: APPROVED
+Consequence: timestamp_corrected_utc is used for analysis, and
+cross-series joins such as ERA5 air density are permitted.
+==============================================================================

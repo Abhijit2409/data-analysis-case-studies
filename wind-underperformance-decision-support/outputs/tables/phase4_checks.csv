@@ -1,0 +1,8 @@
+stage,check,result,detail
+phase4_decision_register,register_prices_are_flat_multipliers,PASS,"Flat EUR/MWh scenarios cannot reorder events by MWh. Reported as exposure scaling, not as an independent robustness check."
+phase4_decision_register,register_built_from_frozen_methods_only,PASS,no model was refitted on 2015 and no threshold was changed
+phase4_decision_register,every_event_has_required_records_listed,PASS,no event is actionable without named operational records
+phase4_decision_register,no_event_claims_a_cause,PASS,explanations are listed as hypotheses only
+phase4_decision_register,mwh_range_is_ordered,PASS,maximum is never below minimum
+phase4_decision_register,no_event_graded_high_confidence,PASS,"no operational record exists, so nothing can be graded high"
+phase4_decision_register,top_event_corroborated_by_more_than_one_method,PASS,rank 1 is flagged by A+B+C

@@ -1,0 +1,10 @@
+stage,check,result,detail
+phase2_part_a_timestamps,raw_archive_unchanged_since_phase_1,PASS,sha256 be5ea66a3355286e...
+phase2_part_a_timestamps,row_count_matches_phase_1,PASS,"420,480 rows, expected 420,480"
+phase2_part_a_timestamps,corrected_timestamps_unique_per_turbine,PASS,0 duplicate(s) remain
+phase2_part_a_timestamps,spring_duplicates_resolved_without_discarding,PASS,"48 duplicates under published time, 0 under corrected time, no rows removed"
+phase2_part_a_timestamps,autumn_gaps_removed_by_correction,PASS,absent intervals: 48 published -> 0 corrected
+phase2_part_a_timestamps,no_new_timestamp_discontinuity,PASS,0 absent interval(s) under corrected time
+phase2_part_a_timestamps,seasonal_lag_difference_removed,PASS,winter-summer difference: -1 h published -> +0 h corrected
+phase2_part_a_timestamps,energy_conserved_across_relabelling,PASS,"24,630 MWh under both timestamps, difference 0.00e+00 kWh"
+phase2_part_a_timestamps,monthly_energy_change_within_boundary_effect,PASS,largest monthly shift 0.339% (month-boundary records only)

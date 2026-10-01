@@ -1,0 +1,19 @@
+Building sendable deliverables...
+
+Verifying the rendered files open and contain what they should:
+  [PASS] deck_file_created - La_Haute_Borne_performance_review.pptx, 127 KB
+  [PASS] deck_reopens_with_six_slides - 6 slides read back from the saved file
+  [PASS] deck_states_shortfall_is_not_recoverable - the disclaimer is present in the deck text
+  [PASS] deck_states_ml_not_ready_for_alerting - the alerting caveat is present in the deck text
+  [PASS] deck_carries_data_attribution - ENGIE / OpenOA attribution on every slide footer
+  [PASS] memo_pdf_created - executive_memo.pdf, 5 KB
+  [PASS] memo_pdf_is_a_valid_pdf - file header b'%PDF-'
+  [PASS] memo_fits_on_one_page - 1 page(s)
+  [PASS] memo_pdf_contains_the_recommendation - turbine and energy range read back from the rendered file
+  [PASS] memo_pdf_states_shortfall_is_not_recoverable - the disclaimer survived rendering
+  [PASS] memo_pdf_has_no_unrenderable_characters - no replacement characters in the rendered text
+
+  11/11 checks passed -> phase4_render_checks.csv
+
+  deliverables\La_Haute_Borne_performance_review.pptx
+  deliverables\executive_memo.pdf

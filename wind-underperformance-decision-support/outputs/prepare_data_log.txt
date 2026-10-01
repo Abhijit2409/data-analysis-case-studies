@@ -1,0 +1,63 @@
+==============================================================================
+PHASE 2 PARTS B, C, D - building the processed dataset
+==============================================================================
+
+Loading raw SCADA and applying the approved timestamp correction...
+  [PASS] raw_row_count_preserved_on_load - 420,480 rows
+
+Attaching ERA5 air density (P-09, permitted because P-11 passed)...
+  air density: mean 1.1952 kg/m3, range 1.092 to 1.306
+
+Adding peer context...
+
+Flagging data-quality problems...
+
+Part D - empirical operating threshold:
+  lowest wind bin where every turbine is >=95% producing: 4.0 m/s
+  working operating threshold (one bin higher): 4.5 m/s
+  share producing in that bin, by turbine: 0.966 to 0.984
+
+P-07 - comparing 2014 and 2015 wind resource:
+
+  ERA5 mean wind speed by quarter (m/s):
+year      2014   2015  change_pct
+quarter                          
+1        6.879  6.592       -4.17
+2        5.406  5.454        0.89
+3        4.863  5.609       15.34
+4        5.993  6.518        8.76
+                   year  era5_mean_wind_ms  era5_median_wind_ms  era5_p90_wind_ms  era5_mean_cubed_wind  scada_mean_wind_ms  scada_median_wind_ms  scada_records
+                   2014              5.780                5.573             9.265                324.20               5.357                  5.42       206942.0
+                   2015              6.042                5.784             9.758                367.40               5.660                  5.53       206360.0
+change_2015_vs_2014_pct              4.530                3.790             5.320                 13.33               5.660                  2.03            NaN
+
+Building reconciliation tables...
+
+Validating the processed dataset:
+  [PASS] every_raw_record_present_in_processed - 420,480 rows in, 420,480 expected
+  [PASS] no_record_silently_dropped - reconciliation starts from the full raw count
+  [PASS] eligible_plus_excluded_equals_total - 336,928 + 83,552 = 420,480
+  [PASS] every_exclusion_has_a_reason - no record is excluded without a recorded reason
+  [PASS] every_eligible_record_has_no_reason - no eligible record carries an exclusion reason
+  [PASS] no_missing_observation_became_zero - 0 missing power values turned into zeros
+  [PASS] missing_power_still_missing - missing power values remain empty, not imputed
+  [PASS] reference_eligible_records_all_producing - no zero or negative power in the reference subset
+  [PASS] density_attached_to_all_records - 0 records without density
+  [PASS] confidence_levels_cover_all_records - every record has exactly one confidence level
+
+  11/11 checks passed -> phase2_partb_checks.csv
+
+Wrote scada_processed.parquet (16.5 MB, 420,480 rows, 36 columns)
+
+Reference-eligible by turbine and year:
+Wind_turbine_name  year  records  reference_eligible  eligible_pct
+           R80711  2014    52560               42772         81.38
+           R80711  2015    52560               43802         83.34
+           R80721  2014    52560               40861         77.74
+           R80721  2015    52560               41569         79.09
+           R80736  2014    52560               41225         78.43
+           R80736  2015    52560               42176         80.24
+           R80790  2014    52560               41868         79.66
+           R80790  2015    52560               42655         81.15
+
+Overall reference-eligible: 336,928 of 420,480 (80.13%)

@@ -1,0 +1,7 @@
+stage,records,note
+Raw SCADA records,420480,Every row in the published file. None deleted at any point.
+Reference-eligible,336928,Passed the data-quality rules. Not a claim that the turbine ran correctly.
+Excluded from fitting,83552,"Kept in the dataset with reasons attached, mostly zero-power records."
+2015 assessment year,210240,The year the frozen reference curves were applied to.
+Assessable in 2015 (method B),207790,"Had an expected-power value, so a shortfall could be computed."
+In persistent reviewable events,1142,Approximate record count behind the 25 leading events.

@@ -1,0 +1,52 @@
+==============================================================================
+PHASE 4B - application validation
+No API key is used and no external request is made.
+==============================================================================
+
+Loading every page without an API key:
+2026-10-01 04:33:00.480 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [PASS] page_loads_without_exception::Executive cockpit - rendered cleanly
+2026-10-01 04:33:01.195 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [PASS] page_loads_without_exception::Investigation explorer - rendered cleanly
+2026-10-01 04:33:01.593 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [PASS] page_loads_without_exception::Method and scenario lab - rendered cleanly
+2026-10-01 04:33:01.973 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [PASS] page_loads_without_exception::Data trust - rendered cleanly
+2026-10-01 04:33:02.381 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [PASS] page_loads_without_exception::Ask the analysis - rendered cleanly
+
+Empty filter selections:
+2026-10-01 04:33:02.727 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [PASS] explorer_survives_all_filters_empty - 4 multiselects cleared, page still renders
+  [PASS] empty_multiselect_means_no_filter_not_no_results - the page says so explicitly when a filter is empty
+  [PASS] event_chart_handles_zero_rows - an empty selection draws an explanatory message, not an error
+2026-10-01 04:33:03.690 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [PASS] method_lab_survives_all_filters_empty - severity, duration and turbine selections cleared
+
+Runtime behaviour:
+  [PASS] app_never_trains_a_model_at_runtime - no model-fitting call in any app module
+  [PASS] missing_power_values_remain_empty - 39 empty power values preserved as empty, none converted
+  [PASS] missing_runs_exported_for_display - 65 runs, longest 132.8 h
+
+Displayed numbers against source tables:
+  [PASS] app_constants_match_generated_tables - 8 headline figures match their source tables
+  [PASS] top_event_is_corroborated_and_not_high_confidence - rank 1: R80711, A+B+C, medium
+
+Assistant, with a stub client:
+  [PASS] assistant_evidence_pack_builds - 84 chunks from 5 documents and 6 tables
+  [PASS] assistant_retrieval_finds_relevant_sources - 8 chunks from ['README.md', 'executive_memo.md', 'phase_2_findings.md', 'phase_4_findings.md']
+  [PASS] assistant_retrieval_spreads_across_files - 4 distinct source files in the top results
+  [PASS] assistant_returns_nothing_for_unrelated_question - retrieval returns no chunks rather than irrelevant ones
+  [PASS] assistant_reads_responses_api_output - output_text read from the Responses API result
+  [PASS] assistant_sends_instructions_and_bounded_output - max_output_tokens=700
+  [PASS] assistant_sends_only_retrieved_evidence - only the retrieved chunks are sent; the raw dataset never is
+  [PASS] assistant_reports_no_key_without_failing - returns a no-key signal so the page can fall back to passages
+
+Secret handling:
+  [PASS] no_api_key_in_tracked_files - no key-shaped string in any tracked file
+  [PASS] secrets_file_is_ignored - .streamlit/secrets.toml is listed in .gitignore
+  [PASS] secrets_example_contains_only_a_placeholder - the example file carries no real value
+
+  25/25 checks passed -> phase4b_app_checks.csv
+
+Combined validation summary refreshed: 84/85 checks passed across 7 files.

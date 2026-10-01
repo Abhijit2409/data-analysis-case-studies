@@ -1,0 +1,100 @@
+==============================================================================
+PHASE 2 PARTS E to H - transparent baseline
+==============================================================================
+
+Loaded 420,480 processed records.
+
+Building reference curves from 2014 reference-eligible records...
+  111 supported bins across 4 turbines (of 133 bins with any data)
+  supported wind range: 0.0 to 13.5 m/s
+  bins dropped for having fewer than 30 records: 22
+
+Checking the baseline against the records it was built from...
+                      scope  records  median_residual_kw  mean_residual_kw  mean_residual_pct_of_rated
+reference_year_all_turbines   140417                 0.0             0.754                       0.037
+      reference_year_R80711    37161                 0.0             1.141                       0.056
+      reference_year_R80721    34142                 0.0             0.204                       0.010
+      reference_year_R80736    34354                 0.0             1.166                       0.057
+      reference_year_R80790    34760                 0.0             0.472                       0.023
+
+Applying the frozen 2014 curve to 2015...
+
+2015 records by evidence category:
+  at_or_above_reference                  136,842  (65.09%)
+  nonpersistent_shortfall                 45,439  (21.61%)
+  operating_below_reference_candidate     20,515  ( 9.76%)
+  not_assessable_due_to_data_quality       2,771  ( 1.32%)
+  idle_in_apparently_usable_wind           2,575  ( 1.22%)
+  unmeasured_due_to_missing_data           2,074  ( 0.99%)
+  site_wide_low_or_zero_production            24  ( 0.01%)
+
+2015 actual production:           13,410 MWh
+2015 potential lost energy:       672 MWh (4.77% of the two combined)
+
+Energy accounting (none of these is recoverable energy):
+                                    quantity   value
+       gross_positive_residual_shortfall_mwh  671.64
+shortfall_in_persistent_candidate_events_mwh  380.82
+                 nonpersistent_shortfall_mwh  290.82
+     unmeasured_energy_from_missing_data_mwh     NaN
+                      records_not_assessable 2771.00
+
+Complete candidate-event breakdown:
+                                     events  records   hours  potential_mwh
+candidate_class                                                            
+idle_in_apparently_usable_wind          434     2575   429.8          156.4
+operating_below_reference_candidate    2239    20515  3419.9          223.4
+site_wide_low_or_zero_production         15       24     4.0            1.1
+
+2,688 candidate events. Largest by potential energy:
+turbine                candidate_class                 start_utc  duration_hours  potential_lost_mwh wind_evidence confidence
+ R80711 idle_in_apparently_usable_wind 2015-07-26 09:30:00+00:00           47.17             37.5272  peer_context     medium
+ R80790 idle_in_apparently_usable_wind 2015-02-07 11:00:00+00:00           40.00             29.7172  peer_context     medium
+ R80736 idle_in_apparently_usable_wind 2015-05-05 06:00:00+00:00            6.33              8.2018  peer_context     medium
+ R80736 idle_in_apparently_usable_wind 2015-11-17 10:30:00+00:00            3.83              5.5103  peer_context     medium
+ R80721 idle_in_apparently_usable_wind 2015-04-30 06:20:00+00:00            7.00              5.3089  peer_context     medium
+ R80721 idle_in_apparently_usable_wind 2015-05-19 05:50:00+00:00            8.00              5.3064  peer_context     medium
+ R80790 idle_in_apparently_usable_wind 2015-08-25 05:50:00+00:00            7.67              4.4332  peer_context     medium
+ R80721 idle_in_apparently_usable_wind 2015-01-02 02:40:00+00:00            4.50              3.8724  peer_context     medium
+
+Monthly stability:
+                         records  potential_lost_mwh  median_residual_kw
+timestamp_corrected_utc                                                 
+2015-01                    17856               72.40               -0.17
+2015-02                    16128               58.78                7.49
+2015-03                    17856               38.97                0.78
+2015-04                    17280               57.55                2.12
+2015-05                    17856               67.58               -0.01
+2015-06                    17280               42.99               -0.65
+2015-07                    17856              112.70               -3.13
+2015-08                    17856               53.43               -0.92
+2015-09                    17280               47.36                6.28
+2015-10                    17856               21.83                5.36
+2015-11                    17280               63.57                2.09
+2015-12                    17856               34.47               21.29
+
+Running sensitivity across every judgement threshold...
+     specification  reference_records_used  supported_bins  assessable_share_pct  below_reference_mwh  total_potential_lost_mwh
+           primary                  166726             111                 98.55               223.38                    671.64
+     frozen_wind_3                  166675             111                 98.55               223.38                    671.61
+    frozen_wind_12                  166726             111                 98.55               223.38                    671.64
+     persistence_3                  166726             111                 98.55               374.21                    671.64
+    persistence_12                  166726             111                 98.55                88.92                    671.64
+curve_quantile_0.4                  166726             111                 98.55               138.44                    538.48
+curve_quantile_0.6                  166726             111                 98.55               352.76                    833.80
+
+Range across specifications: 538 to 834 MWh (primary 672 MWh)
+Illustrative value at 40-80 EUR/MWh: 21,539 to 66,704 EUR. Illustrative value-at-risk sensitivity - not actual revenue.
+
+Validating the baseline:
+  [PASS] expected_power_within_zero_and_rated - range 0.0 to 1998.1 kW
+  [PASS] no_negative_potential_loss - minimum 0.0000 kWh, 3,049 records left empty (unsupported bin)
+  [PASS] sparse_bins_left_empty_not_interpolated - 22 unsupported bins carry no value
+  [PASS] reference_curve_built_only_from_reference_year - curves fitted on 2014, applied to 2015
+  [PASS] assessment_year_not_used_for_fitting - 2015 records never entered the curve
+  [PASS] median_residual_near_zero_on_reference_subset - 0.0 kW (near zero by construction; an arithmetic check, not proof of physical fit)
+  [PASS] every_assessment_record_has_a_class - 7 distinct categories used
+  [PASS] missing_records_not_counted_as_loss - records with no power value contribute no loss
+  [PASS] auxiliary_consumption_never_inflates_loss - largest excess of loss over expected power: 0.000000 kW (negative power floored at zero, not added)
+
+  9/9 checks passed -> phase2_baseline_checks.csv

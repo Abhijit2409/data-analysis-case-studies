@@ -1,0 +1,4 @@
+method_pair,flagged_by_both,flagged_by_first_only,flagged_by_second_only,agreement_pct_of_union
+A_turbine_specific vs B_pooled_transparent,18937,3128,4294,71.8
+A_turbine_specific vs C_pooled_challenger,14289,7776,12488,41.4
+B_pooled_transparent vs C_pooled_challenger,15453,7778,11324,44.7

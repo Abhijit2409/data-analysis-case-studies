@@ -1,0 +1,12 @@
+stage,check,result,detail
+phase2_part_b_prepare,raw_row_count_preserved_on_load,PASS,"420,480 rows"
+phase2_part_b_prepare,every_raw_record_present_in_processed,PASS,"420,480 rows in, 420,480 expected"
+phase2_part_b_prepare,no_record_silently_dropped,PASS,reconciliation starts from the full raw count
+phase2_part_b_prepare,eligible_plus_excluded_equals_total,PASS,"336,928 + 83,552 = 420,480"
+phase2_part_b_prepare,every_exclusion_has_a_reason,PASS,no record is excluded without a recorded reason
+phase2_part_b_prepare,every_eligible_record_has_no_reason,PASS,no eligible record carries an exclusion reason
+phase2_part_b_prepare,no_missing_observation_became_zero,PASS,0 missing power values turned into zeros
+phase2_part_b_prepare,missing_power_still_missing,PASS,"missing power values remain empty, not imputed"
+phase2_part_b_prepare,reference_eligible_records_all_producing,PASS,no zero or negative power in the reference subset
+phase2_part_b_prepare,density_attached_to_all_records,PASS,0 records without density
+phase2_part_b_prepare,confidence_levels_cover_all_records,PASS,every record has exactly one confidence level
