@@ -7,7 +7,7 @@ single year. This analysis establishes how much of that survives data validation
 which event warrants investigation first, and what cannot be concluded without
 operational records the dataset does not contain.
 
-**Independent project · Public data · [Interactive application](RUN_APP.md)**
+**Independent project · Public data · [Interactive application](https://wind-underperformance-decision-support.streamlit.app/)**
 
 ### Start with the decision materials
 
@@ -15,7 +15,7 @@ operational records the dataset does not contain.
 |---|---|
 | **[Executive memo](deliverables/executive_memo.pdf)** | Three-page visual decision brief: recommendation, energy accounting, data trust, method comparison and evidence requests. |
 | **[Case-study presentation](deliverables/La_Haute_Borne_performance_review.pptx)** | Eight-slide, evidence-led presentation with six editable charts, event prioritisation, method comparison and limitations. |
-| **[Interactive decision tool](RUN_APP.md)** | Five-page Streamlit application with scenario controls, event timelines and grounded question answering. |
+| **[Interactive decision tool](https://wind-underperformance-decision-support.streamlit.app/)** | Five-page Streamlit application with scenario controls, event timelines and grounded question answering. |
 
 ---
 
