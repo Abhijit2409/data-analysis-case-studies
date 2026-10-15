@@ -13,7 +13,7 @@ phase4b_application,missing_power_values_remain_empty,PASS,"39 empty power value
 phase4b_application,missing_runs_exported_for_display,PASS,"65 runs, longest 132.8 h"
 phase4b_application,app_constants_match_generated_tables,PASS,8 headline figures match their source tables
 phase4b_application,top_event_is_corroborated_and_not_high_confidence,PASS,"rank 1: R80711, A+B+C, medium"
-phase4b_application,assistant_evidence_pack_builds,PASS,84 chunks from 5 documents and 6 tables
+phase4b_application,assistant_evidence_pack_builds,PASS,95 chunks from 5 documents and 6 tables
 phase4b_application,assistant_retrieval_finds_relevant_sources,PASS,"8 chunks from ['README.md', 'executive_memo.md', 'phase_2_findings.md', 'phase_4_findings.md']"
 phase4b_application,assistant_retrieval_spreads_across_files,PASS,4 distinct source files in the top results
 phase4b_application,assistant_returns_nothing_for_unrelated_question,PASS,retrieval returns no chunks rather than irrelevant ones

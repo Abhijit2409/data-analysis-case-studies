@@ -39,14 +39,17 @@ phase4_decision_register,no_event_claims_a_cause,PASS,explanations are listed as
 phase4_decision_register,mwh_range_is_ordered,PASS,maximum is never below minimum,phase4_checks.csv
 phase4_decision_register,no_event_graded_high_confidence,PASS,"no operational record exists, so nothing can be graded high",phase4_checks.csv
 phase4_decision_register,top_event_corroborated_by_more_than_one_method,PASS,rank 1 is flagged by A+B+C,phase4_checks.csv
-phase4_render,deck_file_created,PASS,"La_Haute_Borne_performance_review.pptx, 127 KB",phase4_render_checks.csv
-phase4_render,deck_reopens_with_six_slides,PASS,6 slides read back from the saved file,phase4_render_checks.csv
+phase4_render,deck_file_created,PASS,"La_Haute_Borne_performance_review.pptx, 150 KB",phase4_render_checks.csv
+phase4_render,deck_reopens_with_eight_slides,PASS,8 slides read back from the saved file,phase4_render_checks.csv
+phase4_render,deck_contains_editable_charts,PASS,6 native charts read back from the saved file,phase4_render_checks.csv
+phase4_render,deck_contains_project_links,PASS,9 hyperlinks read back from the saved file,phase4_render_checks.csv
 phase4_render,deck_states_shortfall_is_not_recoverable,PASS,the disclaimer is present in the deck text,phase4_render_checks.csv
 phase4_render,deck_states_ml_not_ready_for_alerting,PASS,the alerting caveat is present in the deck text,phase4_render_checks.csv
 phase4_render,deck_carries_data_attribution,PASS,ENGIE / OpenOA attribution on every slide footer,phase4_render_checks.csv
-phase4_render,memo_pdf_created,PASS,"executive_memo.pdf, 5 KB",phase4_render_checks.csv
+phase4_render,memo_pdf_created,PASS,"executive_memo.pdf, 120 KB",phase4_render_checks.csv
 phase4_render,memo_pdf_is_a_valid_pdf,PASS,file header b'%PDF-',phase4_render_checks.csv
-phase4_render,memo_fits_on_one_page,PASS,1 page(s),phase4_render_checks.csv
+phase4_render,memo_is_three_page_visual_brief,PASS,3 page(s),phase4_render_checks.csv
+phase4_render,memo_contains_project_link,PASS,1 hyperlink annotation(s) read back from the PDF,phase4_render_checks.csv
 phase4_render,memo_pdf_contains_the_recommendation,PASS,turbine and energy range read back from the rendered file,phase4_render_checks.csv
 phase4_render,memo_pdf_states_shortfall_is_not_recoverable,PASS,the disclaimer survived rendering,phase4_render_checks.csv
 phase4_render,memo_pdf_has_no_unrenderable_characters,PASS,no replacement characters in the rendered text,phase4_render_checks.csv
@@ -64,7 +67,7 @@ phase4b_application,missing_power_values_remain_empty,PASS,"39 empty power value
 phase4b_application,missing_runs_exported_for_display,PASS,"65 runs, longest 132.8 h",phase4b_app_checks.csv
 phase4b_application,app_constants_match_generated_tables,PASS,8 headline figures match their source tables,phase4b_app_checks.csv
 phase4b_application,top_event_is_corroborated_and_not_high_confidence,PASS,"rank 1: R80711, A+B+C, medium",phase4b_app_checks.csv
-phase4b_application,assistant_evidence_pack_builds,PASS,84 chunks from 5 documents and 6 tables,phase4b_app_checks.csv
+phase4b_application,assistant_evidence_pack_builds,PASS,95 chunks from 5 documents and 6 tables,phase4b_app_checks.csv
 phase4b_application,assistant_retrieval_finds_relevant_sources,PASS,"8 chunks from ['README.md', 'executive_memo.md', 'phase_2_findings.md', 'phase_4_findings.md']",phase4b_app_checks.csv
 phase4b_application,assistant_retrieval_spreads_across_files,PASS,4 distinct source files in the top results,phase4b_app_checks.csv
 phase4b_application,assistant_returns_nothing_for_unrelated_question,PASS,retrieval returns no chunks rather than irrelevant ones,phase4b_app_checks.csv

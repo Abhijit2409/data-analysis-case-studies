@@ -204,6 +204,22 @@ if page == PAGES[0]:
             width="stretch", config=PLOTLY)
         source("decision_event_timelines.csv")
 
+    # The chart above asks how far this turbine fell below its own expected
+    # output. The one below asks what the other three machines were doing at the
+    # same moment. Both are needed; neither replaces the other.
+    neighbours = data.event_neighbours(top["priority_rank"])
+    if neighbours is not None:
+        st.plotly_chart(
+            charts.event_neighbour_comparison(
+                neighbours, top["turbine"], top["start_utc"], top["end_utc"]),
+            width="stretch", config=PLOTLY)
+        caveat("**Observation, not a diagnosed fault.** No event codes, work "
+               "orders or curtailment records exist for this interval, so the "
+               "cause cannot be established. Neighbouring output shows wind was "
+               "available; it does not establish causation and does not make the "
+               "shortfall recoverable energy. Gaps are records with no value.")
+        source("presentation_event_neighbour_comparison.csv")
+
     with st.expander("How this was calculated"):
         st.markdown(
             "Expected power comes from a binned-median reference curve fitted on "
@@ -319,8 +335,25 @@ elif page == PAGES[1]:
                             width="stretch", config=PLOTLY)
             source("decision_event_timelines.csv")
         else:
-            st.info("Ten-minute detail is exported for the eight leading events only. "
+            st.info("Ten-minute detail has not been exported for this event. "
                     "The register row below still applies.")
+
+        # A second view of the same interval: what the other three turbines were
+        # doing. Exported per event, so it is shown only where it exists.
+        neighbours = data.event_neighbours(chosen)
+        if neighbours is not None:
+            st.plotly_chart(
+                charts.event_neighbour_comparison(
+                    neighbours, event["turbine"], event["start_utc"],
+                    event["end_utc"]),
+                width="stretch", config=PLOTLY)
+            caveat("**Observation, not a diagnosed fault.** No event codes, work "
+                   "orders or curtailment records exist for this interval, so the "
+                   "cause cannot be established. Neighbouring output shows wind "
+                   "was available; it does not establish causation and does not "
+                   "make the shortfall recoverable energy. Gaps are records with "
+                   "no value.")
+            source("presentation_event_neighbour_comparison.csv")
 
         metrics = st.columns(5)
         metrics[0].metric("Potential",
@@ -494,6 +527,16 @@ elif page == PAGES[3]:
                       f"{int((validation['result'] == 'PASS').sum())} / {len(validation)}",
                       help="The single failure is the wind-direction leakage check, "
                            "which fired as designed.")
+
+    # The combined summary is derived from the per-stage check files, so it can
+    # fall behind them. Saying so on the page is the difference between a number
+    # that is stale and a number that is stale and unnoticed.
+    is_current, summary_rows, source_rows = data.validation_is_current()
+    if not is_current:
+        st.warning(
+            f"This count is stale: the combined summary holds {summary_rows} checks "
+            f"while the per-stage files now hold {source_rows}. Re-run "
+            "`src/export_presentation_tables.py` to regenerate it.")
 
     one, two = st.columns(2)
     with one:
