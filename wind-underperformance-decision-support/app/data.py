@@ -61,6 +61,50 @@ def validation_summary():
     return pd.DataFrame(columns=["stage", "check", "result", "detail", "source_file"])
 
 
+@st.cache_data(show_spinner=False)
+def validation_is_current():
+    """
+    Compare the combined summary against the check files it summarises.
+
+    The summary is a derived table, so it can fall behind its sources — it did
+    once, when the deliverable render checks grew from 11 to 14 and nothing
+    regenerated it. Counting the source files here costs almost nothing and means
+    a stale summary is visible on the page rather than silently wrong.
+
+    Returns (is_current, summary_rows, source_rows).
+    """
+    summary = validation_summary()
+    source_rows = 0
+    for path in sorted(TABLES.glob("*.csv")):
+        if path.name.startswith("presentation_"):
+            continue
+        try:
+            frame = pd.read_csv(path)
+        except Exception:
+            continue
+        if {"check", "result"} <= set(frame.columns):
+            source_rows += len(frame)
+    return len(summary) == source_rows, len(summary), source_rows
+
+
+@st.cache_data(show_spinner=False)
+def event_neighbours(priority_rank):
+    """
+    All four turbines' output across one event window, if it has been exported.
+
+    Returns None when the event has no neighbour export, so the caller can show
+    the rest of the page rather than failing.
+    """
+    name = "presentation_event_neighbour_comparison.csv"
+    if not available(name):
+        return None
+    frame = pd.read_csv(TABLES / name,
+                        parse_dates=["timestamp_corrected_utc",
+                                     "event_start_utc", "event_end_utc"])
+    frame = frame[frame["priority_rank"] == priority_rank]
+    return frame if len(frame) else None
+
+
 # --- Presentation helpers ------------------------------------------------------
 
 def value_at_price(energy_mwh, price_eur_per_mwh):

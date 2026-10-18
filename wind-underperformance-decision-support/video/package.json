@@ -1,0 +1,42 @@
+{
+  "name": "wind-decision-support-video",
+  "version": "2.0.0",
+  "private": true,
+  "description": "89-second 1920x1080 data-native motion film for the wind underperformance decision support case study. Every chart is SVG drawn from the project's published tables. Two earlier cuts are kept as legacy versions.",
+  "scripts": {
+    "demo:data": "python scripts/demo90/export_demo_data.py",
+    "demo:audio": "python scripts/demo90/make_audio.py",
+    "demo:verify": "python scripts/demo90/verify_demo_claims.py",
+    "demo:verify:render": "python scripts/demo90/verify_render.py",
+    "demo:preview": "remotion studio src/demo90/index.ts",
+    "demo:render": "remotion render src/demo90/index.ts WindDemo90 out/demo90/master.mp4 --crf=17",
+    "demo:render:silent": "remotion render src/demo90/index.ts WindDemo90 out/demo90/wind-underperformance-demo90-silent.mp4 --crf=17 --muted",
+    "demo:draft": "remotion render src/demo90/index.ts WindDemo90 out/demo90/draft.mp4 --scale=0.4 --crf=30",
+
+    "legacy:data": "python scripts/export_video_data.py",
+    "legacy:verify": "python scripts/verify_video_figures.py",
+    "legacy:preview": "remotion studio src/index.ts",
+    "legacy:render": "remotion render src/index.ts WindDecisionSupport out/wind-decision-support-40s.mp4 --crf=16",
+
+    "legacy:v2:capture": "node scripts/v2/capture_app.mjs",
+    "legacy:v2:audio": "python scripts/v2/make_audio.py",
+    "legacy:v2:verify": "python scripts/v2/verify_v2_claims.py",
+    "legacy:v2:preview": "remotion studio src/v2/index.ts",
+    "legacy:v2:render": "remotion render src/v2/index.ts WindDecisionFilmV2 out/v2/master.mp4 --crf=16"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.431",
+    "@remotion/google-fonts": "4.0.431",
+    "d3-scale": "4.0.2",
+    "d3-shape": "3.2.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.431"
+  },
+  "devDependencies": {
+    "@types/d3-scale": "4.0.8",
+    "@types/d3-shape": "3.1.6",
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

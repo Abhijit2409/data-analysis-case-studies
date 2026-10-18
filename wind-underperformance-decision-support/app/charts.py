@@ -174,6 +174,45 @@ def event_scatter(events, price, highlight_rank=None):
     return figure
 
 
+def event_neighbour_comparison(frame, event_turbine, event_start, event_end):
+    """
+    All four turbines' actual output across one event window.
+
+    This answers a different question from `event_timeline`. That chart asks how
+    far one turbine fell below its own expected output; this asks what the other
+    three machines were doing at the same moment. Neighbouring output shows wind
+    was available. It does not establish a cause, and it does not make the
+    shortfall recoverable energy.
+
+    Missing records stay as gaps. `connectgaps=False` is load-bearing here: a
+    line drawn across a gap would assert output that was never measured.
+    """
+    figure = go.Figure()
+    for turbine in sorted(frame["Wind_turbine_name"].unique()):
+        group = frame[frame["Wind_turbine_name"] == turbine].sort_values(
+            "timestamp_corrected_utc")
+        is_event_turbine = turbine == event_turbine
+        figure.add_trace(go.Scatter(
+            x=group["timestamp_corrected_utc"], y=group["P_avg"],
+            name=f"{turbine} · event turbine" if is_event_turbine else turbine,
+            mode="lines", connectgaps=False,
+            line=dict(color=TURBINE_COLOURS.get(turbine, NEUTRAL),
+                      width=3.0 if is_event_turbine else 1.5),
+            opacity=1.0 if is_event_turbine else 0.75,
+            hovertemplate=(f"<b>{turbine}</b><br>%{{x|%d %b %H:%M}} UTC"
+                           "<br>Actual power: %{y:.0f} kW<extra></extra>")))
+
+    figure.add_vrect(x0=event_start, x1=event_end, fillcolor=WARN, opacity=0.09,
+                     line_width=0, annotation_text="event window",
+                     annotation_position="top left", annotation_font_size=11)
+    figure.add_hline(y=0, line_color="#1a1a1a", line_width=0.9)
+
+    _style(figure,
+           f"{event_turbine} near zero while neighbouring turbines continued producing",
+           "Time (UTC)", "Actual power (kW)", height=404)
+    return figure
+
+
 def event_timeline(detail, event_start, event_end):
     """
     Actual against expected power for one event.
