@@ -1,0 +1,459 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 1040,
+    "scale": 2
+  },
+  "captured": "2026-10-16T05:20:35.145Z",
+  "screens": {
+    "cockpit": {
+      "file": "cockpit.png",
+      "cssWidth": 1440,
+      "cssHeight": 3095,
+      "scale": 2,
+      "page": "Executive cockpit",
+      "state": "full page, default controls",
+      "boxes": {
+        "title": {
+          "x": 380,
+          "y": 46,
+          "w": 980,
+          "h": 89
+        },
+        "energyBasis": {
+          "x": 1118,
+          "y": 136,
+          "w": 73,
+          "h": 22
+        },
+        "methodView": {
+          "x": 656,
+          "y": 136,
+          "w": 75,
+          "h": 22
+        },
+        "recommendation": {
+          "x": 380,
+          "y": 224,
+          "w": 980,
+          "h": 62
+        },
+        "accounting": {
+          "x": 380,
+          "y": 611,
+          "w": 980,
+          "h": 62
+        },
+        "gross": {
+          "x": 380,
+          "y": 672,
+          "w": 233,
+          "h": 55
+        },
+        "reviewable": {
+          "x": 629,
+          "y": 672,
+          "w": 233,
+          "h": 55
+        },
+        "nonPersistent": {
+          "x": 878,
+          "y": 672,
+          "w": 233,
+          "h": 55
+        },
+        "missing": {
+          "x": 1127,
+          "y": 672,
+          "w": 233,
+          "h": 55
+        },
+        "potentialMwh": {
+          "x": 380,
+          "y": 286,
+          "w": 244,
+          "h": 55
+        },
+        "accountingChart": {
+          "x": 383,
+          "y": 807,
+          "w": 476,
+          "h": 404
+        },
+        "rankingChart": {
+          "x": 881,
+          "y": 807,
+          "w": 476,
+          "h": 404
+        },
+        "eventScatter": {
+          "x": 383,
+          "y": 1398,
+          "w": 974,
+          "h": 444
+        }
+      },
+      "bars": [
+        [
+          {
+            "trace": 0,
+            "index": 0,
+            "x": 956,
+            "y": 982,
+            "w": 26,
+            "h": 171
+          },
+          {
+            "trace": 0,
+            "index": 1,
+            "x": 1054,
+            "y": 987,
+            "w": 26,
+            "h": 166
+          },
+          {
+            "trace": 0,
+            "index": 2,
+            "x": 1152,
+            "y": 986,
+            "w": 26,
+            "h": 167
+          },
+          {
+            "trace": 0,
+            "index": 3,
+            "x": 1251,
+            "y": 912,
+            "w": 26,
+            "h": 241
+          }
+        ],
+        [
+          {
+            "trace": 1,
+            "index": 0,
+            "x": 982,
+            "y": 943,
+            "w": 26,
+            "h": 210
+          },
+          {
+            "trace": 1,
+            "index": 1,
+            "x": 1080,
+            "y": 977,
+            "w": 26,
+            "h": 176
+          },
+          {
+            "trace": 1,
+            "index": 2,
+            "x": 1179,
+            "y": 990,
+            "w": 26,
+            "h": 163
+          },
+          {
+            "trace": 1,
+            "index": 3,
+            "x": 1277,
+            "y": 953,
+            "w": 26,
+            "h": 200
+          }
+        ],
+        [
+          {
+            "trace": 2,
+            "index": 0,
+            "x": 1008,
+            "y": 968,
+            "w": 26,
+            "h": 185
+          },
+          {
+            "trace": 2,
+            "index": 1,
+            "x": 1106,
+            "y": 1013,
+            "w": 26,
+            "h": 140
+          },
+          {
+            "trace": 2,
+            "index": 2,
+            "x": 1205,
+            "y": 1026,
+            "w": 26,
+            "h": 127
+          },
+          {
+            "trace": 2,
+            "index": 3,
+            "x": 1303,
+            "y": 973,
+            "w": 26,
+            "h": 180
+          }
+        ]
+      ],
+      "barOrder": {
+        "traces": [
+          "A_turbine_specific",
+          "B_pooled_transparent",
+          "C_pooled_challenger"
+        ],
+        "points": [
+          "R80711",
+          "R80721",
+          "R80736",
+          "R80790"
+        ]
+      }
+    },
+    "cockpit_gross": {
+      "file": "cockpit_gross.png",
+      "cssWidth": 1440,
+      "cssHeight": 3135,
+      "scale": 2,
+      "page": "Executive cockpit",
+      "state": "after clicking the Gross residual shortfall basis",
+      "boxes": {
+        "rankingChart": {
+          "x": 881,
+          "y": 807,
+          "w": 476,
+          "h": 404
+        },
+        "accountingChart": {
+          "x": 383,
+          "y": 807,
+          "w": 476,
+          "h": 404
+        }
+      },
+      "clicked": {
+        "x": 1142,
+        "y": 186,
+        "w": 134,
+        "h": 22
+      },
+      "control": "Energy basis radio"
+    },
+    "datatrust": {
+      "file": "datatrust.png",
+      "cssWidth": 1440,
+      "cssHeight": 2176,
+      "scale": 2,
+      "page": "Data trust",
+      "state": "full page, default",
+      "boxes": {
+        "title": {
+          "x": 380,
+          "y": 46,
+          "w": 980,
+          "h": 89
+        },
+        "rawRecords": {
+          "x": 380,
+          "y": 174,
+          "w": 233,
+          "h": 55
+        },
+        "eligible": {
+          "x": 629,
+          "y": 174,
+          "w": 233,
+          "h": 82
+        },
+        "longestGap": {
+          "x": 878,
+          "y": 174,
+          "w": 233,
+          "h": 55
+        },
+        "validation": {
+          "x": 1127,
+          "y": 174,
+          "w": 233,
+          "h": 55
+        },
+        "funnelChart": {
+          "x": 383,
+          "y": 275,
+          "w": 476,
+          "h": 380
+        },
+        "exclusionChart": {
+          "x": 881,
+          "y": 275,
+          "w": 476,
+          "h": 340
+        },
+        "completenessChart": {
+          "x": 383,
+          "y": 718,
+          "w": 540,
+          "h": 300
+        },
+        "timestampChart": {
+          "x": 945,
+          "y": 718,
+          "w": 412,
+          "h": 354
+        },
+        "missingRunsChart": {
+          "x": 383,
+          "y": 1114,
+          "w": 974,
+          "h": 364
+        },
+        "expander": {
+          "x": 417,
+          "y": 1889,
+          "w": 281,
+          "h": 22
+        }
+      }
+    },
+    "datatrust_expander": {
+      "file": "datatrust_expander.png",
+      "cssWidth": 1440,
+      "cssHeight": 2533,
+      "scale": 2,
+      "page": "Data trust",
+      "state": "timestamp explanation opened by a real click",
+      "boxes": {
+        "expander": {
+          "x": 417,
+          "y": 1889,
+          "w": 281,
+          "h": 22
+        },
+        "timestampChart": {
+          "x": 945,
+          "y": 718,
+          "w": 412,
+          "h": 354
+        },
+        "explanation": {
+          "x": 397,
+          "y": 2054,
+          "w": 448,
+          "h": 179
+        }
+      },
+      "clicked": {
+        "x": 417,
+        "y": 1889,
+        "w": 281,
+        "h": 22
+      },
+      "control": "expander"
+    },
+    "lab": {
+      "file": "lab.png",
+      "cssWidth": 1440,
+      "cssHeight": 2163,
+      "scale": 2,
+      "page": "Method and scenario lab",
+      "state": "full page, default",
+      "boxes": {
+        "title": {
+          "x": 380,
+          "y": 46,
+          "w": 980,
+          "h": 89
+        },
+        "turbines": {
+          "x": 380,
+          "y": 174,
+          "w": 51,
+          "h": 22
+        },
+        "comparisonChart": {
+          "x": 383,
+          "y": 433,
+          "w": 476,
+          "h": 404
+        },
+        "recoveryChart": {
+          "x": 881,
+          "y": 433,
+          "w": 476,
+          "h": 424
+        }
+      }
+    },
+    "explorer": {
+      "file": "explorer.png",
+      "cssWidth": 1440,
+      "cssHeight": 3203,
+      "scale": 2,
+      "page": "Investigation explorer",
+      "state": "full page, default",
+      "boxes": {
+        "title": {
+          "x": 380,
+          "y": 46,
+          "w": 980,
+          "h": 89
+        },
+        "scatter": {
+          "x": 383,
+          "y": 463,
+          "w": 574,
+          "h": 444
+        },
+        "heatmap": {
+          "x": 979,
+          "y": 463,
+          "w": 378,
+          "h": 420
+        },
+        "timeline": {
+          "x": 383,
+          "y": 1423,
+          "w": 974,
+          "h": 384
+        },
+        "neighbours": {
+          "x": 383,
+          "y": 1849,
+          "w": 974,
+          "h": 404
+        },
+        "explanations": {
+          "x": 380,
+          "y": 2700,
+          "w": 364,
+          "h": 21
+        },
+        "observedFacts": {
+          "x": 380,
+          "y": 2528,
+          "w": 102,
+          "h": 21
+        },
+        "recordsRequired": {
+          "x": 878,
+          "y": 2528,
+          "w": 199,
+          "h": 21
+        },
+        "nextAction": {
+          "x": 878,
+          "y": 2637,
+          "w": 183,
+          "h": 21
+        },
+        "escalate": {
+          "x": 878,
+          "y": 2745,
+          "w": 69,
+          "h": 21
+        }
+      }
+    }
+  }
+}

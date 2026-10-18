@@ -1,0 +1,20 @@
+# Dependencies and build caches
+node_modules/
+.remotion/
+.cache/
+*.tsbuildinfo
+
+# Generated soundtracks. scripts/demo90/make_audio.py and scripts/v2/make_audio.py
+# are tracked and rebuild these deterministically, so the 25 MB of WAV does not
+# belong in the history.
+*.wav
+
+# Rendered output. Only the two published deliverables are tracked: everything
+# else here is a draft, a prototype, a duplicate master, the silent duplicate,
+# a QA frame sequence or a legacy render, all of which are reproducible from
+# the tracked source.
+out/*
+!out/demo90/
+out/demo90/*
+!out/demo90/wind-underperformance-demo90.mp4
+!out/demo90/contact-sheet.png
